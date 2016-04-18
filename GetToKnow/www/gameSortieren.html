@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset=utf-8>
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
-	<title>Kennenlern-Spiele</title>
+	<title>One-Phone</title>
 </head>
 
 <body>
@@ -13,15 +14,17 @@
             <button type="button">Back</button>
             <!--noch keine Funktion-->
         </form>
-        <form>
-            <button type="button">Zufall</button>
-            <!--noch keine Funktion-->
-        </form>
-        <ul class="menu">
-            <a href="game1.html"><li>Game1 - Erzähl mir was</li></a>
-            <a href=""><li>Game2</li></a>
-            <a href=""><li>Game3</li></a>
-        </ul>
+        <a href="onePhone.html"><li>Back</li></a>
+		<main>
+			<h1>Spiel 1 : Sortieren</h1>
+			<h2>Sortiert euch nach:</h2>
+			<h2 id="anzeige">---</h2>
+        
+			<input type="button" id="begriff" value="neuer Begriff" onclick=neuerBegriff()>
+			
+		</main>
+		
     </div>
+	<script type="text/javascript" src="gameSortieren.js"></script>
 </body>
 </html>
