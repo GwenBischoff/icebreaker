@@ -12,7 +12,7 @@ function neuerBegriff()
 	zufall = Math.floor((Math.random() * 8) + 1);  //Zahl zwischen 1 und 8
 	
 	if(zufall == 1){
-		document.getElementById("anzeige").innerHTML="Schuhgröße";
+		document.getElementById("anzeige").innerHTML="Schuhgr&ouml;ße";
 	}
 	if(zufall == 2){
 		document.getElementById("anzeige").innerHTML="Alter";
@@ -24,10 +24,10 @@ function neuerBegriff()
 		document.getElementById("anzeige").innerHTML="Nachname";
 	}
 	if(zufall == 5){
-		document.getElementById("anzeige").innerHTML="Haarlänge";
+		document.getElementById("anzeige").innerHTML="Haarl&auml;nge";
 	}
 	if(zufall == 6){
-		document.getElementById("anzeige").innerHTML="Körpergröße";
+		document.getElementById("anzeige").innerHTML="K&ouml;rpergr&ouml;ße";
 	}
 	if(zufall == 7){
 		document.getElementById("anzeige").innerHTML="Farbe des Oberteils";
