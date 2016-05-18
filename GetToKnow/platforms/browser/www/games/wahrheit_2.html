@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<title>Icebreaker</title>
+    <script>
+        var stopDeg;
+        var stopRounds;
+        var elem;
+        var roundsCount = 0;
+        var degreesCount = 0;
+        var stop;
+        var loop;
+        function run(){
+            stopDeg = Math.floor((Math.random() * 360) + 1);
+            stopRounds = Math.floor((Math.random() * 4) + 2);
+            stop = false;
+
+            while(!stop){
+                setTimeout(rotateArrow, 100);  
+                if (degreesCount == stopDeg && roundsCount == stopRounds){
+                    stop =true;
+                } 
+            };
+        }
+        function rotateArrow(){
+            degreesCount++;
+            if(degreesCount > 359){
+                degreesCount = 1;
+                roundsCount++;
+            }
+            document.getElementById("arrow").style.transform = "rotate("+degreesCount+"deg)";
+        }
+</script>
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="title">Party-Games</h1>
+        <div class="div_buttons">
+            <form method="GET" action="../partyGames.html">
+                <input type="submit" value="Zur&uuml;ck" class="back"/>
+            </form>
+        </div>
+        <div>
+            <img src="../images/arrow.png" style="width:400px;height:400px;" id="arrow">
+            <script>
+                document.getElementById("arrow").addEventListener("click", function(){ count("arrow"); });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
