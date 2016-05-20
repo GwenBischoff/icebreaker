@@ -134,7 +134,7 @@ BUTTONS
 	margin: 0 auto;
     padding: 0.1em 1.0em 0.1em 1.0em;
     font-size: 1.5em;
-    background-color: #fff;
+    background-color: #fff !important;
     color: #7eb2c9;
     text-shadow:none !important;
     border:none !important;
