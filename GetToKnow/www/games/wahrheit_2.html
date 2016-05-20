@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
 	<title>Icebreaker</title>
 </head>
 
 <body>
     <div class="app">
-        <h1 class="title">Party-Games</h1>
-        <div class="div_buttons">
-            <form method="GET" action="../partyGames.html">
-                <input type="submit" value="Zur&uuml;ck" class="back"/>
-            </form>
+        <div id="mySideNav" class="sideNav">
+         <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+                <a href="../kennenlern.html">Kennenlern-Spiele</a>
+                <a href="../icebreaker.html">Icebreaker</a>
+                <a href="../partyGames.html">Party-Games</a>
+                <a href="../onePhone.html">One Phone</a>
         </div>
-        <div>
-            <img src="../images/arrow.png" style="width:400px;height:400px;" id="arrow">
-            <script>
-                document.getElementById("arrow").addEventListener("click", function(){ count("arrow"); });
-            </script>
+
+        <span onclick="openNav()">menu</span>
+
+        <!-- Content which will be pushed away-->
+        <div id="main">
+            <div class="div_buttons">
+                <form method="GET" action="../kennenlern.html">
+                    <input type="submit" value="<" class="btn"/>
+                </form>
+            </div>
+            
+            <img src="../images/logo1.jpg" alt="Icebraker" style="width:430px;height:120px;" class="logo">
+
+            <div class="gameWrapper">
+                <div class="gameName">
+                    <a>Wahrheit oder Pflicht</a>
+                </div>
+                <div class="gameDescription">
+                    <a id="anzeige">Dr&uuml;cke auf den Pfeil um das Spiel zu starten</a>
+
+                </div>
+                <div class="gameBtnsDiv">
+                    <img src="../images/arrow.png" style="width:400px;height:400px;" id="arrow">
+                    <script>
+                        document.getElementById("arrow").addEventListener("click", function(){ count("arrow"); });
+                    </script>
+                </div>
+                <!-- Script for function-->
+                <script type="text/javascript" src="../javascript/erzaehl.js"></script>
+            </div>
         </div>
+        <!-- Script to push content away whem menu is openend-->
+        <script type="text/javascript" src="../javascript/nav.js"></script> 
     </div>
-    <script type="text/javascript" src="../javascript/erzaehl.js"></script>
 </body>
 </html>

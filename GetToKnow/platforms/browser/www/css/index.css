@@ -1,45 +1,52 @@
 /*********************************
+GENERAL
+**********************************/
+.title{
+	margin-bottom: 1em;
+	font-size: 2.5em;
+	color: #1c7aa3;
+	text-align: center;
+}
+
+/*********************************
 SIDENAV
 **********************************/
 .sideNav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
     top: 0;
     left: 0;
-    background-color: #fff; /* White*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #fff; 
+    overflow-x: hidden; 
+    padding-top: 5.5em; /* Place content 60px from the top */
+    transition: 0.5s;
 }
 
-/* The navigation menu links */
 .sideNav a {
-    padding: 8px 8px 8px 32px;
+    padding: 0.6em 0.6em 0.6em 2em;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5em;
     color: #7eb2c9;
     display: block;
     transition: 0.3s
 }
 
-/* When you mouse over the navigation links, change their color */
 .sideNav a:hover, .offcanvas a:focus{
     color: #1c7aa3;
 }
 
-/* Position and style the close button (top right corner) */
 .closeBtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px !important;
-    margin-left: 50px;
+    right: 0.2em;
+    font-size: 2em !important;
+    margin-left: 4.5em;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
+.main {
     transition: margin-left .5s;
     padding: 20px;
 }
@@ -53,16 +60,14 @@ SIDENAV
 /*********************************
 NAV
 **********************************/
-
 .nav{
 	margin-left: 1em ;
 	margin-right: 1em ;
 	padding-left: 0px;
 	padding-right: 0px;
 	background-color: #fff;
-	font-size: 2em;
+	font-size: 1.5em;
 }
-
 .nav a{
 	margin-top: 1em ;
 	text-decoration: none;
@@ -71,38 +76,69 @@ NAV
     clear: right;
     text-align: center;;
 }
-
+.navWarpper{
+	overflow: hidden;
+}
+.navName{
+    float: left;
+}
+.toNextSite{
+	float: right;
+}
 .nav a:hover, .offcanvas a:focus{
     color: #1c7aa3;
 }
 
-
 /*********************************
-GENERAL
+GAME
 **********************************/
-body{
+.gameWarpper{
 	
 }
-
-.title{
-	font-size: 2.5em;
+.gameName{
+	margin: 0.5em auto 0.5em auto ;
+	padding: 0.5em;
+	background-color:  #1c7aa3;
+	font-size: 1.5em;
+	color: #fff;
 	text-align: center;
-	margin-bottom: 1em;
-    color: #1c7aa3;
+}
+.gameDescription{
+	margin: 0.5em auto 0.5em auto ;
+	padding: 0.5em;
+	font-size: 1.25em;
+	color:#7eb2c9;
+}
+.gameBtns{
+	margin: 0 auto;
+    padding: 0.1em 1.0em 0.1em 1.0em;
+    font-size: 1.5em;
+    color: #7eb2c9;
+	background-color:#f4f4f4;
+	border: 0.01em;
+	border-color: #767676;
+}
+#gameBtnsDiv{
+	overflow: auto;
+}
+#hochzaehlen{
+    float: left;
+}
+#ok{
+	float: right;
 }
 /*********************************
 BUTTONS
 **********************************/
-.div_buttons{
-    display: inline-block;
-}
 .btn{
 	margin: 0 auto;
-    padding: 0.5em 4.0em 0.5em 4.0em;
-    font-size: 1em;
-    border-radius: 5px;
+    padding: 0.1em 1.0em 0.1em 1.0em;
+    font-size: 1.5em;
     background-color: #fff;
     color: #7eb2c9;
+    text-shadow:none !important;
+    border:none !important;
+	box-shadow:none !important;
 }
 
 .btn a:hover, .offcanvas a:focus{

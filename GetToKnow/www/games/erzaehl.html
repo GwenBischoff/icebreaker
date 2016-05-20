@@ -2,32 +2,49 @@
 <html>
 <head>
 	<meta charset=utf-8>
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
 	<title>Kennenlern-Spiele</title>
 </head>
 
 <body>
     <div class="app">
-        <h1 class="title">Kennenlern-Spiele</h1>
-        <div class="div_buttons">
-            <form method="GET" action="../kennenlern.html">
-                <input type="submit" value="Zur&uuml;ck" class="back"/>
-            </form>
-        </div>
-        </form>
-        
-		<main>
-			<h1>Spiel 1 : Erzähl mir was</h1>
-			<h2 id="anzeige">Drücke den Button beliebig oft (bis zu 9x) und bestätige anschließend</h2>
-        
-			<input type="button" id="hochzaehlen" value="1" onclick=zaehlen()>
-			<br>
-			<input type="button" id="ok" value="Bestätigen" onclick=bestaetigen()>
-			
+	   	<div id="mySideNav" class="sideNav">
+	     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+	            <a href="../kennenlern.html">Kennenlern-Spiele</a>
+	            <a href="../icebreaker.html">Icebreaker</a>
+	            <a href="../partyGames.html">Party-Games</a>
+	            <a href="../onePhone.html">One Phone</a>
+	    </div>
 
-		</main>
-		
-    </div>
-	<script type="text/javascript" src="../javascript/erzaehl.js"></script>
+	    <span onclick="openNav()">menu</span>
+
+	    <!-- Content which will be pushed away-->
+	    <div class="main">
+	    	<div class="div_buttons">
+	            <form method="GET" action="../kennenlern.html">
+	                <input type="submit" value="<" class="btn"/>
+	            </form>
+	        </div>
+	        
+	        <img src="../images/logo1.jpg" alt="Icebraker" style="width:430px;height:120px;" class="logo">
+
+	        <div class="gameWrapper">
+				<div class="gameName">
+					<a>Erzähl mir was</a>
+				</div>
+				<div class="gameDescription">
+					<a id="anzeige">Dr&uuml;cke den Button beliebig oft (bis zu 9x) und bestätige anschließend</a>
+				</div>
+	        	<div class="gameBtnsDiv">
+					<input type="button" class="gameBtns" id="hochzaehlen" value="1" onclick=zaehlen()>
+					<input type="button" class="gameBtns" id="ok" value="Bestätigen" onclick=bestaetigen()>
+				</div>
+				<!-- Script for function-->
+				<script type="text/javascript" src="../javascript/erzaehl.js"></script>
+			</div>
+    	</div>
+    	<!-- Script to push content away whem menu is openend-->
+   		<script type="text/javascript" src="../javascript/nav.js"></script> 
+	</div>
 </body>
 </html>

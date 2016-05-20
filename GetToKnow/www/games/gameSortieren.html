@@ -2,28 +2,49 @@
 <html>
 <head>
 	<meta charset=utf-8>
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
 	<title>One-Phone</title>
 </head>
 
 <body>
     <div class="app">
-        <h1 class="title">Kennenlern-Spiele</h1>
-        <div class="div_buttons">
-            <form method="GET" action="../onePhone.html">
-                <input type="submit" value="Zur&uuml;ck" class="back"/>
-            </form>
-        </div>
-		<main>
-			<h1>Spiel 1 : Sortieren</h1>
-			<h2>Sortiert euch nach:</h2>
-			<h2 id="anzeige">---</h2>
-        
-			<input type="button" id="begriff" value="neuer Begriff" onclick=neuerBegriff()>
-			
-		</main>
-		
-    </div>
-	<script type="text/javascript" src="../javascript/gameSortieren.js"></script>
+	   	<div id="mySideNav" class="sideNav">
+	     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+	            <a href="../kennenlern.html">Kennenlern-Spiele</a>
+	            <a href="../icebreaker.html">Icebreaker</a>
+	            <a href="../partyGames.html">Party-Games</a>
+	            <a href="../onePhone.html">One Phone</a>
+	    </div>
+
+	    <span onclick="openNav()">menu</span>
+
+	    <!-- Content which will be pushed away-->
+	    <div class="main">
+	    	<div class="div_buttons">
+	            <form method="GET" action="../kennenlern.html">
+	                <input type="submit" value="<" class="btn"/>
+	            </form>
+	        </div>
+	        
+	        <img src="../images/logo1.jpg" alt="Icebraker" style="width:430px;height:120px;" class="logo">
+
+	        <div class="gameWrapper">
+				<div class="gameName">
+					<a>Sortieren</a>
+				</div>
+				<div class="gameDescription">
+					<a>Sortiert euch nach:</a>
+					<a id="anzeige">---</a>
+				</div>
+	        	<div class="gameBtnsDiv">
+					<input type="button" class="gameBtns" id="begriff" value="Neuer Begriff" onclick=neuerBegriff()>
+				</div>
+				<!-- Script for function-->
+				<script type="text/javascript" src="../javascript/gameSortieren.js"></script>
+			</div>
+    	</div>
+    	<!-- Script to push content away whem menu is openend-->
+   		<script type="text/javascript" src="../javascript/nav.js"></script> 
+	</div>
 </body>
 </html>

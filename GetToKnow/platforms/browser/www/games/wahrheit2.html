@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<title>Icebreaker</title>
+    <script>
+        var loop;
+        var stopDeg;
+        var rounds;
+        var elem;
+        var degrees = 0;
+        function rotateArrow(arrow, speed){
+            stopDeg = Math.floor((Math.random() * 360));     
+            rounds = Math.floor((Math.random() * 4) + 1);
+ //           while (i <= stopDeg){
+ //               while (j <= rounds){    
+                    elem = document.getElementById(arrow);
+                    elem.style.transform = "rotate("+degrees+"deg)";
+                    loop = setTimeout('rotateArrow(\''+arrow+'\','+speed+')',speed);
+                    degrees++;
+                    if(degrees > 359){
+                        degrees = 1;
+ //                   }
+ //                   j++;
+ //               }
+ //               i++;
+            }
+        }
+</script>
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="title">Party-Games</h1>
+        <div class="div_buttons">
+            <form method="GET" action="../partyGames.html">
+                <input type="submit" value="Zur&uuml;ck" class="back"/>
+            </form>
+        </div>
+        <div>
+            <img src="../images/arrow.png" style="width:400px;height:400px;" id="arrow">
+            <script>
+                document.getElementById("arrow").addEventListener("click", function(){ rotateArrow("arrow",5); });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
