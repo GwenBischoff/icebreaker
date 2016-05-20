@@ -1,6 +1,80 @@
 /*********************************
-LAYOUT
+SIDENAV
 **********************************/
+.sideNav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #fff; /* White*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #7eb2c9;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideNav a:hover, .offcanvas a:focus{
+    color: #1c7aa3;
+}
+
+/* Position and style the close button (top right corner) */
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*********************************
+NAV
+**********************************/
+
+.nav{
+	margin-left: 1em ;
+	margin-right: 1em ;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #fff;
+	font-size: 2em;
+}
+
+.nav a{
+	margin-top: 1em ;
+	text-decoration: none;
+	color: #7eb2c9;
+	display: block;
+    clear: right;
+    text-align: center;;
+}
+
+.nav a:hover, .offcanvas a:focus{
+    color: #1c7aa3;
+}
 
 
 /*********************************
@@ -11,75 +85,36 @@ body{
 }
 
 .title{
-	font-size: 2em;
+	font-size: 2.5em;
 	text-align: center;
-	margin: 1em;
+	margin-bottom: 1em;
+    color: #1c7aa3;
 }
-
-
-
-/*********************************
-MENU
-**********************************/
-
-.menu{
-	list-style: none;
-	background-color: #7eb2c9;
-	margin-left: 1em ;
-	margin-right: 1em ;
-	padding-left: 0px;
-	padding-right: 0px;
-	border: 0.05em solid black;
-	border-radius: 5px;
-}
-
-.menu li {
-	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	padding-left: 1em;
-	padding-right: 1em;
-	border: 0.05em solid black;
-	/*box-shadow: 2px 3px 2px grey;*/
-
-}
-
-.menu a{
-	text-decoration: none;
-	color: black;
-}
-
 /*********************************
 BUTTONS
 **********************************/
 .div_buttons{
-	text-align:center;
+    display: inline-block;
 }
-.back{
+.btn{
 	margin: 0 auto;
     padding: 0.5em 4.0em 0.5em 4.0em;
-    text-align: center;
-    display: inline-block;
     font-size: 1em;
     border-radius: 5px;
-    background-color: #eee;
+    background-color: #fff;
+    color: #7eb2c9;
 }
-.random{
 
-	margin: 0 auto;
-    padding: 0.5em 4.0em 0.5em 4.0em;
-    text-align: center;
-    display: inline-block;
-    font-size: 1em;
-    border-radius: 5px;
-    background-color: #eee;
+.btn a:hover, .offcanvas a:focus{
+    color: #1c7aa3;
 }
 /*********************************
 LOGO
 **********************************/
 div .logo{
-	margin: auto;
-	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .logo{
 	margin: 0 auto;

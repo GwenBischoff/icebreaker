@@ -1,23 +1,28 @@
-var looper;
-var degrees = 0;
-function rotateAnimation(el,speed){
-    var elem = document.getElementById(el);
-    if(navigator.userAgent.match("Chrome")){
-        elem.style.WebkitTransform = "rotate("+degrees+"deg)";
-    } else if(navigator.userAgent.match("Firefox")){
-        elem.style.MozTransform = "rotate("+degrees+"deg)";
-    } else if(navigator.userAgent.match("MSIE")){
-        elem.style.msTransform = "rotate("+degrees+"deg)";
-    } else if(navigator.userAgent.match("Opera")){
-        elem.style.OTransform = "rotate("+degrees+"deg)";
-    } else {
-        elem.style.transform = "rotate("+degrees+"deg)";
+var stopDeg;
+var stopRounds;
+var elem;
+var roundsCount = 0;
+var degreesCount = 0;
+var stop;
+var loop;
+function run(){
+    stopDeg = Math.floor((Math.random() * 360) + 1);
+    stopRounds = Math.floor((Math.random() * 4) + 2);
+    stop = false;
+
+    while(!stop){
+        setTimeout(rotateArrow, 100);  
+        if (degreesCount == stopDeg && roundsCount == stopRounds){
+            stop =true;
+        } 
+    };
+}
+function rotateArrow(){
+    degreesCount++;
+    if(degreesCount > 359){
+        degreesCount = 1;
+        roundsCount++;
     }
-    looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
-    degrees++;
-    if(degrees > 359){
-        degrees = 1;
-    }
-    document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+    document.getElementById("arrow").style.transform = "rotate("+degreesCount+"deg)";
 }
 
