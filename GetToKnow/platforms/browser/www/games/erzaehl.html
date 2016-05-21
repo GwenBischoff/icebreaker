@@ -8,42 +8,42 @@
 
 <body>
     <div class="app">
+    	<!--SideNavigation-->
 	   	<div id="mySideNav" class="sideNav">
-	     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-	            <a href="../kennenlern.html">Kennenlern-Spiele</a>
-	            <a href="../icebreaker.html">Icebreaker</a>
-	            <a href="../partyGames.html">Party-Games</a>
-	            <a href="../onePhone.html">One Phone</a>
+     		<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="../kennenlern.html">Kennenlern-Spiele</a>
+            <a href="../icebreaker.html">Icebreaker</a>
+            <a href="../partyGames.html">Party-Games</a>
+            <a href="../onePhone.html">One Phone</a>
 	    </div>
-	    
-	    <span onclick="openNav()">menu</span>
 
-	    <!-- Content which will be pushed away-->
-	    <div class="main">
-	    	<div class="div_buttons">
-	            <form method="GET" action="../kennenlern.html">
-	                <input type="submit" value="<" class="btn"/>
-	            </form>
-	        </div>
-	        
-	        <img src="../img/logo1.jpg" alt="Icebraker" class="logo">
+	    <!--SideNavigation-Icon-->
+	    <div class="sideNavIcon" onclick="openNav()">menu</div>
 
-	        <div class="gameWrapper">
-				<div class="gameName">
-					<span>Erzähl mir was</span>
-				</div>
-				<div class="gameDescription">
-					<span id="anzeige">Dr&uuml;cke den Button beliebig oft (bis zu 9x) und bestätige anschließend</span>
-				</div>
-	        	<div class="gameBtnsDiv">
-					<input type="button" class="gameBtns" id="hochzaehlen" value="1" onclick=zaehlen()>
-					<input type="button" class="gameBtns" id="ok" value="Bestätigen" onclick=bestaetigen()>
-				</div>
-				<!-- Script for function-->
-				<script type="text/javascript" src="../js/erzaehl.js"></script>
+        <!--Back-Button-->
+        <a href="index.html" class="back">
+            <div class="divBtnBack"><</div>
+        </a>
+        
+        <!--Logo-->
+        <img src="../img/logo1.jpg" alt="Icebraker" class="logo">
+
+        <!--Game-->
+        <div class="gameWrapper">
+			<div class="gameName">
+				<span>Erzähl mir was</span>
 			</div>
-    	</div>
-    	<!-- Script to push content away whem menu is openend-->
+			<div class="gameDescription">
+				<span id="anzeige">Dr&uuml;cke den Button beliebig oft (bis zu 9x) und bestätige anschließend</span>
+			</div>
+        	<div class="gameBtnsDiv">
+				<input type="button" class="gameBtns" id="hochzaehlen" value="1" onclick=zaehlen()>
+				<input type="button" class="gameBtns" id="ok" value="Bestätigen" onclick=bestaetigen()>
+			</div>
+			<!-- Script for function-->
+			<script type="text/javascript" src="../js/erzaehl.js"></script>
+		</div>
+    	<!-- Script to open nav-->
    		<script type="text/javascript" src="../js/nav.js"></script> 
 	</div>
 </body>

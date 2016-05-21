@@ -7,45 +7,45 @@
 
 <body>
     <div class="app">
+        <!--SideNavigation-->
         <div id="mySideNav" class="sideNav">
-         <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-                <a href="../kennenlern.html">Kennenlern-Spiele</a>
-                <a href="../icebreaker.html">Icebreaker</a>
-                <a href="../partyGames.html">Party-Games</a>
-                <a href="../onePhone.html">One Phone</a>
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="../kennenlern.html">Kennenlern-Spiele</a>
+            <a href="../icebreaker.html">Icebreaker</a>
+            <a href="../partyGames.html">Party-Games</a>
+            <a href="../onePhone.html">One Phone</a>
         </div>
 
-        <span onclick="openNav()">menu</span>
+        <!--SideNavigation-Icon-->
+        <div class="sideNavIcon" onclick="openNav()">menu</div>
+        
+        <!--Back-Button-->
+        <a href="index.html" class="back">
+            <div class="divBtnBack"><</div>
+        </a>
 
-        <!-- Content which will be pushed away-->
-        <div class="main">
-            <div class="div_buttons">
-                <form method="GET" action="../kennenlern.html">
-                    <input type="submit" value="<" class="btn"/>
-                </form>
+        <!--Logo-->
+        <img src="../img/logo1.jpg" alt="Icebraker" id="logo">
+
+        <!--Game-->
+        <div class="gameWrapper">
+            <div class="gameName">
+                <span>Wahrheit oder Pflicht</span>
             </div>
-            
-            <img src="../img/logo1.jpg" alt="Icebraker" class="logo">
+            <div class="gameDescription">
+                <span id="anzeige">Dr&uuml;cke auf den Pfeil um das Spiel zu starten</span>
 
-            <div class="gameWrapper">
-                <div class="gameName">
-                    <span>Wahrheit oder Pflicht</span>
-                </div>
-                <div class="gameDescription">
-                    <span id="anzeige">Dr&uuml;cke auf den Pfeil um das Spiel zu starten</span>
-
-                </div>
-                <div class="gameBtnsDiv">
-                    <img src="../images/arrow.png" style="width:400px;height:400px;" id="arrow">
-                    <script>
-                        document.getElementById("arrow").addEventListener("click", function(){ count("arrow"); });
-                    </script>
-                </div>
-                <!-- Script for function-->
-                <script type="text/javascript" src="../js/erzaehl.js"></script>
             </div>
+            <div class="gameBtnsDiv" id="wahrheit">
+                <img src="../img/arrow.png" id="arrow">
+                <script>
+                    document.getElementById("arrow").addEventListener("click", function(){ run() });
+                </script>
+            </div>
+            <!-- Script for function-->
+            <script type="text/javascript" src="../js/wahrheit.js"></script>
         </div>
-        <!-- Script to push content away whem menu is openend-->
+        <!-- Script to open nav-->
         <script type="text/javascript" src="../js/nav.js"></script> 
     </div>
 </body>
