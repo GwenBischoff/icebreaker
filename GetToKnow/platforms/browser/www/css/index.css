@@ -79,6 +79,9 @@ NAV
 .navWarpper{
 	overflow: hidden;
 }
+.navWarpper a{
+    position: relative;
+}
 .navName{
     float: left;
 }
@@ -117,6 +120,7 @@ GAME
 	background-color:#f4f4f4;
 	border: 0.01em;
 	border-color: #767676;
+    -webkit-appearance: none;
 }
 #gameBtnsDiv{
 	overflow: auto;
@@ -136,6 +140,7 @@ BUTTONS
     font-size: 1.5em;
     background-color: #fff !important;
     color: #7eb2c9;
+    -webkit-appearance: none;
     text-shadow:none !important;
     border:none !important;
 	box-shadow:none !important;
@@ -148,10 +153,11 @@ BUTTONS
 LOGO
 **********************************/
 div .logo{
-	display: block;
+	
 	margin-left: auto;
 	margin-right: auto;
 }
 .logo{
-	margin: 0 auto;
+	width: 100%;
+    height: auto;
 }
