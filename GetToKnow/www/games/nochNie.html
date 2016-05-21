@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset=utf-8>
@@ -10,11 +10,11 @@
     <div class="app">
     	<!--SideNavigation-->
 	   	<div id="mySideNav" class="sideNav">
-	     		<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-	            <a href="../kennenlern.html">Kennenlern-Spiele</a>
-	            <a href="../icebreaker.html">Icebreaker</a>
-	            <a href="../partyGames.html">Party-Games</a>
-	            <a href="../onePhone.html">One Phone</a>
+     		<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="../kennenlern.html">Kennenlern-Spiele</a>
+            <a href="../icebreaker.html">Icebreaker</a>
+            <a href="../partyGames.html">Party-Games</a>
+            <a href="../onePhone.html">One Phone</a>
 	    </div>
 
 	    <!--SideNavigation-Icon-->
@@ -31,17 +31,19 @@
         <!--Game-->
         <div class="gameWrapper">
 			<div class="gameName">
-				<span>Erzähl mir was</span>
+				<span>Ich hab noch nie</span>
 			</div>
 			<div class="gameDescription">
-				<span id="anzeige">Dr&uuml;cke den Button beliebig oft (bis zu 9x) und bestätige anschließend</span>
+				<span>Jeder sagt etwas, dass er/sie noch nie gemacht hat. Alle die diese Sache schon mal gemacht haben müssen die abgebildete Aktion ausführen.</span>
+				</br>
+				</br>
+				<span id="anzeige">Beispiel: So hoch hüpfen wie man kann.</span>
 			</div>
         	<div class="gameBtnsDiv">
-				<input type="button" class="gameBtns" id="hochzaehlen" value="1" onclick=zaehlen()>
-				<input type="button" class="gameBtns" id="ok" value="Bestätigen" onclick=bestaetigen()>
+				<input type="button" class="gameBtns" id="nochNie" value="Neue Aktion" onclick=nochNie()>
 			</div>
 			<!-- Script for function-->
-			<script type="text/javascript" src="../js/erzaehl.js"></script>
+			<script type="text/javascript" src="../js/nochNie.js"></script>
 		</div>
     	<!-- Script to open nav-->
    		<script type="text/javascript" src="../js/nav.js"></script> 

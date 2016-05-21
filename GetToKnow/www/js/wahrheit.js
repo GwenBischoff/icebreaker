@@ -6,7 +6,7 @@ function run(){
     if (start){
         /*Creats random degree and amount of rounds*/
         stopDeg = Math.floor((Math.random() * 360) + 1);
-        stopRounds = Math.floor((Math.random() * 4)+2);
+        stopRounds = Math.floor((Math.random() * 4) + 1);
         
         /*Boolean to stop when random created numbers are reached*/
         stop = false;
