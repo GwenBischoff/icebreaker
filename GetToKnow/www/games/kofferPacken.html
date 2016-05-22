@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<title>Party-Games</title>
+</head>
+
+<body>
+    <div class="app">
+    	<!--SideNavigation-->
+	   	<div id="mySideNav" class="sideNav">
+     		<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="../kennenlern.html">Kennenlern-Spiele</a>
+            <a href="../icebreaker.html">Icebreaker</a>
+            <a href="../partyGames.html">Party-Games</a>
+            <a href="../onePhone.html">One Phone</a>
+	    </div>
+
+	    <!--SideNavigation-Icon-->
+	    <div class="sideNavIcon" onclick="openNav()">menu</div>
+
+        <!--Back-Button-->
+        <a href="../partyGames.html" class="back">
+            <div class="divBtnBack"><</div>
+        </a>
+        
+        <!--Logo-->
+        <img src="../img/logo1.jpg" alt="Icebraker" class="logo">
+
+        <!--Game-->
+        <div class="gameWrapper">
+			<div class="gameName">
+				<span>Ich packe meinen Koffer...</span>
+			</div>
+			<div class="gameDescription">
+				</br>
+				</br>
+				<span id="anzeige">Klicke den Button um einen Begriff zu erhalten</span>
+			</div>
+        	<div class="gameBtnsDiv">
+				<input type="button" class="gameBtns" id="kofferPacken" value="Neuer Begriff" onclick=kofferPacken()>
+			</div>
+			<!-- Script for function-->
+			<script type="text/javascript" src="../js/kofferPacken.js"></script>
+		</div>
+    	<!-- Script to open nav-->
+   		<script type="text/javascript" src="../js/nav.js"></script> 
+	</div>
+</body>
+</html>
