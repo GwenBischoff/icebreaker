@@ -35,7 +35,7 @@ SIDENAV
     left: 0;
     background-color: #fff; 
     overflow-x: hidden; 
-    padding-top: 5.5em; /* Place content 60px from the top */
+    padding-top: 5.5em; 
     transition: 0.5s;
 }
 .sideNav a {

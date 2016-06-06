@@ -10,38 +10,41 @@
     <div class="app">
     	<!--SideNavigation-->
 	   	<div id="mySideNav" class="sideNav">
-	     	<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+     		<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
             <a href="../kennenlern.html">Kennenlern-Spiele</a>
             <a href="../icebreaker.html">Icebreaker</a>
             <a href="../partyGames.html">Party-Games</a>
             <a href="../onePhone.html">One Phone</a>
 	    </div>
 
-		<!--SideNavigation-Icon-->
+	    <!--SideNavigation-Icon-->
 	    <div class="sideNavIcon" onclick="openNav()">menu</div>
-        
+
         <!--Back-Button-->
-        <a href="../onePhone.html" class="back">
+        <a href="../icebreaker.html" class="back">
             <div class="divBtnBack"><</div>
         </a>
         
         <!--Logo-->
-        <img src="../img/logo1.jpg" alt="Icebraker" class="logo">
-		
-		<!--Game-->
+        <img src="../img/logo1.jpg" alt="Icebreaker" class="logo">
+
+        <!--Game-->
         <div class="gameWrapper">
 			<div class="gameName">
-				<span>Sortieren</span>
+				<span>Was wäre wenn...</span>
 			</div>
 			<div class="gameDescription">
-				<span>Sortiert euch nach: </span>
+				</br>
+				</br>
+				<span>Was wäre wenn....</span>
+				</br>
 				<span id="anzeige">---</span>
 			</div>
         	<div class="gameBtnsDiv">
-				<input type="button" class="gameBtns" id="begriff" value="Neuer Begriff" onclick=neuerBegriff()>
+				<input type="button" class="gameBtns" id="wasWenn" value="Neuer Satz" onclick=wasWenn()>
 			</div>
 			<!-- Script for function-->
-			<script type="text/javascript" src="../js/gameSortieren.js"></script>
+			<script type="text/javascript" src="../js/wasWenn.js"></script>
 		</div>
     	<!-- Script to open nav-->
    		<script type="text/javascript" src="../js/nav.js"></script> 

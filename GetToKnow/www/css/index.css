@@ -16,42 +16,73 @@ FONT
     font-style: normal;
     font-weight: 400;
 }
+/*********************************
+BODY
+**********************************/
 body{
     margin: 0;
     font-family: 'Pt Sans', sans-serif;
+    color: #454545;
+    font-size: 12pt;
 }
-.btn .gameBtns{
-    font-family: 'Pt Sans', sans-serif;
+a{
+    color: #454545;
+    text-decoration: none;
+}
+a:hover{
+    color: #989898;
+}
+/**************************
+HEADER
+**************************/
+header{
+    
+}
+/**************************
+FOOTER
+**************************/
+footer {
+    font-size: 0.75em;
+    color: #e1e1e1;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c7aa3;
 }
 /*********************************
 SIDENAV
 **********************************/
 .sideNav {
+    padding-top: 5.5em;
     height: 100%;
     width: 0; 
     position: fixed;
     z-index: 1; 
     top: 0;
     left: 0;
-    background-color: #fff; 
-    overflow-x: hidden; 
-    padding-top: 5.5em; /* Place content 60px from the top */
+    background-color: #f0f0f0; 
+    overflow-x: hidden;  
     transition: 0.5s;
 }
 .sideNav a {
     padding: 0.6em 0.6em 0.6em 2em;
-    text-decoration: none;
     font-size: 1.5em;
-    color: #7eb2c9;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 .sideNavIcon{
     width: 5%;
-    padding: 1.2em 0em 0em 0.7em;
-}
-.sideNav a:hover, .offcanvas a:focus{
+    padding: 0.3em 0 0.3em 0.7em;
+    font-size: 2em;
     color: #1c7aa3;
+}
+#navDiv{
+    border-bottom: 5px solid #1c7aa3;
+    background-color: #e1e1e1;
+}
+.sideNavIcon:hover{
+    color: #7eb2c9;
 }
 .closeBtn {
     position: absolute;
@@ -60,10 +91,48 @@ SIDENAV
     font-size: 2em !important;
     margin-left: 4.5em;
 }
-
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
+.sideNavNamesWrapper{
+        display: inline-block; 
+}
+.navIcons{
+    width: 20%;
+    height: auto;
+}
+/*********************************
+MAIN
+**********************************/
+#mainMenu{
+    margin: 1em 1em 0 1em;
+    overflow: auto;
+    display:block;
+    font-size: 1.5em
+}
+.mainMenuDiv{
+    padding: 1em 0 1em 0.5em;
+    height: 40%;
+    width: 45.5%;
+    float: left;
+}
+.text{
+    text-align: center;
+    padding: 1.25em 0 1.25em 0;
+}
+#leftUp{
+    border-left: 2px solid #e1e1e1;
+    border-top: 2px solid #e1e1e1;
+    border-right: 2px solid #e1e1e1;
+}
+#rightUp{
+    border-top: 2px solid #e1e1e1;
+    border-right: 2px solid #e1e1e1;
+}
+#leftLow{
+    border-left: 2px solid #e1e1e1;
+    border-top: 2px solid #e1e1e1;
+    border-bottom: 2px solid #e1e1e1;
+}
+#rightLow{
+    border: 2px solid #e1e1e1;
 }
 
 /*********************************
@@ -104,9 +173,6 @@ NAV
 /*********************************
 GAME-GENERAL
 **********************************/
-.gameWarpper{
-	
-}
 .gameName{
 	margin: 0.5em auto 0.5em auto ;
 	padding: 0.5em;
@@ -156,13 +222,17 @@ GAME-WAHRHEIT
 /*********************************
 BACK-SYMBOL
 **********************************/
-.divBtnBack{
+#divBtnBack{
     width: 5%;
-    padding: 1.2em 0em 0em 0.7em;
-    color: #7eb2c9;
+    padding: 0.6em 0 0.6em 1.2em;
+    color: #1c7aa3;
     font-size: 1.5em;
 }
-.back{  
+#btnBackWrapper{
+    border-bottom: 5px solid #1c7aa3;
+    background-color: #e1e1e1;
+}
+#back{  
     margin: 0;
     padding: 0;   
     text-decoration: none;

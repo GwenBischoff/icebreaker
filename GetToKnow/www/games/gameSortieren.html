@@ -3,22 +3,29 @@
 <head>
 	<meta charset=utf-8>
 	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<title>Icebreaker</title>
 </head>
 
 <body>
-    <div class="app">
+	<header>
     	<!--SideNavigation-->
-	   	<div id="mySideNav" class="sideNav">
-	     	<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-            <a href="../kennenlern.html">Kennenlern-Spiele</a>
+        <div id="mySideNav" class="sideNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="../kennenlern.html">
+                <div class="sideNavNamesWrapper">
+                    <div><img src="../img/bekanntschaft.png" alt="Icebraker" class="navIcons"></div>
+                    <div>Kennenlern-Spiele</div></a>
+                </div>
             <a href="../icebreaker.html">Icebreaker</a>
             <a href="../partyGames.html">Party-Games</a>
             <a href="../onePhone.html">One Phone</a>
-	    </div>
+        </div>
 
 		<!--SideNavigation-Icon-->
-	    <div class="sideNavIcon" onclick="openNav()">menu</div>
+        <div id="navDiv">
+            <div class="sideNavIcon" onclick="openNav()"><i class="fa fa-bars"></i></div>
+        </div>
         
         <!--Back-Button-->
         <a href="../onePhone.html" class="back">
@@ -27,7 +34,8 @@
         
         <!--Logo-->
         <img src="../img/logo1.jpg" alt="Icebraker" class="logo">
-		
+	</header>
+	<section>
 		<!--Game-->
         <div class="gameWrapper">
 			<div class="gameName">
@@ -45,6 +53,9 @@
 		</div>
     	<!-- Script to open nav-->
    		<script type="text/javascript" src="../js/nav.js"></script> 
-	</div>
+    </section>	
+    <footer>
+        <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
+    </footer> 
 </body>
 </html>

@@ -1,50 +1,12 @@
-init();
 
-var zaehler = 1;
+var zaehler;
+var action  = ["Arme hochheben", "Einmal im Kreis tanzen", "Laut lachen", "Auf die Nase fassen", //4
+			"Den linken Nachbar anstupsen", "Beide Hände auf den Boden", "Die Zunge raus strecken", //3
+			"Auf einem Bein stehen", "Im Kreis hüpfen", "Die Augen rollen", "In die Hände klatschen", //4
+			"Auf einem Bein hüpfen", "Den rechten Nachbar anstupsen", "Laut husten", "Sich räuspern", //4
+			"Am Ohr zupfen", "Hampelmann", "Eine Kniebeuge"]; //3
 
-function init()
-{
-
-	zaehler = 1;
-}
-
-
-function zaehlen()
-{
-	if (zaehler == 1){
-		document.getElementById("hochzaehlen").value="2";
-	}
-	if (zaehler == 2){
-		document.getElementById("hochzaehlen").value="3";
-	}
-	if (zaehler == 3){
-		document.getElementById("hochzaehlen").value="4";
-	}
-	if (zaehler == 4){
-		document.getElementById("hochzaehlen").value="5";
-	}
-	if (zaehler == 5){
-		document.getElementById("hochzaehlen").value="6";
-	}
-	if (zaehler == 6){
-		document.getElementById("hochzaehlen").value="7";
-	}
-	if (zaehler == 7){
-		document.getElementById("hochzaehlen").value="8";
-	}
-	if (zaehler == 8){
-		document.getElementById("hochzaehlen").value="9";
-	}
-	if (zaehler == 9){
-		document.getElementById("hochzaehlen").value="10";
-	}
-	zaehler = zaehler + 1;
-	
-}
-
-function bestaetigen()
-{
-	document.getElementById("hochzaehlen").style.display="none";
-	document.getElementById("ok").style.display="none";
-	document.getElementById("anzeige").innerHTML=zaehler;
+function nochNie(){
+	zaehler = Math.floor((Math.random() * 18));
+	document.getElementById("anzeige").innerHTML=action[zaehler];
 }
