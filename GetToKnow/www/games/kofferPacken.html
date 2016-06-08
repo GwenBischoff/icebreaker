@@ -10,30 +10,27 @@
 <body>
 	<header>
     	<!--SideNavigation-->
-        <div id="mySideNav" class="sideNav">
+        <div id="sideNav">
             <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-            <a href="../kennenlern.html">
-                <div class="sideNavNamesWrapper">
-                    <div><img src="../img/bekanntschaft.png" alt="Icebraker" class="navIcons"></div>
-                    <div>Kennenlern-Spiele</div></a>
-                </div>
-            <a href="../icebreaker.html">Icebreaker</a>
+            <a id="home" href="../index.html">Startseite</a>
+            <a href="../kennenlern.html">Kennenlern-Spiele</a>
+            <a href="../icebreaker.html">Eisbrecher</a>
             <a href="../partyGames.html">Party-Games</a>
             <a href="../onePhone.html">One Phone</a>
+            <a id = "help" href="">Hilfe</a>
+            <a href="">Einstellungen</a>
         </div>
 
 	    <!--SideNavigation-Icon-->
-        <div id="navDiv">
-            <div class="sideNavIcon" onclick="openNav()"><i class="fa fa-bars"></i></div>
+        <div id="navIconWrapper">
+            <div id="sideNavIcon" onclick="openNav()"><i class="fa fa-bars"></i></div>
+            <div id="appName">Icebreakers</div>
         </div>
 
         <!--Back-Button-->
         <a href="../partyGames.html" class="back">
             <div class="divBtnBack"><</div>
         </a>
-        
-        <!--Logo-->
-        <img src="../img/logo1.jpg" alt="Icebraker" class="logo">
 	</header>
 	<section>
         <!--Game-->

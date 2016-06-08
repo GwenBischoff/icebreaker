@@ -1,12 +1,7 @@
 /*********************************
-GENERAL
+GENERAL 
 **********************************/
-.title{
-	margin-bottom: 1em;
-	font-size: 2.5em;
-	color: #1c7aa3;
-	text-align: center;
-}
+
 /*********************************
 FONT
 **********************************/
@@ -22,38 +17,48 @@ BODY
 body{
     margin: 0;
     font-family: 'Pt Sans', sans-serif;
-    color: #454545;
+    color: #000;
     font-size: 12pt;
 }
 a{
-    color: #454545;
+    color: #000;
     text-decoration: none;
 }
-a:hover{
-    color: #989898;
-}
 /**************************
-HEADER
+HEADER 
 **************************/
 header{
-    
+    background-color: #1c7aa3;
+}
+#navIconWrapper{
+    padding: 0.3em 0 0.3em 0.7em;
+    font-size: 2em;
+}
+#sideNavIcon{
+    width: 5%;
+    display: inline-block;
+}
+#appName{
+    display: inline-block;
+    margin-left: 2.5em;
+    margin-right: auto;
 }
 /**************************
 FOOTER
 **************************/
 footer {
     font-size: 0.75em;
-    color: #e1e1e1;
+    color: #000;
     position: fixed;
     text-align: center;
     bottom: 0;
     width: 100%;
-    background-color: #1c7aa3;
 }
 /*********************************
 SIDENAV
 **********************************/
-.sideNav {
+#sideNav {
+    background-color: rgba(28, 122, 163, 0.95);
     padding-top: 5.5em;
     height: 100%;
     width: 0; 
@@ -61,28 +66,14 @@ SIDENAV
     z-index: 1; 
     top: 0;
     left: 0;
-    background-color: #f0f0f0; 
     overflow-x: hidden;  
     transition: 0.5s;
 }
-.sideNav a {
+#sideNav a {
     padding: 0.6em 0.6em 0.6em 2em;
     font-size: 1.5em;
     display: block;
     transition: 0.3s;
-}
-.sideNavIcon{
-    width: 5%;
-    padding: 0.3em 0 0.3em 0.7em;
-    font-size: 2em;
-    color: #1c7aa3;
-}
-#navDiv{
-    border-bottom: 5px solid #1c7aa3;
-    background-color: #e1e1e1;
-}
-.sideNavIcon:hover{
-    color: #7eb2c9;
 }
 .closeBtn {
     position: absolute;
@@ -91,84 +82,120 @@ SIDENAV
     font-size: 2em !important;
     margin-left: 4.5em;
 }
-.sideNavNamesWrapper{
-        display: inline-block; 
+.sideNavLeft{
+
+}
+.sideNavRight{
+
 }
 .navIcons{
-    width: 20%;
-    height: auto;
+
+}
+#home{
+    margin: 0 0 2.5em 0;
+}
+#help{
+    margin: 3em 0 0 0;
 }
 /*********************************
 MAIN
 **********************************/
 #mainMenu{
-    margin: 1em 1em 0 1em;
     overflow: auto;
     display:block;
-    font-size: 1.5em
+    font-size: 1.5em;
+    width: 100%;
 }
-.mainMenuDiv{
-    padding: 1em 0 1em 0.5em;
-    height: 40%;
-    width: 45.5%;
-    float: left;
-}
-.text{
+.mainMenuName{
+    padding: 2.5em 0 2.5em 0 ;   
+    width: 100%;
     text-align: center;
-    padding: 1.25em 0 1.25em 0;
 }
-#leftUp{
-    border-left: 2px solid #e1e1e1;
-    border-top: 2px solid #e1e1e1;
-    border-right: 2px solid #e1e1e1;
+#menuOne{ 
+    background-color: hsla(204, 61%, 59%, 0.5);/*rgba(86, 162, 214,0.5); #56a2d6*/
 }
-#rightUp{
-    border-top: 2px solid #e1e1e1;
-    border-right: 2px solid #e1e1e1;
+#menuTwo{
+    background-color: hsla(172, 100%, 32%, 0.5); /*#00a38e*/
 }
-#leftLow{
-    border-left: 2px solid #e1e1e1;
-    border-top: 2px solid #e1e1e1;
-    border-bottom: 2px solid #e1e1e1;
+#menuThree{
+    background-color: hsla(10, 60%, 43%, 0.5);/*#b0412c*/
 }
-#rightLow{
-    border: 2px solid #e1e1e1;
+#menuFour{
+    background-color: hsla(1, 100%, 42%, 0.5);/*#d60300*/
 }
-
 /*********************************
-NAV
+GAME-NAV
 **********************************/
-.nav{
-	margin-left: 1em ;
-	margin-right: 1em ;
-	padding-left: 0px;
-	padding-right: 0px;
-	background-color: #fff;
+#gameNav{
 	font-size: 1.5em;
 }
-.nav a{
-	margin-top: 1em ;
+#gameNav a{
 	text-decoration: none;
-	color: #7eb2c9;
 	display: block;
     clear: right;
-    text-align: center;;
+    text-align: center;
 }
-.navWarpper{
-	overflow: hidden;
+/*********************************
+GAME-NAV: KENNENLERN, BLAU
+**********************************/
+.blue{
+    padding: 3.7em 0 3.7em 0;
 }
-.navWarpper a{
-    position: relative;
+#gameOneBlue{
+    background-color: hsla(204, 61%, 59%, 0.5);
 }
-.navName{
-    float: left;
+#gameTwoBlue{
+    background-color: hsla(204, 61%, 69%, 0.5);
 }
-.toNextSite{
-	float: right;
+#gameThreeBlue{
+    background-color: hsla(204, 61%, 79%, 0.5);
 }
-.nav a:hover, .offcanvas a:focus{
-    color: #1c7aa3;
+/*********************************
+GAME-NAV: EISBRECHER, GRÜN
+**********************************/
+.green{
+    padding: 3.7em 0 3.7em 0;
 }
+#gameOneGreen{
+    background-color: hsla(172, 100%, 32%, 0.5);
+}
+#gameTwoGreen{
+    background-color: hsla(172, 100%, 42%, 0.5);
+}
+#gameThreeGreen{
+    background-color: hsla(172, 100%, 52%, 0.5);
+}
+/*********************************
+GAME-NAV: PARTY, BRAUN
+**********************************/
+.brown{
+    padding: 3.7em 0 3.7em 0;
+}
+#gameOneBrown{
+    background-color: hsla(10, 60%, 43%, 0.5);
+}
+#gameTwoBrown{
+    background-color: hsla(10, 60%, 53%, 0.5);
+}
+#gameThreeBrown{
+    background-color: hsla(10, 60%, 63%, 0.5);
+}
+/*********************************
+GAME-NAV: ONE-PHONE, ROT
+**********************************/
+.red{
+    padding: 3.7em 0 3.7em 0;
+}
+#gameOneRed{
+    background-color: hsla(1, 100%, 42%, 0.5);
+}
+#gameTwoRed{
+    background-color: hsla(1, 100%, 52%, 0.5);
+}
+#gameThreeRed{
+    background-color: hsla(1, 100%, 62%, 0.5);
+}
+
 
 /*********************************
 GAME-GENERAL
@@ -178,20 +205,17 @@ GAME-GENERAL
 	padding: 0.5em;
 	background-color:  #1c7aa3;
 	font-size: 1.5em;
-	color: #fff;
 	text-align: center;
 }
 .gameDescription{
 	margin: 0.5em auto 0.5em auto ;
 	padding: 0.5em;
 	font-size: 1.25em;
-	color:#7eb2c9;
 }
 .gameBtns{
 	margin: 0 auto;
     padding: 0.1em 1.0em 0.1em 1.0em;
     background-color:#f4f4f4;
-    color: #7eb2c9;
 
     font-size: 1.5em;
     border: 0.01em;
@@ -225,7 +249,6 @@ BACK-SYMBOL
 #divBtnBack{
     width: 5%;
     padding: 0.6em 0 0.6em 1.2em;
-    color: #1c7aa3;
     font-size: 1.5em;
 }
 #btnBackWrapper{
@@ -240,6 +263,7 @@ BACK-SYMBOL
 /*********************************
 LOGO
 **********************************/
+
 .logo{
 	width: 100%;
     height: auto;

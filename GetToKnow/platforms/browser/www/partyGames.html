@@ -2,40 +2,49 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<title>Icebreaker</title>
 </head>
 
 <body>
-    <div class="app">
-        <!--Back-Button-->
-        <a href="index.html" class="back">
-            <div class="divBtnBack"><</div>
-        </a>
+    <header>
+        <!--SideNavigation-->
+        <div id="sideNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a id="home" href="index.html">Startseite</a>
+            <a href="kennenlern.html">Kennenlern-Spiele</a>
+            <a href="icebreaker.html">Eisbrecher</a>
+            <a href="partyGames.html">Party-Games</a>
+            <a href="onePhone.html">One Phone</a>
+            <a id = "help" href="">Hilfe</a>
+            <a href="">Einstellungen</a>
+        </div>
 
-        <!--Logo-->
-        <img src="img/logo1.jpg" alt="Icebraker" class="logo">
+        <!--SideNavigation-Icon-->
+        <div id="navIconWrapper">
+            <div id="sideNavIcon" onclick="openNav()"><i class="fa fa-bars"></i></div>
+            <div id="appName">Icebreakers</div>
+        </div>
 
+    </header>
+    <section>
         <!--Navigation-->
-        <div class="nav">
+        <div id="gameNav">
             <a href="games/wahrheit.html">
-                <div class="navWarpper">
-                    <div class="navName">Wahrheit oder Pflicht</div>
-                    <div class="toNextSite">></div>
-                </div>
+                <div class="brown" id="gameOneBrown">Wahrheit oder Pflicht</div>
             </a>
             <a href="games/nochNie.html">
-                <div class="navWarpper">
-                    <div class="navName">Ich hab noch nie</div>
-                    <div class="toNextSite">></div>
-                </div>
+                <div class="brown" id="gameTwoBrown"> Ich hab noch nie</div>
             </a>
             <a href="games/kofferPacken.html">
-                <div class="navWarpper">
-                    <div class="navName">Ich packe meinen Koffer</div>
-                    <div class="toNextSite">></div>
-                </div>
+                <div class="brown" id="gameThreeBrown">Ich packe meinen Koffer</div>
             </a>
         </div>    
-    </div>
+    </section>
+    <footer>
+        <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
+    </footer> 
 </body>
+    <!-- Script to open nav-->
+    <script type="text/javascript" src="js/nav.js"></script>
 </html>

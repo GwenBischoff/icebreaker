@@ -2,41 +2,42 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<title>One-Phone</title>
 </head>
 
 <body>
     <header>
-        <!--Back-Button-->
-        <a href="index.html" id="back">
-            <div id="btnBackWrapper">
-                <div id="divBtnBack"><</div>
-            </div>
-        </a>
+        <!--SideNavigation-->
+        <div id="sideNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a id="home" href="index.html">Startseite</a>
+            <a href="kennenlern.html">Kennenlern-Spiele</a>
+            <a href="icebreaker.html">Eisbrecher</a>
+            <a href="partyGames.html">Party-Games</a>
+            <a href="onePhone.html">One Phone</a>
+            <a id = "help" href="">Hilfe</a>
+            <a href="">Einstellungen</a>
+        </div>
 
-        <!--Logo-->
-        <img src="img/logo1.jpg" alt="Icebraker" class="logo">
+        <!--SideNavigation-Icon-->
+        <div id="navIconWrapper">
+            <div id="sideNavIcon" onclick="openNav()"><i class="fa fa-bars"></i></div>
+            <div id="appName">Icebreakers</div>
+        </div>
+
     </header>
     <section>
         <!--Navigation-->
-        <div class="nav">
+        <div id="gameNav">
             <a href="games/gameSortieren.html">
-                <div class="navWarpper">
-                    <div class="navName">Sortieren</div>
-                    <div class="toNextSite">></div>
-                </div>
+                <div class="red" id="gameOneRed">Sortieren</div>
             </a>
             <a href="">
-                <div class="navWarpper">
-                    <div class="navName">Game2</div>
-                    <div class="toNextSite">></div>
-                </div>
+                <div class="red" id="gameTwoRed">Game2</div>
             </a>
             <a href="">
-                <div class="navWarpper">
-                    <div class="navName">Game3</div>
-                    <div class="toNextSite">></div>
-                </div>
+                <div class="red" id="gameThreeRed">Game3</div>
             </a>
         </div>    
     </section>
@@ -44,4 +45,6 @@
         <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
     </footer> 
 </body>
+    <!-- Script to open nav-->
+    <script type="text/javascript" src="js/nav.js"></script>
 </html>

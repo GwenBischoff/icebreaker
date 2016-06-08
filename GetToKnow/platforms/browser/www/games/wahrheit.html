@@ -2,31 +2,36 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<title>Icebreaker</title>
 </head>
 
 <body>
-    <div class="app">
+    <header>
         <!--SideNavigation-->
-        <div id="mySideNav" class="sideNav">
+        <div id="sideNav">
             <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a id="home" href="../index.html">Startseite</a>
             <a href="../kennenlern.html">Kennenlern-Spiele</a>
-            <a href="../icebreaker.html">Icebreaker</a>
+            <a href="../icebreaker.html">Eisbrecher</a>
             <a href="../partyGames.html">Party-Games</a>
             <a href="../onePhone.html">One Phone</a>
+            <a id = "help" href="">Hilfe</a>
+            <a href="">Einstellungen</a>
         </div>
 
         <!--SideNavigation-Icon-->
-        <div class="sideNavIcon" onclick="openNav()">menu</div>
-        
+        <div id="navIconWrapper">
+            <div id="sideNavIcon" onclick="openNav()"><i class="fa fa-bars"></i></div>
+            <div id="appName">Icebreakers</div>
+        </div>
+
         <!--Back-Button-->
-        <a href="index.html" class="back">
+        <a href="../partyGames.html" class="back">
             <div class="divBtnBack"><</div>
         </a>
-
-        <!--Logo-->
-        <img src="../img/logo1.jpg" alt="Icebraker" class="logo">
-
+    </header>
+    <section>
         <!--Game-->
         <div class="gameWrapper">
             <div class="gameName">
@@ -45,7 +50,10 @@
             <script type="text/javascript" src="../js/wahrheit.js"></script>
         </div>
         <!-- Script to open nav-->
-        <script type="text/javascript" src="../js/nav.js"></script> 
-    </div>
+        <script type="text/javascript" src="../js/nav.js"></script>
+    </section> 
+    <footer>
+        <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
+    </footer> 
 </body>
 </html>

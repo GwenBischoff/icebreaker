@@ -2,28 +2,51 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<title>Get To Know</title>
 
 </head>
 
 <body>
-    <!--SideNavigation-->
-    <div id="mySideNav" class="sideNav">
-        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-        <a href="kennenlern.html">Kennenlern-Spiele</a>
-        <a href="icebreaker.html">Icebreaker</a>
-        <a href="partyGames.html">Party-Games</a>
-        <a href="onePhone.html">One Phone</a>
-    </div>
+    <header>
+        <!--SideNavigation-->
+        <div id="sideNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="kennenlern.html">Kennenlern-Spiele</a>
+            <a href="icebreaker.html">Eisbrecher</a>
+            <a href="partyGames.html">Party-Games</a>
+            <a href="onePhone.html">One Phone</a>
+            <a id = "help" href="">Hilfe</a>
+            <a href="">Einstellungen</a>
+        </div>
 
-    <!--SideNavigation-Icon-->
-    <div class="sideNavIcon" onclick="openNav()">menu</div>
+        <!--SideNavigation-Icon-->
+        <div id="navIconWrapper">
+            <div id="sideNavIcon" onclick="openNav()"><i class="fa fa-bars"></i></div>
+            <div id="appName">Icebreakers</div>
+        </div>
 
-    <!--Logo-->
-    <img src="img/logo1.jpg" alt="Icebraker" class="logo">
-    
+    </header>
+    <section>
+        <!-- Content -->
+        <div id="mainMenu">
+            <a href="kennenlern.html" class="menu_a">
+                <div class="mainMenuName" id="menuOne">Kennenlernen</div>
+            </a>
+            <a href="icebreaker.html" class="menu_a">
+                <div class="mainMenuName" id="menuTwo">Eisbrecher</div>
+            </a>
+            <a href="partyGames.html" class="menu_a">
+                <div class="mainMenuName" id="menuThree">Party-Games</div>
+            </a>
+            <a href="onePhone.html" class="menu_a">
+                <div class="mainMenuName" id="menuFour">One Phone</div>
+            </a>
+    </section> 
+    <footer>
+        <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
+    </footer>    
+</body>
     <!-- Script to open nav-->
     <script type="text/javascript" src="js/nav.js"></script>
-</body>
-
 </html>
