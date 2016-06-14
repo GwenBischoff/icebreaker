@@ -2,7 +2,17 @@
 HEADER 
 **************************/
 header{
-    background-color: #1c7aa3;
+    background-color: rgba(28, 122, 163, 0.9);
+    color: #fff;
+}
+/**************************
+BODY 
+**************************/
+body{
+    color: #000;
+}
+body a{
+    color: #000;
 }
 /**************************
 FOOTER
@@ -14,7 +24,11 @@ footer {
 SIDENAV
 **********************************/
 #sideNav {
-    background-color: rgba(28, 122, 163, 0.95);
+    color: #fff;
+    background-color: rgba(28, 122, 163, 0.9);
+}
+#sideNav a{
+    color: #fff;
 }
 /*********************************
 MAIN
@@ -41,7 +55,7 @@ GAME-NAV: KENNENLERN, BLAU
     background-color: hsla(204, 61%, 59%, 0.7);
 }
 #gameTwoBlue{
-    background-color: hsla(204, 61%, 69%, 0.7);
+    background-color: hsla(204, 61%, 64%, 0.7);
 }
 #gameThreeBlue{
     background-color: hsla(204, 61%, 79%, 0.7);
@@ -53,10 +67,10 @@ GAME-NAV: EISBRECHER, GRÜN
     background-color: hsla(172, 100%, 32%, 0.7);
 }
 #gameTwoGreen{
-    background-color: hsla(172, 100%, 42%, 0.7);
+    background-color: hsla(172, 100%, 47%, 0.7);
 }
 #gameThreeGreen{
-    background-color: hsla(172, 100%, 52%, 0.7);
+    background-color: hsla(172, 100%, 62%, 0.7);
 }
 /*********************************
 GAME-NAV: PARTY, BRAUN
@@ -65,20 +79,44 @@ GAME-NAV: PARTY, BRAUN
     background-color: hsla(10, 60%, 43%, 0.7);
 }
 #gameTwoBrown{
-    background-color: hsla(10, 60%, 53%, 0.7);
+    background-color: hsla(10, 60%, 58%, 0.7);
 }
 #gameThreeBrown{
-    background-color: hsla(10, 60%, 63%, 0.7);
+    background-color: hsla(10, 60%, 73%, 0.7);
 }
 /*********************************
 GAME-NAV: ONE-PHONE, ROT
 **********************************/
 #gameOneRed{
-    background-color: hsla(1, 100%, 42%, 0.7);
+    background-color: hsla(1, 90%, 22%, 0.7);
 }
 #gameTwoRed{
-    background-color: hsla(1, 100%, 52%, 0.7);
+    background-color: hsla(1, 90%, 37%, 0.7);
 }
 #gameThreeRed{
-    background-color: hsla(1, 100%, 62%, 0.7);
+    background-color: hsla(1, 90%, 52%, 0.7);
+}
+/*********************************
+GAMES IN KENNENLERN, BLAU
+**********************************/
+#gamesBlue{
+    background-color: hsla(204, 61%, 79%, 0.7);
+}
+/*********************************
+GAMES IN KENNENLERN, GRÜN
+**********************************/
+#gamesGreen{
+    background-color: hsla(172, 100%, 47%, 0.7);
+}
+/*********************************
+GAMES IN KENNENLERN, BRAUN
+**********************************/
+#gamesBrown{
+    background-color: hsla(10, 60%, 58%, 0.7);
+}
+/*********************************
+GAMES IN KENNENLERN, ROT
+**********************************/
+#gamesRed{
+    background-color: hsla(1, 90%, 37%, 0.7);
 }
