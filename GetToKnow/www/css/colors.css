@@ -1,0 +1,84 @@
+/**************************
+HEADER 
+**************************/
+header{
+    background-color: #1c7aa3;
+}
+/**************************
+FOOTER
+**************************/
+footer {
+    color: #000;
+}
+/*********************************
+SIDENAV
+**********************************/
+#sideNav {
+    background-color: rgba(28, 122, 163, 0.95);
+}
+/*********************************
+MAIN
+**********************************/
+#menuOne{ 
+    background-color: hsla(204, 61%, 59%, 0.7);/*rgba(86, 162, 214,0.5); #56a2d6*/
+}
+#menuTwo{
+    background-color: hsla(172, 100%, 32%, 0.7); /*#00a38e*/
+}
+#menuThree{
+    background-color: hsla(10, 60%, 43%, 0.7);/*#b0412c*/
+}
+#menuFour{
+    background-color: hsla(1, 100%, 42%, 0.7);/*#d60300*/
+}
+/*********************************
+GAME-NAV: KENNENLERN, BLAU
+**********************************/
+.blue{
+    padding: 3.7em 0 3.7em 0;
+}
+#gameOneBlue{
+    background-color: hsla(204, 61%, 59%, 0.7);
+}
+#gameTwoBlue{
+    background-color: hsla(204, 61%, 69%, 0.7);
+}
+#gameThreeBlue{
+    background-color: hsla(204, 61%, 79%, 0.7);
+}
+/*********************************
+GAME-NAV: EISBRECHER, GRÜN
+**********************************/
+#gameOneGreen{
+    background-color: hsla(172, 100%, 32%, 0.7);
+}
+#gameTwoGreen{
+    background-color: hsla(172, 100%, 42%, 0.7);
+}
+#gameThreeGreen{
+    background-color: hsla(172, 100%, 52%, 0.7);
+}
+/*********************************
+GAME-NAV: PARTY, BRAUN
+**********************************/
+#gameOneBrown{
+    background-color: hsla(10, 60%, 43%, 0.7);
+}
+#gameTwoBrown{
+    background-color: hsla(10, 60%, 53%, 0.7);
+}
+#gameThreeBrown{
+    background-color: hsla(10, 60%, 63%, 0.7);
+}
+/*********************************
+GAME-NAV: ONE-PHONE, ROT
+**********************************/
+#gameOneRed{
+    background-color: hsla(1, 100%, 42%, 0.7);
+}
+#gameTwoRed{
+    background-color: hsla(1, 100%, 52%, 0.7);
+}
+#gameThreeRed{
+    background-color: hsla(1, 100%, 62%, 0.7);
+}

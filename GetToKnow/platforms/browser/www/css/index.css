@@ -18,7 +18,11 @@ body{
     margin: 0;
     font-family: 'Pt Sans', sans-serif;
     color: #000;
-    font-size: 12pt;
+    font-size: 12pt; 
+    background: url(../img/cubes.png); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 a{
     color: #000;
@@ -28,37 +32,37 @@ a{
 HEADER 
 **************************/
 header{
-    background-color: #1c7aa3;
+    
 }
 #navIconWrapper{
-    padding: 0.3em 0 0.3em 0.7em;
     font-size: 2em;
+    padding: 1em 1em 1em 0.7em; 
+    text-align: center;    
 }
 #sideNavIcon{
-    width: 5%;
-    display: inline-block;
+    float: left;
+    width: 0;
 }
 #appName{
     display: inline-block;
-    margin-left: 2.5em;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 50%;
 }
 /**************************
 FOOTER
 **************************/
 footer {
     font-size: 0.75em;
-    color: #000;
     position: fixed;
     text-align: center;
     bottom: 0;
     width: 100%;
 }
+
 /*********************************
 SIDENAV
 **********************************/
 #sideNav {
-    background-color: rgba(28, 122, 163, 0.95);
     padding-top: 5.5em;
     height: 100%;
     width: 0; 
@@ -107,22 +111,11 @@ MAIN
     width: 100%;
 }
 .mainMenuName{
-    padding: 2.5em 0 2.5em 0 ;   
+    padding: 2.4em 0 2.4em 0 ;   
     width: 100%;
     text-align: center;
 }
-#menuOne{ 
-    background-color: hsla(204, 61%, 59%, 0.5);/*rgba(86, 162, 214,0.5); #56a2d6*/
-}
-#menuTwo{
-    background-color: hsla(172, 100%, 32%, 0.5); /*#00a38e*/
-}
-#menuThree{
-    background-color: hsla(10, 60%, 43%, 0.5);/*#b0412c*/
-}
-#menuFour{
-    background-color: hsla(1, 100%, 42%, 0.5);/*#d60300*/
-}
+
 /*********************************
 GAME-NAV
 **********************************/
@@ -141,29 +134,11 @@ GAME-NAV: KENNENLERN, BLAU
 .blue{
     padding: 3.7em 0 3.7em 0;
 }
-#gameOneBlue{
-    background-color: hsla(204, 61%, 59%, 0.5);
-}
-#gameTwoBlue{
-    background-color: hsla(204, 61%, 69%, 0.5);
-}
-#gameThreeBlue{
-    background-color: hsla(204, 61%, 79%, 0.5);
-}
 /*********************************
 GAME-NAV: EISBRECHER, GRÜN
 **********************************/
 .green{
     padding: 3.7em 0 3.7em 0;
-}
-#gameOneGreen{
-    background-color: hsla(172, 100%, 32%, 0.5);
-}
-#gameTwoGreen{
-    background-color: hsla(172, 100%, 42%, 0.5);
-}
-#gameThreeGreen{
-    background-color: hsla(172, 100%, 52%, 0.5);
 }
 /*********************************
 GAME-NAV: PARTY, BRAUN
@@ -171,103 +146,9 @@ GAME-NAV: PARTY, BRAUN
 .brown{
     padding: 3.7em 0 3.7em 0;
 }
-#gameOneBrown{
-    background-color: hsla(10, 60%, 43%, 0.5);
-}
-#gameTwoBrown{
-    background-color: hsla(10, 60%, 53%, 0.5);
-}
-#gameThreeBrown{
-    background-color: hsla(10, 60%, 63%, 0.5);
-}
 /*********************************
 GAME-NAV: ONE-PHONE, ROT
 **********************************/
 .red{
     padding: 3.7em 0 3.7em 0;
-}
-#gameOneRed{
-    background-color: hsla(1, 100%, 42%, 0.5);
-}
-#gameTwoRed{
-    background-color: hsla(1, 100%, 52%, 0.5);
-}
-#gameThreeRed{
-    background-color: hsla(1, 100%, 62%, 0.5);
-}
-
-
-/*********************************
-GAME-GENERAL
-**********************************/
-.gameName{
-	margin: 0.5em auto 0.5em auto ;
-	padding: 0.5em;
-	background-color:  #1c7aa3;
-	font-size: 1.5em;
-	text-align: center;
-}
-.gameDescription{
-	margin: 0.5em auto 0.5em auto ;
-	padding: 0.5em;
-	font-size: 1.25em;
-}
-.gameBtns{
-	margin: 0 auto;
-    padding: 0.1em 1.0em 0.1em 1.0em;
-    background-color:#f4f4f4;
-
-    font-size: 1.5em;
-    border: 0.01em;
-	border-color: #767676;
-    -webkit-appearance: none;
-}
-#gameBtnsDiv{
-	overflow: auto;
-}
-#hochzaehlen{
-    float: left;
-}
-#ok{
-	float: right;
-}
-
-/*********************************
-GAME-WAHRHEIT
-**********************************/
-#arrow{
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*********************************
-BACK-SYMBOL
-**********************************/
-#divBtnBack{
-    width: 5%;
-    padding: 0.6em 0 0.6em 1.2em;
-    font-size: 1.5em;
-}
-#btnBackWrapper{
-    border-bottom: 5px solid #1c7aa3;
-    background-color: #e1e1e1;
-}
-#back{  
-    margin: 0;
-    padding: 0;   
-    text-decoration: none;
-}
-/*********************************
-LOGO
-**********************************/
-
-.logo{
-	width: 100%;
-    height: auto;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
 }

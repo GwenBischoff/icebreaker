@@ -1,0 +1,66 @@
+/*********************************
+GAME-GENERAL
+**********************************/
+#gameWrapper{
+    width: 100%;
+    height: auto;
+}
+.gameName{
+	margin: 0.5em auto 0.5em auto ;
+	padding: 0.5em;
+	background-color:  #1c7aa3;
+	text-align: center;
+}
+.gameDescription{
+	margin: 0.5em auto 0.5em auto ;
+	padding: 0.5em;
+	font-size: 1.25em;
+}
+.gameBtns{
+	margin: 0 auto;
+    padding: 0.1em 1.0em 0.1em 1.0em;
+    background-color:#f4f4f4;
+
+    font-size: 1.5em;
+    border: 0.01em;
+	border-color: #767676;
+    -webkit-appearance: none;
+}
+#gameBtnsDiv{
+	overflow: auto;
+}
+#hochzaehlen{
+    float: left;
+}
+#ok{
+	float: right;
+}
+
+/*********************************
+GAME-WAHRHEIT
+**********************************/
+#arrow{
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*********************************
+BACK-SYMBOL
+**********************************/
+#divBtnBack{
+    width: 5%;
+    padding: 0.6em 0 0.6em 1.2em;
+    font-size: 1.5em;
+}
+#btnBackWrapper{
+    border-bottom: 5px solid #1c7aa3;
+    background-color: #e1e1e1;
+}
+#back{  
+    margin: 0;
+    padding: 0;   
+    text-decoration: none;
+}
