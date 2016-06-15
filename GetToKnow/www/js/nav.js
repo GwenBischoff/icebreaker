@@ -1,3 +1,4 @@
+
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("sideNav").style.width = "20em";
@@ -7,7 +8,3 @@ function openNav() {
 function closeNav() {
     document.getElementById("sideNav").style.width = "0";
 }
-
-$("sideNav").on("swipeleft",function(){
-  $(this).style.width = "0";
-});

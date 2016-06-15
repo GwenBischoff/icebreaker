@@ -5,11 +5,13 @@
     <link rel="stylesheet" type="text/css" href="css/colors.css" />
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
 	<title>Icebreakers</title>
 
 </head>
 
 <body>
+    <div id="pages">
     <header>
         <!--SideNavigation-->
         <div id="sideNav">
@@ -33,7 +35,7 @@
     <section>
         <!-- Content -->
         <div id="mainMenu">
-            <a href="kennenlern.html" class="menu_a">
+            <a href="kennenlern.html" class="menu_a" data-transition="fade">
                 <div class="mainMenuName" id="menuOne">Kennenlernen</div>
             </a>
             <a href="icebreaker.html" class="menu_a">
@@ -48,8 +50,10 @@
     </section> 
     <footer>
         <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
-    </footer>    
+    </footer> 
+    </div>   
 </body>
     <!-- Script to open nav-->
     <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/nav_swipe.js"></script>
 </html>
