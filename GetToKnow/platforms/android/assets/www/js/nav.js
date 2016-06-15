@@ -7,3 +7,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("sideNav").style.width = "0";
 }
+
+$("sideNav").on("swipeleft",function(){
+  $(this).style.width = "0";
+});

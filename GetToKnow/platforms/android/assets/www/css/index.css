@@ -5,22 +5,23 @@ html{
     height: 100%;
 }
 /*********************************
-FONT
+FONT     src: url('../font/PT_Sans.woff2') format('woff2');
 **********************************/
 @font-face{
-    font-family: 'PT Sans';
-    src: url('../font/PT_Sans.woff2') format('woff2');
+    font-family: 'Ubuntu';
+    src: url('../font/Ubuntu.woff2') format('woff2');
     font-style: normal;
     font-weight: 400;
 }
 /*********************************
-BODY
+BODY            background: url(../img/eis2.jpg);  
+font-family: 'Pt Sans', sans-serif; 
 **********************************/
 body{
     margin: 0;
-    font-family: 'Pt Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 12pt; 
-    background: url(../img/cubes.png); 
+
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,7 +38,7 @@ header{
 }
 #navIconWrapper{
     font-size: 2em;
-    padding: 1em 1em 1em 0.7em; 
+    padding: 0.4em 1em 0.2em 0.7em; 
     text-align: center;    
 }
 #sideNavIcon{
@@ -49,6 +50,10 @@ header{
     margin: 0 auto;
     width: 50%;
     font-style: italic;
+}
+#appName img{
+    width: 40%;
+    height: auto;
 }
 /**************************
 FOOTER
