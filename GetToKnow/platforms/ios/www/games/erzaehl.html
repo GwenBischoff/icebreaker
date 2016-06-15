@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/colors.css" />
+	<link rel="stylesheet" type="text/css" href="../css/games.css" />
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+	<title>Icebreakers</title>
+</head>
+
+<body>
+   	<header>
+    	<!--SideNavigation-->
+        <div id="sideNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a id="home" href="../index.html">Startseite</a>
+            <a href="../kennenlern.html">Kennenlern-Spiele</a>
+            <a href="../icebreaker.html">Eisbrecher</a>
+            <a href="../partyGames.html">Party-Games</a>
+            <a href="../onePhone.html">One Phone</a>
+            <a id = "help" href="">Hilfe</a>
+            <a href="">Einstellungen</a>
+        </div>
+
+	    <!--SideNavigation-Icon-->
+        <div id="navIconWrapper">
+            <div id="sideNavIcon" onclick="openNav()"><i class="fa fa-bars"></i></div>
+            <div id="appName"><img src="../img/icon2.png" alt="Icebreakers"></div>
+        </div>
+    </header>
+    <section class="contentGame" id="gamesBlue">
+        <div class="gameWrapper">
+			<div class="gameName">
+				<span>Erzähl mir was</span>
+			</div>
+			<div class="gameDescription">
+				<span id="anzeige">Dr&uuml;cke den Button beliebig oft (bis zu 9x) und bestätige anschließend</span>
+			</div>
+        	<div class="gameBtnsDiv" >
+				<input type="button" class="gameBtns" id="hochzaehlen" value="1" onclick=zaehlen()>
+				<input type="button" class="gameBtns" id="ok" value="Bestätigen" onclick=bestaetigen()>
+			</div>	
+		</div>
+	</section>
+	<footer>
+        <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
+    </footer> 
+</body>
+	<!-- Script for function-->
+	<script type="text/javascript" src="../js/erzaehl.js"></script>
+    <!-- Script to open nav-->
+   	<script type="text/javascript" src="../js/nav.js"></script> 
+    <script type="text/javascript" src="../js/nav_swipe.js"></script>
+</html>

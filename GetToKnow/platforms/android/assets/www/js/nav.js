@@ -1,10 +1,17 @@
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-    document.getElementById("sideNav").style.width = "20em";
+    var sidenav = document.getElementsByClassName("sideNav");
+    Array.prototype.forEach.call(sidenav, function(el) {
+    	el.style.width = "20em";
+	});
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-    document.getElementById("sideNav").style.width = "0";
+    var sidenav = document.getElementsByClassName("sideNav");
+    Array.prototype.forEach.call(sidenav, function(el) {
+    	el.style.width = "0";
+	});
 }
+

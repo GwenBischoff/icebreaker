@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/colors.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+	<title>Icebreakers</title>
+</head>
+
+<body>
+    <header>
+        <!--SideNavigation-->
+        <div id="sideNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a id="home" href="index.html">Startseite</a>
+            <a href="kennenlern.html">Kennenlern-Spiele</a>
+            <a href="icebreaker.html">Eisbrecher</a>
+            <a href="partyGames.html">Party-Games</a>
+            <a href="onePhone.html">One Phone</a>
+            <a id = "help" href="">Hilfe</a>
+            <a href="">Einstellungen</a>
+        </div>
+
+        <!--SideNavigation-Icon-->
+        <div id="navIconWrapper">
+            <div id="sideNavIcon" onclick="openNav()"><i class="fa fa-bars"></i></div>
+            <div id="appName"><img src="img/icon2.png" alt="Icebreakers"></div>
+        </div>
+
+    </header>
+    <section>  
+        <!--Navigation-->
+        <div id="gameNav">
+            <a href="games/erzaehl.html">
+                <div class="blue" id="gameOneBlue">
+                    <span>Erz&auml;hl mir was</span>
+                </div>
+            </a>
+            <a href="games/vorstellrunde.html">
+                <div class="blue" id="gameTwoBlue">
+                    <span>Vorstellrunde</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="blue" id="gameThreeBlue">
+                    <span>Game3</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
+    </footer>
+</body>
+    <!-- Script to open nav-->
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/nav_swipe.js"></script>
+</html>

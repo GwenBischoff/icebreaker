@@ -1,0 +1,163 @@
+/*********************************
+GENERAL 
+**********************************/
+html{
+    height: 100%;
+}
+/*********************************
+FONT     src: url('../font/PT_Sans.woff2') format('woff2');
+**********************************/
+@font-face{
+    font-family: 'Ubuntu';
+    src: url('../font/Ubuntu.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+/*********************************
+BODY            background: url(../img/eis2.jpg);  
+font-family: 'Pt Sans', sans-serif; 
+**********************************/
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12pt; 
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%
+}
+a{
+    text-decoration: none;
+}
+/**************************
+HEADER 
+**************************/
+header{
+    
+}
+#navIconWrapper{
+    font-size: 2em;
+    padding: 0.4em 1em 0.2em 0.7em; 
+    text-align: center;    
+}
+#sideNavIcon{
+    float: left;
+    width: 0;
+}
+#appName{
+    display: inline-block;
+    margin: 0 auto;
+    width: 50%;
+    font-style: italic;
+}
+#appName img{
+    width: 40%;
+    max-width: 100px;
+    height: auto;
+
+}
+/**************************
+FOOTER
+**************************/
+footer {
+    font-size: 0.75em;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+/*********************************
+SIDENAV
+**********************************/
+#sideNav {
+    padding-top: 5.5em;
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    overflow-x: hidden;  
+    transition: 0.5s;
+}
+#sideNav a {
+    padding: 0.6em 0.6em 0.6em 2em;
+    font-size: 1.5em;
+    display: block;
+    transition: 0.3s;
+}
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0.2em;
+    font-size: 2em !important;
+    margin-left: 4.5em;
+}
+.sideNavLeft{
+
+}
+.sideNavRight{
+
+}
+.navIcons{
+
+}
+#home{
+    margin: 0 0 2.5em 0;
+}
+#help{
+    margin: 3em 0 0 0;
+}
+/*********************************
+MAIN
+**********************************/
+#mainMenu{
+    overflow: auto;
+    display:block;
+    font-size: 1.5em;
+    width: 100%;
+}
+.mainMenuName{
+    padding: 2.4em 0 2.4em 0 ;   
+    width: 100%;
+    text-align: center;
+}
+
+/*********************************
+GAME-NAV
+**********************************/
+#gameNav{
+	font-size: 1.5em;
+}
+#gameNav a{
+	text-decoration: none;
+	display: block;
+    clear: right;
+    text-align: center;
+}
+/*********************************
+GAME-NAV: KENNENLERN, BLAU
+**********************************/
+.blue{
+    padding: 3.7em 0 3.7em 0;
+}
+/*********************************
+GAME-NAV: EISBRECHER, GRÜN
+**********************************/
+.green{
+    padding: 3.7em 0 3.7em 0;
+}
+/*********************************
+GAME-NAV: PARTY, BRAUN
+**********************************/
+.brown{
+    padding: 3.7em 0 3.7em 0;
+}
+/*********************************
+GAME-NAV: ONE-PHONE, ROT
+**********************************/
+.red{
+    padding: 3.7em 0 3.7em 0;
+}

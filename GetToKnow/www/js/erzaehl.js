@@ -5,7 +5,6 @@ var unterZehn = true;
 
 function init()
 {
-
 	zaehler = 1;
 	unterZehn = true;
 }
@@ -15,13 +14,13 @@ function zaehlen()
 {
 	if(unterZehn == true){
 		if (zaehler == 1){
-			document.getElementById("hochzaehlen").value="2";
+			$('#hochzaehlen').val('2');
 		}
 		if (zaehler == 2){
-			document.getElementById("hochzaehlen").value="3";
+			$('#hochzaehlen').val('3');
 		}
 		if (zaehler == 3){
-			document.getElementById("hochzaehlen").value="4";
+			$('input[id=hochzaehlen]').val('4');
 		}
 		if (zaehler == 4){
 			document.getElementById("hochzaehlen").value="5";
@@ -48,6 +47,7 @@ function zaehlen()
 
 function bestaetigen()
 {
+
 	document.getElementById("hochzaehlen").style.display="none";
 	document.getElementById("ok").style.display="none";
 	document.getElementById("anzeige").innerHTML=zaehler;
