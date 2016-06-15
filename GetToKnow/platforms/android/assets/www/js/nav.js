@@ -4,6 +4,7 @@ function openNav() {
     var sidenav = document.getElementsByClassName("sideNav");
     Array.prototype.forEach.call(sidenav, function(el) {
     	el.style.width = "20em";
+    	console.log(el);
 	});
 }
 
