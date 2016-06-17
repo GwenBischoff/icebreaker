@@ -84,7 +84,7 @@ $( document ).ready(function() {
 		      clearInterval(timer);
 	   		} 
 		}, 1000);
-		document.getElementById("anzeige").innerHTML=fragen[zaehler];
+		document.getElementById("anzeige").innerHTML=namen[zaehler];
 	}
 
 	neuerName();

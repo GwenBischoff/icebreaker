@@ -1,9 +1,9 @@
-$( document ).ready(function() {
+$(document).bind('pageinit', function() {
 	var zaehler;
+	var running = false;
 	var namen = ["Abraham Lincoln",
 					"Angela Merkel",
 					"Barack Obama",
-					"Colt Sievers",
 					"Donald Duck",
 					"Elvis Presley",
 					"George W. Bush",
@@ -11,31 +11,28 @@ $( document ).ready(function() {
 					"Isaac Newton",
 					"Johannes Paul II",
 					"Karl der Große",
-					"La Mamma",
 					"Lady Gaga",
-					"Marlon Brando",
-					"Max Mustermann",
 					"Miley Cyrus",
 					"Prinzessin Liliefee",
 					"Spongebob Schwammkopf",
 					"Taylor Swift",
 					"Theodor Heuss",
 					"Zeus",
-					"Homer Simpson ",
-					"Paris Hilton ",
-					"Heidi Klum ",
-					"Kevin James ",
-					"Cameron Diaz ",
-					"Ashton Kutscher ",
-					"Charlie Sheen ",
+					"Homer Simpson",
+					"Paris Hilton",
+					"Heidi Klum",
+					"Kevin James",
+					"Cameron Diaz",
+					"Ashton Kutscher",
+					"Charlie Sheen",
 					"Pipi Langstrumpf",
-					"Katy Perry ",
-					"Van Helsing ",
-					"Spiderman ",
-					"Eva Longoria ",
-					"Harry Potter ",
-					"Edward Cullen ",
-					"Jane Austen ",
+					"Katy Perry",
+					"Van Helsing",
+					"Spiderman",
+					"Eva Longoria",
+					"Harry Potter",
+					"Edward Cullen",
+					"Jane Austen",
 					"Bridget Jones ",
 					"Micky Maus ",
 					"Herr Nilsson ",
@@ -43,11 +40,11 @@ $( document ).ready(function() {
 					"Dumbledore",
 					"Hugh Hefner",
 					"Stitch (Lilo & Stitch)",
-					"Kapitän Blaubär ",
-					"Pikachu ",
+					"Kapitän Blaubär",
+					"Pikachu",
 					"Joker (Dark Knight)",
-					"Daniela Katzenberger ",
-					"Günther Jauch ",
+					"Daniela Katzenberger",
+					"Günther Jauch",
 					"Stefan Raab",
 					"Bart Simpson",
 					"Homer Simpson",
@@ -70,22 +67,22 @@ $( document ).ready(function() {
 					"Selena Gomez",
 					"Superman",
 					"King Kong",
-					"Heidi",
-					];
+					"Heidi"];
 
-	function neuerName(){
-		zaehler = Math.floor((Math.random() * namen.length));
-		var sec = 10;
-		var timer = setInterval(function() {
-			console.log(sec); 
-		   $('#anzeige').text(sec--);
-		   if (sec == -1) {
-		      $('#hideMsg').fadeOut('fast');
-		      clearInterval(timer);
-	   		} 
-		}, 1000);
-		document.getElementById("anzeige").innerHTML=fragen[zaehler];
-	}
+	$( "#name" ).click(function() {
+		if (running == false){
+			running = true;
+			zaehler = Math.floor(Math.random() * namen.length);
+			var sec = 10;
+			var timer = setInterval(function() {
+			   	$('#name').text(sec--);
+			   	if (sec == -1) {
+			    	$('#name').text(namen[zaehler]);
+			    	running = false;
+			      	clearInterval(timer);
+		   		} 
+			}, 1000);
+		}
+	});
 
-	neuerName();
-}	
+});	

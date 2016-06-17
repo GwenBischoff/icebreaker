@@ -10,4 +10,4 @@ $( document ).ready(function() {
 		zaehler = Math.floor((Math.random() * 18));
 		document.getElementById("anzeige").innerHTML=action[zaehler];
 	}
-}
+});

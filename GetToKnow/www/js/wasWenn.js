@@ -21,5 +21,5 @@ $( document ).ready(function() {
 		zaehler = Math.floor((Math.random() * 16));
 		document.getElementById("anzeige").innerHTML=action[zaehler];
 	}
-}	
+});	
 	

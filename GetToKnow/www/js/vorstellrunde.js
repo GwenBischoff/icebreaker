@@ -47,4 +47,4 @@ $( document ).ready(function() {
 		zaehler = Math.floor((Math.random() * fragen.length));
 		document.getElementById("anzeige3").innerHTML=fragen[zaehler];
 	}
-}
+});

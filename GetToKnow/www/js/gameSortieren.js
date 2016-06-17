@@ -37,4 +37,4 @@ $( document ).ready(function() {
 			document.getElementById("anzeige").innerHTML="Geburtsort alphabetisch";
 		}
 	}
-}
+});

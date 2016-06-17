@@ -1,3 +1,3 @@
 $(document).bind('pagecreate'){
 	
-});
+}

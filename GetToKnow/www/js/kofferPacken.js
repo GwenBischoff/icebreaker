@@ -25,4 +25,4 @@ $( document ).ready(function() {
 		zaehler = Math.floor((Math.random() * 20));
 		document.getElementById("anzeige").innerHTML=action[zaehler];
 	}
-}
+});

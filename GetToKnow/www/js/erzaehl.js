@@ -53,4 +53,4 @@ $( document ).ready(function() {
 		document.getElementById("ok").style.display="none";
 		document.getElementById("anzeige").innerHTML=zaehler;
 	}
-}
+});
