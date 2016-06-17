@@ -5,7 +5,7 @@ html{
     height: 100%;
 }
 /*********************************
-FONT     src: url('../font/PT_Sans.woff2') format('woff2');
+FONT     
 **********************************/
 @font-face{
     font-family: 'Ubuntu';
@@ -14,8 +14,7 @@ FONT     src: url('../font/PT_Sans.woff2') format('woff2');
     font-weight: 400;
 }
 /*********************************
-BODY            background: url(../img/eis2.jpg);  
-font-family: 'Pt Sans', sans-serif; 
+BODY 
 **********************************/
 body{
     margin: 0;
@@ -55,7 +54,6 @@ header{
     width: 40%;
     max-width: 100px;
     height: auto;
-
 }
 /**************************
 FOOTER
@@ -67,7 +65,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 /*********************************
 SIDENAV
 **********************************/
@@ -95,12 +92,6 @@ SIDENAV
     font-size: 2em !important;
     margin-left: 4.5em;
 }
-.sideNavLeft{
-
-}
-.sideNavRight{
-
-}
 .navIcons{
 
 }
@@ -123,41 +114,4 @@ MAIN
     padding: 2.4em 0 2.4em 0 ;   
     width: 100%;
     text-align: center;
-}
-
-/*********************************
-GAME-NAV
-**********************************/
-#gameNav{
-	font-size: 1.5em;
-}
-#gameNav a{
-	text-decoration: none;
-	display: block;
-    clear: right;
-    text-align: center;
-}
-/*********************************
-GAME-NAV: KENNENLERN, BLAU
-**********************************/
-.blue{
-    padding: 3.7em 0 3.7em 0;
-}
-/*********************************
-GAME-NAV: EISBRECHER, GRÜN
-**********************************/
-.green{
-    padding: 3.7em 0 3.7em 0;
-}
-/*********************************
-GAME-NAV: PARTY, BRAUN
-**********************************/
-.brown{
-    padding: 3.7em 0 3.7em 0;
-}
-/*********************************
-GAME-NAV: ONE-PHONE, ROT
-**********************************/
-.red{
-    padding: 3.7em 0 3.7em 0;
 }

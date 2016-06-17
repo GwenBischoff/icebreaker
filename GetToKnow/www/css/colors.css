@@ -46,6 +46,19 @@ MAIN
     background-color: hsla(28, 100%, 50%, 0.85);/*#d60300*/
 }
 /*********************************
+GAMES
+**********************************/
+.gameName{
+    background-color: rgba(28, 122, 163, 0.9);
+    color: #fff;
+}
+.gameBtns{
+    background-color:#f4f4f4;
+}
+#btnBackWrapper{
+    background-color: #e1e1e1;
+}
+/*********************************
 GAME-NAV: KENNENLERN, DUNKELGRÜN
 **********************************/
 .blue{
@@ -75,13 +88,13 @@ GAME-NAV: EISBRECHER, HELLGRÜN
 /*********************************
 GAME-NAV: PARTY, GELB
 **********************************/
-#gameOneBrown{
+#gameOneYellow{
     background-color: hsla(52, 100%, 50%, 0.85);
 }
-#gameTwoBrown{
+#gameTwoYellow{
     background-color: hsla(52, 100%, 40%, 0.85);
 }
-#gameThreeBrown{
+#gameThreeYellow{
     background-color: hsla(52, 100%, 30%, 0.85);
 }
 /*********************************

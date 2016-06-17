@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/colors.css" />
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+	<meta charset=utf-8>
 	<title>Icebreakers</title>
 </head>
 
 <body>
     <header>
         <!--SideNavigation-->
-        <div id="sideNav">
+        <div id="sideNav" class="sideNav">
             <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
             <a id="home" href="index.html">Startseite</a>
             <a href="kennenlern.html">Kennenlern-Spiele</a>
@@ -20,7 +16,6 @@
             <a href="partyGames.html">Party-Games</a>
             <a href="onePhone.html">One Phone</a>
             <a id = "help" href="">Hilfe</a>
-            <a href="">Einstellungen</a>
         </div>
 
         <!--SideNavigation-Icon-->
@@ -33,22 +28,22 @@
     <section>
         <!--Navigation-->
         <div id="gameNav">
-            <a href="games/gameSortieren.html">
+            <a href="games/gameSortieren.html" data-transition="slide">
                 <div class="red" id="gameOneRed">Sortieren</div>
             </a>
-            <a href="">
-                <div class="red" id="gameTwoRed">Game2</div>
+            <a href="games/wahrheit.html" data-transition="slide">
+                <div class="brown" id="gameTwoRed">Wahrheit oder Pflicht</div>
             </a>
-            <a href="">
+            <a href="" data-transition="slide">
                 <div class="red" id="gameThreeRed">Game3</div>
             </a>
         </div>    
     </section>
     <footer>
         <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
-    </footer> 
-</body>
+    </footer>
     <!-- Script to open nav-->
     <script type="text/javascript" src="js/nav.js"></script>
-    <script type="text/javascript" src="js/nav_swipe.js"></script>
+    <script type="text/javascript" src="js/nav_swipe.js"></script> 
+</body>
 </html>
