@@ -1,9 +1,36 @@
+var stopDeg, stopRounds, roundsCount;
+var stop, loop; 
+var start = true;
+var degreesCount = 0;
+    
+function rotateArrow(){
+    console.log("rotate");
+    if(!stop){
+        /*Roatate image*/ 
+        document.getElementById("arrow").style.transform = "rotate("+degreesCount+"deg)";
+        
+        /*Self calling funtion*/
+        loop = setTimeout('rotateArrow()', 0.1);
+        
+        /*Increases degrees & rounds*/
+        degreesCount++;
+        if(degreesCount > 359){
+            degreesCount = 1;
+            roundsCount++;
+        } 
+
+        /*Stop numbers reached?*/
+        if(roundsCount >= stopRounds && degreesCount >= stopDeg){
+            stop =true;  
+            start = true;  
+        }
+    } 
+}
+
 $(document).bind('pageinit', function() {
-    var stopDeg, stopRounds, roundsCount;
-    var stop, loop; 
-    var start = true;
-    var degreesCount = 0;
-    function run(){
+
+    $("#arrow").click(function(){
+
         if (start){
             /*Creats random degree and amount of rounds*/
             stopDeg = Math.floor((Math.random() * 360) + 1);
@@ -20,27 +47,6 @@ $(document).bind('pageinit', function() {
             /*Prevents from starting again before action is performed*/
             start = false;
         }
-    }
-    function rotateArrow(){
-        if(!stop){
-            /*Roatate image*/ 
-            document.getElementById("arrow").style.transform = "rotate("+degreesCount+"deg)";
-            
-            /*Self calling funtion*/
-            loop = setTimeout('rotateArrow()', 0.1);
-            
-            /*Increases degrees & rounds*/
-            degreesCount++;
-            if(degreesCount > 359){
-                degreesCount = 1;
-                roundsCount++;
-            } 
+    });
 
-            /*Stop numbers reached?*/
-            if(roundsCount >= stopRounds && degreesCount >= stopDeg){
-                stop =true;  
-                start = true;  
-            }
-        } 
-    }
 });
