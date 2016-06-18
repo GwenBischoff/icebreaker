@@ -1,6 +1,6 @@
-$( document ).ready(function() {
-	var zaehler;
-	var fragen = ["Wann gehst du normalerweise ins Bett?", 
+$(document).bind('pageinit', function() {
+	var zaehlerVorstell;
+	var arrayVorstell = ["Wann gehst du normalerweise ins Bett?", 
 				  "Was ist f&uuml;r dich typisch?", 
 				  "Hast du Geschwister?", 
 				  "Wie w&uuml;rdest du dich selbst beschreiben?",
@@ -39,12 +39,12 @@ $( document ).ready(function() {
 				  "Wovor hast du Angst?",
 				  "Wie h&auml;ltst du dich fit?"];
 
-	function neueFragen(){
-		zaehler = Math.floor((Math.random() * fragen.length));
-		document.getElementById("anzeige1").innerHTML=fragen[zaehler];
-		zaehler = Math.floor((Math.random() * fragen.length));
-		document.getElementById("anzeige2").innerHTML=fragen[zaehler];
-		zaehler = Math.floor((Math.random() * fragen.length));
-		document.getElementById("anzeige3").innerHTML=fragen[zaehler];
-	}
+	$("#begriffVorstell").click(function() {
+		zaehlerVorstell = Math.floor((Math.random() * arrayVorstell.length));
+		$("#anzeigeVorstell1").html(arrayVorstell[zaehlerVorstell]);
+		zaehlerVorstell = Math.floor((Math.random() * arrayVorstell.length));
+		$("#anzeigeVorstell2").html(arrayVorstell[zaehlerVorstell]);
+		zaehlerVorstell = Math.floor((Math.random() * arrayVorstell.length));
+		$("#anzeigeVorstell3").html(arrayVorstell[zaehlerVorstell]);
+	});
 });

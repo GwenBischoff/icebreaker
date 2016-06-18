@@ -1,7 +1,7 @@
 $(document).bind('pageinit', function() {
-	var zaehler;
+	var zaehlerWer;
 	var running = false;
-	var namen = ["Abraham Lincoln",
+	var arrayWer = ["Abraham Lincoln",
 					"Angela Merkel",
 					"Barack Obama",
 					"Donald Duck",
@@ -72,12 +72,12 @@ $(document).bind('pageinit', function() {
 	$( "#name" ).click(function() {
 		if (running == false){
 			running = true;
-			zaehler = Math.floor(Math.random() * namen.length);
+			zaehlerWer = Math.floor(Math.random() * arrayWer.length);
 			var sec = 10;
 			var timer = setInterval(function() {
 			   	$('#name').text(sec--);
 			   	if (sec == -1) {
-			    	$('#name').text(namen[zaehler]);
+			    	$('#name').text(arrayWer[zaehlerWer]);
 			    	running = false;
 			      	clearInterval(timer);
 		   		} 

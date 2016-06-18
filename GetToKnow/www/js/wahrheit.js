@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).bind('pageinit', function() {
     var stopDeg, stopRounds, roundsCount;
     var stop, loop; 
     var start = true;

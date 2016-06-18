@@ -2,39 +2,22 @@
 GAME-NAV
 **********************************/
 #gameNav{
+    overflow: auto;
+    display:block;
     font-size: 1.5em;
+    width: 100%;
 }
-#gameNav a{
+/*#gameNav a{
     text-decoration: none;
     display: block;
     clear: right;
     text-align: center;
+}*/
+.gamesNamen{
+    padding: 3.7em 0 3.7em 0;   
+    width: 100%;
+    text-align: center;
 }
-/*********************************
-GAME-NAV: KENNENLERN, BLAU
-**********************************/
-.blue{
-    padding: 3.7em 0 3.7em 0;
-}
-/*********************************
-GAME-NAV: EISBRECHER, GRÜN
-**********************************/
-.green{
-    padding: 3.7em 0 3.7em 0;
-}
-/*********************************
-GAME-NAV: PARTY, BRAUN
-**********************************/
-.brown{
-    padding: 3.7em 0 3.7em 0;
-}
-/*********************************
-GAME-NAV: ONE-PHONE, ROT
-**********************************/
-.red{
-    padding: 3.7em 0 3.7em 0;
-}
-
 
 /*********************************
 GAME-GENERAL

@@ -1,6 +1,6 @@
-$( document ).ready(function() {
-	var zaehler;
-	var action = ["... du 1 Million Euro im Lotto gewinnst?", 
+$(document).bind('pageinit', function() {
+	var zaehlerWasWenn;
+	var arrayWasWenn = ["... du 1 Million Euro im Lotto gewinnst?", 
 				  "... du nie mehr arbeiten müsstest?", 
 				  "... du für einen Tag unsichtbar sein könntest?", 
 				  "... es eine Zombieinvasion gäbe?", 
@@ -17,9 +17,9 @@ $( document ).ready(function() {
 				  "... du einen Tag lang in der Welt deines Lieblingsfilmes gefangen wärst?", 
 				  "... du fliegen könntest?"];
 
-	function wasWenn(){
-		zaehler = Math.floor((Math.random() * 16));
-		document.getElementById("anzeige").innerHTML=action[zaehler];
-	}
-}	
+	$("#begriffWasWenn").click(function(){ 
+		zaehlerWasWenn = Math.floor(Math.random() * arrayWasWenn.length);
+		$("#anzeigeWasWenn").html(innerHTML=arrayWasWenn[zaehlerWasWenn]);
+	});
+});	
 	

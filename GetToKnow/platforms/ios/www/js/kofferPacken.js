@@ -1,6 +1,6 @@
-$( document ).ready(function() {
-	var zaehler;
-	var action = ["ein Handtuch", 
+$(document).bind('pageinit', function() {
+	var zaehlerKoffer;
+	var arrayKoffer = ["ein Handtuch", 
 				  "Sonnencreme", 
 				  "einen Hut", 
 				  "ein Chemiebuch",
@@ -21,8 +21,8 @@ $( document ).ready(function() {
 				  "Kühlschrankmagneten",
 				  "einen Volleyball"];
 
-	function kofferPacken(){
-		zaehler = Math.floor((Math.random() * 20));
-		document.getElementById("anzeige").innerHTML=action[zaehler];
-	}
-}
+	$("#begriffKofferPacken").click(function() {
+		zaehlerKoffer = Math.floor(Math.random() * arrayKoffer.length);
+		$("#anzeigeKoffer").html(arrayKoffer[zaehlerKoffer]);
+	});
+});
