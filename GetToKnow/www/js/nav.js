@@ -3,6 +3,7 @@
 	    var sidenav = document.getElementsByClassName("sideNav");
 	    Array.prototype.forEach.call(sidenav, function(el) {
 	    	el.style.width = "20em";
+	    	$('.gameBtns').button('disable'); 
 		});
 	}
 
@@ -11,5 +12,6 @@
 	    var sidenav = document.getElementsByClassName("sideNav");
 	    Array.prototype.forEach.call(sidenav, function(el) {
 	    	el.style.width = "0";
+	    	$('.gameBtns').button('enable');
 		});
 	}
