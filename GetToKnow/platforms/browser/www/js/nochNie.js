@@ -10,4 +10,13 @@ $(document).bind('pageinit', function() {
 		zaehlerNochNie = Math.floor(Math.random() * arrayNochNie.length);
 		$("#anzeigeNochNie").html(arrayNochNie[zaehlerNochNie]);
 	});
+
+	$("#gameNameNochNie").click(function () {
+	  	if ($("#divTextNochNie" ).is(":hidden")) {
+	    	$("#divTextNochNie").slideDown("slow");
+	  	} 
+	  	else {
+	    	$("#divTextNochNie").slideUp("slow");
+	  	}
+	});
 });

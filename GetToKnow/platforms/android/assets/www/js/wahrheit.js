@@ -49,4 +49,12 @@ $(document).bind('pageinit', function() {
         }
     });
 
+    $("#gameNameWahrheit").click(function () {
+        if ($("#divTextWahrheit" ).is(":hidden")) {
+            $("#divTextWahrheit").slideDown("slow");
+        } 
+        else {
+            $("#divTextWahrheit").slideUp("slow");
+        }
+    });
 });

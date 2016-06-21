@@ -21,4 +21,13 @@ $(document).bind('pageinit', function() {
 		unterZehn = true;
 		zaehlerErzaehl = 1;
 	});
+
+	$("#gameNameErzaehl").click(function () {
+	  	if ($("#divTextErzaehl" ).is(":hidden")) {
+	    	$("#divTextErzaehl").slideDown("slow");
+	  	} 
+	  	else {
+	    	$("#divTextErzaehl").slideUp("slow");
+	  	}
+	});
 });

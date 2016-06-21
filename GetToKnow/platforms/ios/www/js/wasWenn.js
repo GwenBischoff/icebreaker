@@ -21,5 +21,14 @@ $(document).bind('pageinit', function() {
 		zaehlerWasWenn = Math.floor(Math.random() * arrayWasWenn.length);
 		$("#anzeigeWasWenn").html(innerHTML=arrayWasWenn[zaehlerWasWenn]);
 	});
+	
+	$("#gameNameWasWenn").click(function () {
+	  	if ($("#divTextWasWenn" ).is(":hidden")) {
+	    	$("#divTextWasWenn").slideDown("slow");
+	  	} 
+	  	else {
+	    	$("#divTextWasWenn").slideUp("slow");
+	  	}
+	});
 });	
 	

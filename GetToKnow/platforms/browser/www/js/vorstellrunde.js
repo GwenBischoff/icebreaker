@@ -47,4 +47,13 @@ $(document).bind('pageinit', function() {
 		zaehlerVorstell = Math.floor((Math.random() * arrayVorstell.length));
 		$("#anzeigeVorstell3").html(arrayVorstell[zaehlerVorstell]);
 	});
+
+	$("#gameNameVorstell").click(function () {
+	  	if ($("#divTextVorstell" ).is(":hidden")) {
+	    	$("#divTextVorstell").slideDown("slow");
+	  	} 
+	  	else {
+	    	$("#divTextVorstell").slideUp("slow");
+	  	}
+	});
 });

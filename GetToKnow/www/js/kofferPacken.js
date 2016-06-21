@@ -25,4 +25,13 @@ $(document).bind('pageinit', function() {
 		zaehlerKoffer = Math.floor(Math.random() * arrayKoffer.length);
 		$("#anzeigeKoffer").html(arrayKoffer[zaehlerKoffer]);
 	});
+
+	$("#gameNameKoffer").click(function () {
+	  	if ($("#divTextKoffer" ).is(":hidden")) {
+	    	$("#divTextKoffer").slideDown("slow");
+	  	} 
+	  	else {
+	    	$("#divTextKoffer").slideUp("slow");
+	  	}
+	});
 });

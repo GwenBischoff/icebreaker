@@ -9,4 +9,13 @@ $(document).bind('pageinit', function() {
 		$("#anzeigeSortieren").html(arraySortieren[i]);
 		};
 	});
+
+	$("#gameNameSortieren").click(function () {
+	  	if ($("#divTextSortieren" ).is(":hidden")) {
+	    	$("#divTextSortieren").slideDown("slow");
+	  	} 
+	  	else {
+	    	$("#divTextSortieren").slideUp("slow");
+	  	}
+	});
 });

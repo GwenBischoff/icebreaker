@@ -141,10 +141,18 @@ GAME-GENERAL
     height: 100%;
     padding: 0.5em;
     font-size: 1.5em;
-    text-align: center;
+    text-align: center
+}
+.gameNameSpan{
+    float: center;
+    padding: 0 0 0 1.2em;
+}
+.fragezeichen{
+    float: right;
+    padding: 0 1em 0 0;
 }
 .gameDescription{
-    margin: 0.5em auto 0.5em auto ;
+    margin: 1em auto 0.8em auto ;
     padding: 0.5em;
     font-size: 1.25em;
 }
@@ -192,3 +200,11 @@ GAME-WAHRHEIT
     margin-left: auto;
     margin-right: auto;
 }
+/*********************************
+Collapsible
+**********************************/
+.divText {
+    font-size: 0.8em;
+    display: none;
+    padding: 1em 0 1em 0;
+  }

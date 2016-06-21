@@ -85,4 +85,12 @@ $(document).bind('pageinit', function() {
 		}
 	});
 
+	$("#gameNameWerBinIch").click(function () {
+	  	if ($("#divTextWerBinIch" ).is(":hidden")) {
+	    	$("#divTextWerBinIch").slideDown("slow");
+	  	} 
+	  	else {
+	    	$("#divTextWerBinIch").slideUp("slow");
+	  	}
+	});
 });	
