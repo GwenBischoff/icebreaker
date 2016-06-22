@@ -5,8 +5,7 @@ $( document ).ready(function() {
 	    var sidenav = document.getElementsByClassName("sideNav");
 	    Array.prototype.forEach.call(sidenav, function(el) {
 	    	console.log("open");
-	    	el.style.width = "20em";
-	    	
+	    	el.style.width = "20em";	    	
 		});
 	});
 
@@ -15,8 +14,7 @@ $( document ).ready(function() {
 	    var sidenav = document.getElementsByClassName("sideNav");
 	    Array.prototype.forEach.call(sidenav, function(el) {
 	    	console.log("close");
-	    	el.style.width = "0";
-	    	
+	    	el.style.width = "0";	    	
 		});
 	});
 });
