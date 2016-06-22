@@ -40,18 +40,16 @@ header{
     padding: 0.4em 1em 0.2em 0.7em; 
     text-align: center;    
 }
-#sideNavIcon{
+.sideNavIcon{
     float: left;
     width: 0;
 }
 #appName{
     display: inline-block;
     margin: 0 auto;
-    width: 50%;
-    font-style: italic;
 }
 #appName img{
-    width: 40%;
+    width: 70%;
     max-width: 100px;
     height: auto;
 }
@@ -91,9 +89,6 @@ SIDENAV
     right: 0.2em;
     font-size: 2em !important;
     margin-left: 4.5em;
-}
-.navIcons{
-
 }
 #home{
     margin: 0 0 2.5em 0;
