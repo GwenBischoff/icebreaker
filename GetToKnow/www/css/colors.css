@@ -46,10 +46,10 @@ MAIN
     background-color: hsla(28, 100%, 50%, 0.85);/*#d60300*/
 }
 /*********************************
-GAMES
+GAMES background-color: rgba(28, 122, 163, 1);
 **********************************/
 .gameName{
-    background-color: rgba(28, 122, 163, 1);
+    
     color: #fff;
 }
 .gameBtns{
@@ -113,13 +113,13 @@ GAME-NAV: ONE-PHONE, ORANGE
 GAMES IN KENNENLERN, DUNKELGRÜN
 **********************************/
 #gamesBlue{
-    background-color: hsla(165, 63%, 63%, 0.85);
+    background-color: hsla(165, 63%, 33%, 0.85);
 }
 /*********************************
 GAMES IN KENNENLERN, HELLGRÜN
 **********************************/
 #gamesGreen{
-    background-color: hsla(71, 69%, 66%, 0.85);
+    background-color: hsla(71, 69%, 54%, 0.85);
 }
 /*********************************
 GAMES IN KENNENLERN, GELB
@@ -131,5 +131,5 @@ GAMES IN KENNENLERN, GELB
 GAMES IN KENNENLERN, ORANGE
 **********************************/
 #gamesRed{
-    background-color: hsla(28, 100%, 70%, 0.85)
+    background-color: hsla(28, 100%, 50%, 0.85)
 }

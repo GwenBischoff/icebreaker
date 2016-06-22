@@ -111,9 +111,15 @@ MAIN
     width: 100%;
 }
 .mainMenuName{
-    padding: 2.4em 0 2.4em 0 ;   
+    padding: 2em 0 2em 0 ;   
     width: 100%;
     text-align: center;
+}
+.icons{
+    min-width: 60px;
+    width: 5%;
+    height: auto;
+    vertical-align:middle
 }
 /*********************************
 GAME-NAV
@@ -143,17 +149,43 @@ GAME-GENERAL
     font-size: 1.5em;
     text-align: center
 }
-.gameNameSpan{
-    float: center;
-    padding: 0 0 0 1.2em;
+.gameNameSpan h3{
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+    text-align: center;
+    overflow: hidden;
+}
+.gameNameSpan h3 span {
+    display: inline-block;
+    position: relative;
+}
+.gameNameSpan h3 span:after, h3 span:before{
+    content:" ";
+    display: block;
+    height: 1px;
+    width: 1000px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+}
+.gameNameSpan h3 span:before{
+    left: -1010px;
+}
+.gameNameSpan h3 span:after{
+    right: -1010px;
 }
 .fragezeichen{
-    float: right;
-    padding: 0 1em 0 0;
+}
+.fragezeichenIcons{
+        float: right;
+    margin-top: -1.7em;
+    min-width: 35px;
+    width: 3%;
+    height: auto;
 }
 .gameDescription{
     margin: 1em auto 0.8em auto ;
-    padding: 0.5em;
+    padding: 0.5em 1.4em 0.5em 1.4em;
     font-size: 1.25em;
 }
 .gameBtns{
@@ -161,11 +193,11 @@ GAME-GENERAL
     padding: 0.1em 1.0em 0.1em 1.0em;
     font-size: 1.5em;
     border: 0.01em;
-    border-color: #767676;
     -webkit-appearance: none;
 }
 #gameBtnsDiv{
     overflow: auto;
+    float: center;
 }
 #hochzaehlen{
     float: left;
@@ -201,10 +233,31 @@ GAME-WAHRHEIT
     margin-right: auto;
 }
 /*********************************
+GAME-WASWENN
+**********************************/
+#begriffWasWenn{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    background-color: hsla(71, 69%, 54%, 0.85);
+    font-size: 2em;
+}
+/*********************************
+VORSTELLRUNDE
+**********************************/
+#begriffVorstell{
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    background-color: hsla(165, 63%, 48%, 0.85);
+    font-size: 2em;
+}
+/*********************************
 Collapsible
 **********************************/
 .divText {
     font-size: 0.8em;
     display: none;
-    padding: 1em 0 1em 0;
+    padding: 1em 0 0.7em 0;
+    font-weight: lighter;
   }
