@@ -45,8 +45,15 @@ MAIN
 #menuFour{
     background-color: hsla(28, 100%, 50%, 0.85);/*#d60300*/
 }
+
 /*********************************
-GAMES background-color: rgba(28, 122, 163, 1);
+HILFE background-color: 
+**********************************/
+#gamesDarkBlue{
+    background-color: hsla(198, 71%, 47%, 1);
+}
+/*********************************
+GAMES background-color: TÜRKIS
 **********************************/
 .gameName{
     
