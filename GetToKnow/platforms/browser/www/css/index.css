@@ -169,10 +169,8 @@ GAME-GENERAL
 .gameNameSpan h3 span:after{
     right: -1010px;
 }
-.fragezeichen{
-}
 .fragezeichenIcons{
-        float: right;
+    float: right;
     margin-top: -1.7em;
     min-width: 35px;
     width: 3%;
@@ -182,6 +180,7 @@ GAME-GENERAL
     margin: 1em auto 0.8em auto ;
     padding: 0.5em 1.4em 0.5em 1.4em;
     font-size: 1.25em;
+    text-align: center;
 }
 .gameBtns{
     margin: 0 auto;
