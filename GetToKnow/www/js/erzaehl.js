@@ -17,9 +17,11 @@ $(document).bind('pageinit', function() {
 	});
 
 	$("#bestaetigenErzaehl").click(function() {
-		$("#anzeigeErzaehl").text(zaehlerErzaehl);
+		$("#anzeigeErzaehl").text("Erzähle " + zaehlerErzaehl + " Dinge über dich");
 		unterZehn = true;
 		zaehlerErzaehl = 1;
+		$( "#hochzaehlenErzaehl" ).hide();
+		$( "#bestaetigenErzaehl" ).hide();
 	});
 
 	$("#gameNameErzaehl").click(function () {
