@@ -114,7 +114,22 @@ MAIN
     min-width: 60px;
     width: 5%;
     height: auto;
-    vertical-align: center;
+    float: right;   
+}
+.gridA{
+    height: 2.5em;
+}
+.gridB{
+    padding: auto 0;
+    height: 2.5em;
+    position: relative
+}
+.textMain{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 1em;
+    float: left;
 }
 
 /*********************************
