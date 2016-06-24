@@ -266,7 +266,7 @@ GAME-WASWENN
 KOFFERPACKEN
 **********************************/
 #begriffKofferPacken{
-	padding: 1.4em 1em 0.6em 1em;
+	padding: 1.4em 1.1em 0.6em 0.9em;
     width: 2em;
     height: 2em;
     border-radius: 50%;
@@ -277,7 +277,7 @@ KOFFERPACKEN
 #gameDescriptionKofferPacken{
 	margin-top: -0.5em;
 	text-align: center;
-	height: 4em;
+	height: 5em;
 }
 /*********************************
 ERZÄHL MIR WAS
@@ -304,15 +304,29 @@ ERZÄHL MIR WAS
 #divTextErzaehl{
 	font-size: 2em;
 }
+#erzaehlLogo{
+	text-align: center;
+}
+#erzaehlBild{
+	margin-top: 2em;
+	height: 10em;
+	width: auto;
+}
 /*********************************
 VORSTELLRUNDE
 **********************************/
 #begriffVorstell{
-    width: 8em;
-    height: 8em;
+    padding: 1.4em 1.1em 0.6em 0.9em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     background-color: hsla(165, 63%, 48%, 0.85);
-    font-size: 2em;
+    font-size: 3em;
+}
+
+#gameDescriptionVorstellrunde{
+    text-align: center;
+	height: 4em;
 }
 /*********************************
 Collapsible
