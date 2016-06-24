@@ -41,11 +41,7 @@ $(document).bind('pageinit', function() {
 
 	$("#begriffVorstell").click(function() {
 		zaehlerVorstell = Math.floor((Math.random() * arrayVorstell.length));
-		$("#anzeigeVorstell1").html(arrayVorstell[zaehlerVorstell]);
-		zaehlerVorstell = Math.floor((Math.random() * arrayVorstell.length));
-		$("#anzeigeVorstell2").html(arrayVorstell[zaehlerVorstell]);
-		zaehlerVorstell = Math.floor((Math.random() * arrayVorstell.length));
-		$("#anzeigeVorstell3").html(arrayVorstell[zaehlerVorstell]);
+		$("#anzeigeVorstell1").html(arrayVorstell[zaehlerVorstell]);	
 	});
 
 	$("#gameNameVorstell").click(function () {

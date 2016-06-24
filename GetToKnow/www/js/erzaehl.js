@@ -1,7 +1,7 @@
 $(document).bind('pageinit', function() {
 	var zaehlerErzaehl = 1;
 	var unterZehn = true;
-
+	$("#erzaehlLogo").hide()
 	$("#hochzaehlenErzaehl").click(function() {
 		if(unterZehn == true){
 			for (var i = 0; i <= 10; i++) {
@@ -22,6 +22,7 @@ $(document).bind('pageinit', function() {
 		zaehlerErzaehl = 1;
 		$( "#hochzaehlenErzaehl" ).hide();
 		$( "#bestaetigenErzaehl" ).hide();
+		$("#erzaehlLogo").show()
 	});
 
 	$("#gameNameErzaehl").click(function () {
