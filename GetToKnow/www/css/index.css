@@ -178,7 +178,7 @@ GAME-GENERAL
     height: auto;
 }
 .gameDescription{
-    margin: 1em auto 0.8em auto ;
+    margin: 0 auto 0.3em auto ;
     padding: 0.5em 1.4em 0.5em 1.4em;
     font-size: 1.25em;
     text-align: center;
@@ -231,11 +231,63 @@ GAME-WAHRHEIT
 GAME-WASWENN
 **********************************/
 #begriffWasWenn{
-    width: 7em;
-    height: 7em;
+	padding: 1.4em 1em 0.6em 1em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
-    background-color: hsla(71, 69%, 54%, 0.85);
-    font-size: 2em;
+    background-color: hsla(71, 69%, 50%, 0.85);
+    font-size: 3em;
+	text-align: center;
+}
+#anzeigeWasWenn{
+	font-size: 1em;
+}
+
+#gameDescriptionWasWenn{
+    text-align: center;
+	height: 4em;
+}
+/*********************************
+KOFFERPACKEN
+**********************************/
+#begriffKofferPacken{
+	padding: 1.4em 1em 0.6em 1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: hsla(71, 69%, 50%, 0.85);
+    font-size: 3em;
+	text-align: center;
+}
+#gameDescriptionKofferPacken{
+	margin-top: -0.5em;
+	text-align: center;
+	height: 4em;
+}
+/*********************************
+ERZÄHL MIR WAS
+**********************************/
+#hochzaehlenErzaehl{
+	margin-top: -0.5em;
+	padding: 1.4em 1em 0.6em 1em;
+	width: 2em;
+    height: 2em;
+	border-radius: 50%;
+
+    background-color: hsla(165, 63%, 33%, 0.85);
+    font-size: 3em;
+	text-align: center;
+}
+#bestaetigenErzaehl{
+	margin-top: 1.2em;
+	background-color: hsla(165, 63%, 33%, 0.85);
+	text-align: center;
+	height: 2em;
+	padding-top: 0.7em;
+}
+
+#divTextErzaehl{
+	font-size: 2em;
 }
 /*********************************
 VORSTELLRUNDE
