@@ -88,9 +88,11 @@ $(document).bind('pageinit', function() {
 	$("#gameNameWerBinIch").click(function () {
 	  	if ($("#divTextWerBinIch" ).is(":hidden")) {
 	    	$("#divTextWerBinIch").slideDown("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
 	  	else {
 	    	$("#divTextWerBinIch").slideUp("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}
 	});
 });	

@@ -52,9 +52,11 @@ $(document).bind('pageinit', function() {
     $("#gameNameWahrheit").click(function () {
         if ($("#divTextWahrheit" ).is(":hidden")) {
             $("#divTextWahrheit").slideDown("slow");
+            $(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
         } 
         else {
             $("#divTextWahrheit").slideUp("slow");
+            $(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
         }
     });
 });
