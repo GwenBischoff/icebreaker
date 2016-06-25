@@ -114,8 +114,24 @@ MAIN
     min-width: 60px;
     width: 5%;
     height: auto;
-    vertical-align:middle
+    float: right;   
 }
+.gridA{
+    height: 2.5em;
+}
+.gridB{
+    padding: auto 0;
+    height: 2.5em;
+    position: relative
+}
+.textMain{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 30%;
+    float: left;
+}
+
 /*********************************
 GAME-NAV
 **********************************/
@@ -126,7 +142,7 @@ GAME-NAV
     width: 100%;
 }
 .gamesNamen{
-    padding: 3.7em 0 3.7em 0;   
+    padding: 2.85em 0 2.85em 0;   
     width: 100%;
     text-align: center;
 }
@@ -177,7 +193,7 @@ GAME-GENERAL
     height: auto;
 }
 .gameDescription{
-    margin: 1em auto 0.8em auto ;
+    margin: 0 auto 0.3em auto ;
     padding: 0.5em 1.4em 0.5em 1.4em;
     font-size: 1.25em;
     text-align: center;
@@ -219,32 +235,101 @@ GAME-GENERAL
 /*********************************
 GAME-WAHRHEIT
 **********************************/
+#wahrheit{
+    padding-left: 47%;
+    padding-right: auto;
+    padding-bottom: 2.5em;
+}
 #arrow{
-    width: 100%;
+    width: 7%;
     height: auto;
     margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 /*********************************
 GAME-WASWENN
 **********************************/
 #begriffWasWenn{
-    width: 7em;
-    height: 7em;
+	padding: 1.4em 1em 0.6em 1em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
-    background-color: hsla(71, 69%, 54%, 0.85);
-    font-size: 2em;
+    background-color: hsla(71, 69%, 50%, 0.85);
+    font-size: 3em;
+	text-align: center;
+}
+#anzeigeWasWenn{
+	font-size: 1em;
+}
+
+#gameDescriptionWasWenn{
+    text-align: center;
+	height: 4em;
+}
+/*********************************
+KOFFERPACKEN
+**********************************/
+#begriffKofferPacken{
+	padding: 1.4em 1.1em 0.6em 0.9em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: hsla(71, 69%, 50%, 0.85);
+    font-size: 3em;
+	text-align: center;
+}
+#gameDescriptionKofferPacken{
+	margin-top: -0.5em;
+	text-align: center;
+	height: 5em;
+}
+/*********************************
+ERZÄHL MIR WAS
+**********************************/
+#hochzaehlenErzaehl{
+	margin-top: -0.5em;
+	padding: 1.4em 1em 0.6em 1em;
+	width: 2em;
+    height: 2em;
+	border-radius: 50%;
+
+    background-color: hsla(165, 63%, 33%, 0.85);
+    font-size: 3em;
+	text-align: center;
+}
+#bestaetigenErzaehl{
+	margin-top: 1.2em;
+	background-color: hsla(165, 63%, 33%, 0.85);
+	text-align: center;
+	height: 2em;
+	padding-top: 0.7em;
+}
+
+#divTextErzaehl{
+	font-size: 2em;
+}
+#erzaehlLogo{
+	text-align: center;
+}
+#erzaehlBild{
+	margin-top: 2em;
+	height: 10em;
+	width: auto;
 }
 /*********************************
 VORSTELLRUNDE
 **********************************/
 #begriffVorstell{
-    width: 8em;
-    height: 8em;
+    padding: 1.4em 1.1em 0.6em 0.9em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     background-color: hsla(165, 63%, 48%, 0.85);
-    font-size: 2em;
+    font-size: 3em;
+}
+
+#gameDescriptionVorstellrunde{
+    text-align: center;
+	height: 4em;
 }
 /*********************************
 Collapsible

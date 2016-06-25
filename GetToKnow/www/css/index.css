@@ -235,12 +235,15 @@ GAME-GENERAL
 /*********************************
 GAME-WAHRHEIT
 **********************************/
+#wahrheit{
+    padding-left: 47%;
+    padding-right: auto;
+    padding-bottom: 2.5em;
+}
 #arrow{
-    width: 100%;
+    width: 7%;
     height: auto;
     margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 /*********************************
 GAME-WASWENN
