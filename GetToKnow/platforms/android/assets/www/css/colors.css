@@ -53,17 +53,13 @@ HILFE background-color:
     background-color: hsla(198, 71%, 47%, 1);
 }
 /*********************************
-GAMES background-color: TÜRKIS
+GAMES 
 **********************************/
-.gameName{
-    
+.gameName{ 
     color: #fff;
 }
 .gameBtns{
     background-color:#f4f4f4;
-}
-#btnBackWrapper{
-    background-color: #e1e1e1;
 }
 /*********************************
 GAME-NAV: KENNENLERN, DUNKELGRÜN
@@ -72,31 +68,31 @@ GAME-NAV: KENNENLERN, DUNKELGRÜN
     padding: 3.7em 0 3.7em 0;
 }
 #gameOneBlue{
-    background-color: hsla(165, 63%, 33%, 0.85);
+    background-color: hsla(165, 63%, 33%, 0.85); /*#1F896F*/
 }
 #gameTwoBlue{
     background-color: hsla(165, 63%, 48%, 0.85);
 }
 #gameThreeBlue{
-    background-color: hsla(165, 63%, 63%, 0.85);
+    background-color: hsla(165, 63%, 63%, 0.85); /*#65DCBE*/
 }
 /*********************************
 GAME-NAV: EISBRECHER, HELLGRÜN
 **********************************/
 #gameOneGreen{
-    background-color: hsla(71, 69%, 54%, 0.85);
+    background-color: hsla(71, 69%, 54%, 0.85); /*#BDDB39*/
 }
 #gameTwoGreen{
     background-color: hsla(71, 69%, 60%, 0.85);
 }
 #gameThreeGreen{
-    background-color: hsla(71, 69%, 66%, 0.85);
+    background-color: hsla(71, 69%, 66%, 0.85); /*#CEE46C*/
 }
 /*********************************
 GAME-NAV: PARTY, GELB
 **********************************/
 #gameOneYellow{
-    background-color: hsla(52, 100%, 50%, 0.85);
+    background-color: hsla(52, 100%, 50%, 0.85); /*#FFDD00*/
 }
 #gameTwoYellow{
     background-color: hsla(52, 100%, 40%, 0.85);

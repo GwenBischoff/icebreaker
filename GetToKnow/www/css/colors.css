@@ -53,17 +53,13 @@ HILFE background-color:
     background-color: hsla(198, 71%, 47%, 1);
 }
 /*********************************
-GAMES background-color: TÜRKIS
+GAMES 
 **********************************/
-.gameName{
-    
+.gameName{ 
     color: #fff;
 }
 .gameBtns{
     background-color:#f4f4f4;
-}
-#btnBackWrapper{
-    background-color: #e1e1e1;
 }
 /*********************************
 GAME-NAV: KENNENLERN, DUNKELGRÜN

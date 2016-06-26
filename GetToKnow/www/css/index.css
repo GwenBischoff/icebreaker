@@ -115,7 +115,7 @@ MAIN
     min-width: 60px;
     width: 25%;
     height: auto;
-    float: right;   
+    float: right;
 }
 .gridA{
     height: 2.5em;
@@ -147,6 +147,10 @@ GAME-NAV
     padding: 2.85em 0 2.85em 0;   
     width: 100%;
     text-align: center;
+}
+.rwd-line{
+    display: block;
+    float: left;
 }
 /*********************************
 GAME-GENERAL
@@ -228,7 +232,7 @@ GAME-GENERAL
 }
 .contentGame {
     padding-top: 1em;
-    padding-bottom: 23em;
+    padding-bottom: 100%;
 }
 
 /*********************************
@@ -434,28 +438,49 @@ Collapsible
 /*********************************
 MEDIA-QUERIES
 **********************************/  
-/*IPad3 hochkant*/
-@media screen and ( max-height: 2048px ){
+/*Nexus 7 2012 hochkant*/
+@media screen and ( max-height: 1280px ){
     .mainMenuName{
-        padding: 3.605em 0 3.605em 0 ;
-    }  
+        padding: 4.95em 0 4.95em 0 ;
+    }
+    .gamesNamen{
+        padding: 7em 0 7em 0;   
+    }     
 }
-/*IPad3 quer*/
-@media screen and ( max-height: 1536px ){
+/*Nexus 7 2012 quer*/
+@media screen and ( max-height: 1280px ) and (orientation : landscape){
     .mainMenuName{
-        padding: 2.265em 0 2.265em 0 ;
-    }  
+        padding: 2.43em 0 2.43em 0 ;
+    }
+    .gamesNamen{
+        padding: 3.655em 0 3.655em 0;   
+    }   
+}
+/*Nexus 7 quer*/
+@media screen and ( max-height: 1280px ) and (orientation : landscape){
+    .mainMenuName{
+        padding: 2.43em 0 2.43em 0 ;
+    }
+    .gamesNamen{
+        padding: 3.655em 0 3.655em 0;   
+    }   
 }
 /*Nexus 4 hochkant*/
 @media screen and ( max-height: 640px ){
     .mainMenuName{
         padding: 1.6em 0 1.6em 0 ;
-    }  
+    }
+    .gamesNamen{
+        padding: 2.55em 0 2.55em 0;   
+    }
 }
 /*Iphone 5 hochkant*/
 @media screen and ( max-height: 568px ){
     .mainMenuName{
         padding: 1.215em 0 1.215em 0 ;
+    }
+    .gamesNamen{
+        padding: 2.05em 0 2.05em 0;   
     } 
 }
 /*Nexus 4 quer*/
@@ -468,12 +493,26 @@ MEDIA-QUERIES
         height: 80%;
         min-width: auto;
         width: auto;
-        float: right;
-    }   
+    }
+    .gamesNamen{
+        padding: 0.765em 0 0.765em 0;   
+    }    
 }  
 /*Iphone 5 quer*/
 @media screen and ( max-height: 326px ){
     .mainMenuName{
         padding: 0.265em 0 0.265em 0 ;
+    }
+    .gamesNamen{
+        padding: 0.32em 0 0.32em 0;   
     } 
-}  
+}
+
+@media screen and ( min-width: 170px ){
+    .rwd-line{
+        display: inline;
+    }  
+}
+
+
+ 
