@@ -295,6 +295,17 @@ PANTOMIME
     font-size: 2em;
 	text-align: center;
 }
+#begriffPantomime2{
+	padding-top: 3em;
+
+    width: 6em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: hsla(28, 100%, 50%, 0.85);
+    font-size: 2em;
+	text-align: center;
+}
+
 /*********************************
 ERZÄHL MIR WAS
 **********************************/

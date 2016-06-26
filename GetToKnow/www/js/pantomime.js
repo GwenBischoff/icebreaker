@@ -37,7 +37,12 @@ $(document).bind('pageinit', function() {
 		zaehlerPantomime = Math.floor(Math.random() * arrayPantomime.length);
 		$("#begriffPantomime").html(arrayPantomime[zaehlerPantomime]);
 	});
-
+	
+	$("#begriffPantomime2").click(function() {
+		zaehlerPantomime = Math.floor(Math.random() * arrayPantomime.length);
+		$("#begriffPantomime2").html(arrayPantomime[zaehlerPantomime]);
+	});
+	
 	$("#gameNamePantomime").click(function () {
 	  	if ($("#divTextPantomime" ).is(":hidden")) {
 	    	$("#divTextPantomime").slideDown("slow");
