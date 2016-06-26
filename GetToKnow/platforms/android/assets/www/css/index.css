@@ -256,6 +256,48 @@ GAME-GENERAL: CONTENT
     padding-bottom: 18%;
 }
 /*********************************
+ERZÄHL MIR WAS
+**********************************/
+#hochzaehlenErzaehl{
+	margin-top: -0.5em;
+	padding: 1.4em 1em 0.6em 1em;
+	width: 2em;
+    height: 2em;
+	border-radius: 50%;
+		
+    font-size: 3em;
+	text-align: center;
+	
+	background: #65DCBE;
+	background-image: -webkit-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: -moz-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: -ms-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: -o-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: linear-gradient(to bottom, #65DCBE, #1F896F);	
+	border: solid #ACECDC 8px;
+}
+
+#bestaetigenErzaehl{
+	margin-top: 1.2em;
+	padding-top: 0.7em;
+	
+	text-align: center;
+	height: 2em;
+	
+	background-color: hsla(165, 63%, 33%, 0.85);
+	
+}
+
+#erzaehlLogo{
+	text-align: center;
+}
+#erzaehlBild{
+	margin-top: 2em;
+	height: 10em;
+	width: auto;
+}
+
+/*********************************
 GAME-WAHRHEIT
 **********************************/
 #wahrheit{
@@ -291,6 +333,7 @@ GAME-WASWENN
 	background-image: -ms-linear-gradient(top, #BDDB39, #A1BE23);
 	background-image: -o-linear-gradient(top, #BDDB39, #A1BE23);
 	background-image: linear-gradient(to bottom, #BDDB39, #A1BE23);
+	border: solid #A5C224 8px;
 }
 #anzeigeWasWenn{
 	font-size: 1em;
@@ -298,7 +341,7 @@ GAME-WASWENN
 
 #gameDescriptionWasWenn{
     text-align: center;
-	height: 4em;
+	height: 3em;
 }
 /*********************************
 KOFFERPACKEN
@@ -308,7 +351,8 @@ KOFFERPACKEN
     width: 2em;
     height: 2em;
     border-radius: 50%;
-    font-size: 3em;
+    
+	font-size: 3em;
 	text-align: center;
 	
 	background: #BDDB39;
@@ -323,15 +367,41 @@ KOFFERPACKEN
 	text-align: center;
 	height: 5em;
 }
+
+/*********************************
+NOCH NIE
+**********************************/
+#nochNie{
+	padding: 1.4em 1em 0.6em 1em;
+	width: 2em;
+    height: 2em;
+	border-radius: 50%;
+	
+	font-size: 3em;
+	text-align: center;
+	
+	background: #FFDD00;
+	background-image: -webkit-linear-gradient(top, #FFDD00, #998500);
+	background-image: -moz-linear-gradient(top, #FFDD00, #998500);
+	background-image: -ms-linear-gradient(top, #FFDD00, #998500);
+	background-image: -o-linear-gradient(top, #FFDD00, #998500);
+	background-image: linear-gradient(to bottom, #FFDD00, #998500);
+}
+
+#gameDescriptionNochNie{
+	text-align: center;
+	height: 4em;
+}
+
 /*********************************
 PANTOMIME
 **********************************/
 #begriffPantomime{
 	padding-top: 3em;
-
     width: 6em;
     height: 5em;
     border-radius: 50%;
+	
     font-size: 2em;
 	text-align: center;
 	
@@ -345,67 +415,55 @@ PANTOMIME
 }
 #begriffPantomime2{
 	padding-top: 3em;
-
     width: 6em;
     height: 5em;
     border-radius: 50%;
-    background-color: hsla(28, 100%, 50%, 0.85);
+	
     font-size: 2em;
 	text-align: center;
+	
+	background: #FFAD66;
+	background-image: -webkit-linear-gradient(top, #FFAD66, #FF7700);
+	background-image: -moz-linear-gradient(top, #FFAD66, #FF7700);
+	background-image: -ms-linear-gradient(top, #FFAD66, #FF7700);
+	background-image: -o-linear-gradient(top, #FFAD66, #FF7700);
+	background-image: linear-gradient(to bottom, #FFAD66, #FF7700);
+	border: solid #FFC999 8px;
 }
+
+
 
 /*********************************
-NOCH NIE
+SORTIEREN
 **********************************/
-#nochNie{
+#begriffSortieren{
 	padding: 1.4em 1em 0.6em 1em;
-	width: 2em;
+    width: 2em;
     height: 2em;
-	border-radius: 50%;
-	
-  background: #FFDD00;
-  background-image: -webkit-linear-gradient(top, #FFDD00, #998500);
-  background-image: -moz-linear-gradient(top, #FFDD00, #998500);
-  background-image: -ms-linear-gradient(top, #FFDD00, #998500);
-  background-image: -o-linear-gradient(top, #FFDD00, #998500);
-  background-image: linear-gradient(to bottom, #FFDD00, #998500);
-	
+    border-radius: 50%;
+
     font-size: 3em;
 	text-align: center;
+	
+	background: #FFAD66;
+	background-image: -webkit-linear-gradient(top, #FFAD66, #FF7700);
+	background-image: -moz-linear-gradient(top, #FFAD66, #FF7700);
+	background-image: -ms-linear-gradient(top, #FFAD66, #FF7700);
+	background-image: -o-linear-gradient(top, #FFAD66, #FF7700);
+	background-image: linear-gradient(to bottom, #FFAD66, #FF7700);
+	border: solid #FFC999 8px;
 
 }
-#gameDescriptionNochNie{
-	text-align: center;
-	height: 4em;
-}
-/*********************************
-ERZÄHL MIR WAS
-**********************************/
-#hochzaehlenErzaehl{
-	margin-top: -0.5em;
-	padding: 1.4em 1em 0.6em 1em;
-	width: 2em;
-    height: 2em;
-	border-radius: 50%;
-	
-	background: #65DCBE;
-	background-image: -webkit-linear-gradient(top, #65DCBE, #1F896F);
-	background-image: -moz-linear-gradient(top, #65DCBE, #1F896F);
-	background-image: -ms-linear-gradient(top, #65DCBE, #1F896F);
-	background-image: -o-linear-gradient(top, #65DCBE, #1F896F);
-	background-image: linear-gradient(to bottom, #65DCBE, #1F896F);	
-	
-    font-size: 3em;
-	text-align: center;
+#anzeigeSortieren{
+	margin-top: 1em;
+	font-size: 1em;
 }
 
-#bestaetigenErzaehl{
-	margin-top: 1.2em;
-	background-color: hsla(165, 63%, 33%, 0.85);
-	text-align: center;
-	height: 2em;
-	padding-top: 0.7em;
+#gameDescriptionSortieren{
+    text-align: center;
+	height: 3.5em;
 }
+
 #erzaehlLogo{
 	text-align: center;
 }
@@ -420,6 +478,7 @@ WER BIN ICH
 #name{
 	font-size: 2em;
 }
+
 /*********************************
 VORSTELLRUNDE
 **********************************/
@@ -428,7 +487,8 @@ VORSTELLRUNDE
     width: 2em;
     height: 2em;
     border-radius: 50%;
-    font-size: 3em;
+    
+	font-size: 3em;
 	
 	background: #65DCBE;
 	background-image: -webkit-linear-gradient(top, #65DCBE, #1F896F);
@@ -436,13 +496,20 @@ VORSTELLRUNDE
 	background-image: -ms-linear-gradient(top, #65DCBE, #1F896F);
 	background-image: -o-linear-gradient(top, #65DCBE, #1F896F);
 	background-image: linear-gradient(to bottom, #65DCBE, #1F896F);	
-
+	border: solid #ACECDC 8px;
 }
 
 #gameDescriptionVorstellrunde{
     text-align: center;
-	height: 4em;
+	height: 3em;
 }
+/*********************************
+WER BIN ICH
+**********************************/
+#name{
+	font-size: 2em;
+}
+
 /*********************************
 MEDIA-QUERIES
 **********************************/  
