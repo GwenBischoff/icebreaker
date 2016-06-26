@@ -283,6 +283,19 @@ KOFFERPACKEN
 	height: 5em;
 }
 /*********************************
+PANTOMIME
+**********************************/
+#begriffPantomime{
+	padding-top: 3em;
+
+    width: 6em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: hsla(71, 69%, 50%, 0.85);
+    font-size: 2em;
+	text-align: center;
+}
+/*********************************
 ERZÄHL MIR WAS
 **********************************/
 #hochzaehlenErzaehl{
