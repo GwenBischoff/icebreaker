@@ -241,9 +241,9 @@ GAME-WAHRHEIT
     padding-bottom: 2.5em;
 }
 #arrow{
-    width: 7%;
+    width: 15%;
     height: auto;
-    margin-top: 0;
+    margin-top: 1em;
 }
 /*********************************
 GAME-WASWENN
@@ -327,6 +327,30 @@ PANTOMIME
 }
 
 /*********************************
+NOCH NIE
+**********************************/
+#nochNie{
+	padding: 1.4em 1em 0.6em 1em;
+	width: 2em;
+    height: 2em;
+	border-radius: 50%;
+	
+  background: #FFDD00;
+  background-image: -webkit-linear-gradient(top, #FFDD00, #998500);
+  background-image: -moz-linear-gradient(top, #FFDD00, #998500);
+  background-image: -ms-linear-gradient(top, #FFDD00, #998500);
+  background-image: -o-linear-gradient(top, #FFDD00, #998500);
+  background-image: linear-gradient(to bottom, #FFDD00, #998500);
+	
+    font-size: 3em;
+	text-align: center;
+
+}
+#gameDescriptionNochNie{
+	text-align: center;
+	height: 4em;
+}
+/*********************************
 ERZÄHL MIR WAS
 **********************************/
 #hochzaehlenErzaehl{
@@ -365,6 +389,12 @@ ERZÄHL MIR WAS
 	margin-top: 2em;
 	height: 10em;
 	width: auto;
+}
+/*********************************
+WER BIN ICH
+**********************************/
+#name{
+	font-size: 2em;
 }
 /*********************************
 VORSTELLRUNDE

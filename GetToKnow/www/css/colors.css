@@ -96,7 +96,7 @@ GAME-NAV: EISBRECHER, HELLGRÜN
 GAME-NAV: PARTY, GELB
 **********************************/
 #gameOneYellow{
-    background-color: hsla(52, 100%, 50%, 0.85);
+    background-color: hsla(52, 100%, 50%, 0.85); /*#FFDD00*/
 }
 #gameTwoYellow{
     background-color: hsla(52, 100%, 40%, 0.85);
