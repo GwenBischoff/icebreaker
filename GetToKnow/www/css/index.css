@@ -240,9 +240,9 @@ GAME-WAHRHEIT
     padding-bottom: 2.5em;
 }
 #arrow{
-    width: 7%;
+    width: 15%;
     height: auto;
-    margin-top: 0;
+    margin-top: 1em;
 }
 .contentWahrheit{
     padding-top: 1em;
@@ -256,9 +256,16 @@ GAME-WASWENN
     width: 2em;
     height: 2em;
     border-radius: 50%;
-    background-color: hsla(71, 69%, 50%, 0.85);
+
     font-size: 3em;
 	text-align: center;
+	
+	background: #BDDB39;
+	background-image: -webkit-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: -moz-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: -ms-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: -o-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: linear-gradient(to bottom, #BDDB39, #A1BE23);
 }
 #anzeigeWasWenn{
 	font-size: 1em;
@@ -276,14 +283,75 @@ KOFFERPACKEN
     width: 2em;
     height: 2em;
     border-radius: 50%;
-    background-color: hsla(71, 69%, 50%, 0.85);
     font-size: 3em;
 	text-align: center;
+	
+	background: #BDDB39;
+	background-image: -webkit-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: -moz-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: -ms-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: -o-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: linear-gradient(to bottom, #BDDB39, #A1BE23);
 }
 #gameDescriptionKofferPacken{
 	margin-top: -0.5em;
 	text-align: center;
 	height: 5em;
+}
+/*********************************
+PANTOMIME
+**********************************/
+#begriffPantomime{
+	padding-top: 3em;
+
+    width: 6em;
+    height: 5em;
+    border-radius: 50%;
+    font-size: 2em;
+	text-align: center;
+	
+	background: #BDDB39;
+	background-image: -webkit-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: -moz-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: -ms-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: -o-linear-gradient(top, #BDDB39, #A1BE23);
+	background-image: linear-gradient(to bottom, #BDDB39, #A1BE23);
+
+}
+#begriffPantomime2{
+	padding-top: 3em;
+
+    width: 6em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: hsla(28, 100%, 50%, 0.85);
+    font-size: 2em;
+	text-align: center;
+}
+
+/*********************************
+NOCH NIE
+**********************************/
+#nochNie{
+	padding: 1.4em 1em 0.6em 1em;
+	width: 2em;
+    height: 2em;
+	border-radius: 50%;
+	
+  background: #FFDD00;
+  background-image: -webkit-linear-gradient(top, #FFDD00, #998500);
+  background-image: -moz-linear-gradient(top, #FFDD00, #998500);
+  background-image: -ms-linear-gradient(top, #FFDD00, #998500);
+  background-image: -o-linear-gradient(top, #FFDD00, #998500);
+  background-image: linear-gradient(to bottom, #FFDD00, #998500);
+	
+    font-size: 3em;
+	text-align: center;
+
+}
+#gameDescriptionNochNie{
+	text-align: center;
+	height: 4em;
 }
 /*********************************
 ERZÄHL MIR WAS
@@ -294,11 +362,18 @@ ERZÄHL MIR WAS
 	width: 2em;
     height: 2em;
 	border-radius: 50%;
-
-    background-color: hsla(165, 63%, 33%, 0.85);
+	
+	background: #65DCBE;
+	background-image: -webkit-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: -moz-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: -ms-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: -o-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: linear-gradient(to bottom, #65DCBE, #1F896F);	
+	
     font-size: 3em;
 	text-align: center;
 }
+
 #bestaetigenErzaehl{
 	margin-top: 1.2em;
 	background-color: hsla(165, 63%, 33%, 0.85);
@@ -319,6 +394,12 @@ ERZÄHL MIR WAS
 	width: auto;
 }
 /*********************************
+WER BIN ICH
+**********************************/
+#name{
+	font-size: 2em;
+}
+/*********************************
 VORSTELLRUNDE
 **********************************/
 #begriffVorstell{
@@ -326,8 +407,15 @@ VORSTELLRUNDE
     width: 2em;
     height: 2em;
     border-radius: 50%;
-    background-color: hsla(165, 63%, 48%, 0.85);
     font-size: 3em;
+	
+	background: #65DCBE;
+	background-image: -webkit-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: -moz-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: -ms-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: -o-linear-gradient(top, #65DCBE, #1F896F);
+	background-image: linear-gradient(to bottom, #65DCBE, #1F896F);	
+
 }
 
 #gameDescriptionVorstellrunde{
