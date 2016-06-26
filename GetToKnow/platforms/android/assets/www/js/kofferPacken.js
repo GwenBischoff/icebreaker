@@ -29,9 +29,11 @@ $(document).bind('pageinit', function() {
 	$("#gameNameKoffer").click(function () {
 	  	if ($("#divTextKoffer" ).is(":hidden")) {
 	    	$("#divTextKoffer").slideDown("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
 	  	else {
 	    	$("#divTextKoffer").slideUp("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}
 	});
 });

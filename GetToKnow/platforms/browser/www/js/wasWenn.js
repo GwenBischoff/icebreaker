@@ -25,9 +25,11 @@ $(document).bind('pageinit', function() {
 	$("#gameNameWasWenn").click(function () {
 	  	if ($("#divTextWasWenn" ).is(":hidden")) {
 	    	$("#divTextWasWenn").slideDown("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
 	  	else {
 	    	$("#divTextWasWenn").slideUp("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}
 	});
 });	

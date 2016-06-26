@@ -14,9 +14,11 @@ $(document).bind('pageinit', function() {
 	$("#gameNameNochNie").click(function () {
 	  	if ($("#divTextNochNie" ).is(":hidden")) {
 	    	$("#divTextNochNie").slideDown("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
 	  	else {
 	    	$("#divTextNochNie").slideUp("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}
 	});
 });

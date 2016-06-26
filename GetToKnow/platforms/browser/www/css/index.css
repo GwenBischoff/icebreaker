@@ -37,10 +37,11 @@ header{
 }
 #navIconWrapper{
     font-size: 2em;
-    padding: 0.4em 1em 0.2em 0.7em; 
+    padding: 0.6em 1em 0.2em 1em; 
     text-align: center;    
 }
 .sideNavIcon{
+    padding-top: 0.3em;
     float: left;
     width: 0;
 }
@@ -112,10 +113,27 @@ MAIN
 }
 .icons{
     min-width: 60px;
-    width: 5%;
+    width: 25%;
     height: auto;
-    vertical-align:middle
+    float: right;   
 }
+.gridA{
+    height: 2.5em;
+}
+.gridB{
+    padding: auto 0;
+    height: 2.5em;
+    position: relative
+}
+.textMain{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 30%;
+    float: left;
+    white-space: nowrap;
+}
+
 /*********************************
 GAME-NAV
 **********************************/
@@ -126,7 +144,7 @@ GAME-NAV
     width: 100%;
 }
 .gamesNamen{
-    padding: 3.7em 0 3.7em 0;   
+    padding: 2.85em 0 2.85em 0;   
     width: 100%;
     text-align: center;
 }
@@ -177,7 +195,7 @@ GAME-GENERAL
     height: auto;
 }
 .gameDescription{
-    margin: 1em auto 0.8em auto ;
+    margin: 0 auto 0.3em auto ;
     padding: 0.5em 1.4em 0.5em 1.4em;
     font-size: 1.25em;
     text-align: center;
@@ -212,39 +230,109 @@ GAME-GENERAL
     padding-top: 1em;
     padding-bottom: 23em;
 }
+
+/*********************************
+GAME-WAHRHEIT
+**********************************/
+#wahrheit{
+    padding-left: 47%;
+    padding-right: auto;
+    padding-bottom: 2.5em;
+}
+#arrow{
+    width: 7%;
+    height: auto;
+    margin-top: 0;
+}
 .contentWahrheit{
     padding-top: 1em;
     padding-bottom: 3em;
 }
 /*********************************
-GAME-WAHRHEIT
-**********************************/
-#arrow{
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-/*********************************
 GAME-WASWENN
 **********************************/
 #begriffWasWenn{
-    width: 7em;
-    height: 7em;
+	padding: 1.4em 1em 0.6em 1em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
-    background-color: hsla(71, 69%, 54%, 0.85);
-    font-size: 2em;
+    background-color: hsla(71, 69%, 50%, 0.85);
+    font-size: 3em;
+	text-align: center;
+}
+#anzeigeWasWenn{
+	font-size: 1em;
+}
+
+#gameDescriptionWasWenn{
+    text-align: center;
+	height: 4em;
+}
+/*********************************
+KOFFERPACKEN
+**********************************/
+#begriffKofferPacken{
+	padding: 1.4em 1.1em 0.6em 0.9em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: hsla(71, 69%, 50%, 0.85);
+    font-size: 3em;
+	text-align: center;
+}
+#gameDescriptionKofferPacken{
+	margin-top: -0.5em;
+	text-align: center;
+	height: 5em;
+}
+/*********************************
+ERZÄHL MIR WAS
+**********************************/
+#hochzaehlenErzaehl{
+	margin-top: -0.5em;
+	padding: 1.4em 1em 0.6em 1em;
+	width: 2em;
+    height: 2em;
+	border-radius: 50%;
+
+    background-color: hsla(165, 63%, 33%, 0.85);
+    font-size: 3em;
+	text-align: center;
+}
+#bestaetigenErzaehl{
+	margin-top: 1.2em;
+	background-color: hsla(165, 63%, 33%, 0.85);
+	text-align: center;
+	height: 2em;
+	padding-top: 0.7em;
+}
+
+#divTextErzaehl{
+	
+}
+#erzaehlLogo{
+	text-align: center;
+}
+#erzaehlBild{
+	margin-top: 2em;
+	height: 10em;
+	width: auto;
 }
 /*********************************
 VORSTELLRUNDE
 **********************************/
 #begriffVorstell{
-    width: 8em;
-    height: 8em;
+    padding: 1.4em 1.1em 0.6em 0.9em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     background-color: hsla(165, 63%, 48%, 0.85);
-    font-size: 2em;
+    font-size: 3em;
+}
+
+#gameDescriptionVorstellrunde{
+    text-align: center;
+	height: 4em;
 }
 /*********************************
 Collapsible
@@ -254,4 +342,50 @@ Collapsible
     display: none;
     padding: 1em 0 0.7em 0;
     font-weight: lighter;
-  }
+}
+/*********************************
+MEDIA-QUERIES
+**********************************/  
+/*IPad3 hochkant*/
+@media screen and ( max-height: 2048px ){
+    .mainMenuName{
+        padding: 3.605em 0 3.605em 0 ;
+    }  
+}
+/*IPad3 quer*/
+@media screen and ( max-height: 1536px ){
+    .mainMenuName{
+        padding: 2.265em 0 2.265em 0 ;
+    }  
+}
+/*Nexus 4 hochkant*/
+@media screen and ( max-height: 640px ){
+    .mainMenuName{
+        padding: 1.6em 0 1.6em 0 ;
+    }  
+}
+/*Iphone 5 hochkant*/
+@media screen and ( max-height: 568px ){
+    .mainMenuName{
+        padding: 1.215em 0 1.215em 0 ;
+    } 
+}
+/*Nexus 4 quer*/
+@media screen and ( max-height: 384px ){
+    .mainMenuName{
+        padding: 0.265em 0 0.265em 0 ;
+    } 
+    .icons{
+        padding-top: 0.2em;
+        height: 80%;
+        min-width: auto;
+        width: auto;
+        float: right;
+    }   
+}  
+/*Iphone 5 quer*/
+@media screen and ( max-height: 326px ){
+    .mainMenuName{
+        padding: 0.265em 0 0.265em 0 ;
+    } 
+}  

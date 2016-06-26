@@ -13,9 +13,11 @@ $(document).bind('pageinit', function() {
 	$("#gameNameSortieren").click(function () {
 	  	if ($("#divTextSortieren" ).is(":hidden")) {
 	    	$("#divTextSortieren").slideDown("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
 	  	else {
 	    	$("#divTextSortieren").slideUp("slow");
+	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}
 	});
 });
