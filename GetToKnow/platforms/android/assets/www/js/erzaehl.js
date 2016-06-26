@@ -1,6 +1,7 @@
 $(document).bind('pageinit', function() {
 	var zaehlerErzaehl = 1;
 	var unterZehn = true;
+
 	$("#erzaehlLogo").hide()
 	$("#hochzaehlenErzaehl").click(function() {
 		if(unterZehn == true){

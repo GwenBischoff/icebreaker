@@ -10,6 +10,8 @@ FONT
 @font-face{
     font-family: 'Ubuntu';
     src: url('../font/Ubuntu.woff2') format('woff2');
+    font-family: 'Ubuntu_lighter';
+    src: url('../font/Ubuntu_lighter.woff2') format('woff2');
     font-style: normal;
     font-weight: 400;
 }
@@ -112,9 +114,9 @@ MAIN
     text-align: center;
 }
 .icons{
-    min-width: 60px;
-    width: 25%;
-    height: auto;
+    min-height: 60px;
+    height: 80%;
+    width: auto;
     float: right;
 }
 .gridA{
@@ -153,7 +155,7 @@ GAME-NAV
     float: left;
 }
 /*********************************
-GAME-GENERAL
+GAME-GENERAL: NAME
 **********************************/
 #gameWrapper{
     width: 100%;
@@ -168,9 +170,9 @@ GAME-GENERAL
 }
 .gameNameSpan h3{
     letter-spacing: 0.05em;
-    font-weight: lighter;
     text-align: center;
     overflow: hidden;
+    font-weight: normal;
 }
 .gameNameSpan h3 span {
     display: inline-block;
@@ -204,6 +206,25 @@ GAME-GENERAL
     font-size: 1.25em;
     text-align: center;
 }
+/*********************************
+COLLAPSIBLE
+**********************************/
+.divText {
+    font-size: 0.8em;
+    display: none;
+    padding-bottom: 0.7em;
+    font-family: 'Ubuntu_lighter', sans-serif;
+}
+hr {
+    width: 30%;
+    height: 1px;
+    border: transparent;
+    margin: 1.5em auto 0.3em auto;
+    background-color: white;
+}
+/*********************************
+GAME-GENERAL: CONTENT
+**********************************/
 .gameBtns{
     margin: 0 auto;
     padding: 0.1em 1.0em 0.1em 1.0em;
@@ -232,19 +253,19 @@ GAME-GENERAL
 }
 .contentGame {
     padding-top: 1em;
-    padding-bottom: 100%;
+    padding-bottom: 18%;
 }
-
 /*********************************
 GAME-WAHRHEIT
 **********************************/
 #wahrheit{
-    padding-left: 47%;
-    padding-right: auto;
+    padding-left: 50%;
+    margin-left: -15px;
     padding-bottom: 2.5em;
 }
 #arrow{
-    width: 15%;
+    width: 20%;
+    max-width: 50px;
     height: auto;
     margin-top: 1em;
 }
@@ -385,10 +406,6 @@ ERZÄHL MIR WAS
 	height: 2em;
 	padding-top: 0.7em;
 }
-
-#divTextErzaehl{
-	
-}
 #erzaehlLogo{
 	text-align: center;
 }
@@ -427,15 +444,6 @@ VORSTELLRUNDE
 	height: 4em;
 }
 /*********************************
-Collapsible
-**********************************/
-.divText {
-    font-size: 0.8em;
-    display: none;
-    padding: 1em 0 0.7em 0;
-    font-weight: lighter;
-}
-/*********************************
 MEDIA-QUERIES
 **********************************/  
 /*Nexus 7 2012 hochkant*/
@@ -448,16 +456,7 @@ MEDIA-QUERIES
     }     
 }
 /*Nexus 7 2012 quer*/
-@media screen and ( max-height: 1280px ) and (orientation : landscape){
-    .mainMenuName{
-        padding: 2.43em 0 2.43em 0 ;
-    }
-    .gamesNamen{
-        padding: 3.655em 0 3.655em 0;   
-    }   
-}
-/*Nexus 7 quer*/
-@media screen and ( max-height: 1280px ) and (orientation : landscape){
+@media screen and ( max-height: 800px ){
     .mainMenuName{
         padding: 2.43em 0 2.43em 0 ;
     }
