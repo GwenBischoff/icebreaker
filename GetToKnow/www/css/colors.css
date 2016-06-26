@@ -72,25 +72,25 @@ GAME-NAV: KENNENLERN, DUNKELGRÜN
     padding: 3.7em 0 3.7em 0;
 }
 #gameOneBlue{
-    background-color: hsla(165, 63%, 33%, 0.85);
+    background-color: hsla(165, 63%, 33%, 0.85); /*#1F896F*/
 }
 #gameTwoBlue{
     background-color: hsla(165, 63%, 48%, 0.85);
 }
 #gameThreeBlue{
-    background-color: hsla(165, 63%, 63%, 0.85);
+    background-color: hsla(165, 63%, 63%, 0.85); /*#65DCBE*/
 }
 /*********************************
 GAME-NAV: EISBRECHER, HELLGRÜN
 **********************************/
 #gameOneGreen{
-    background-color: hsla(71, 69%, 54%, 0.85);
+    background-color: hsla(71, 69%, 54%, 0.85); /*#BDDB39*/
 }
 #gameTwoGreen{
     background-color: hsla(71, 69%, 60%, 0.85);
 }
 #gameThreeGreen{
-    background-color: hsla(71, 69%, 66%, 0.85);
+    background-color: hsla(71, 69%, 66%, 0.85); /*#CEE46C*/
 }
 /*********************************
 GAME-NAV: PARTY, GELB
