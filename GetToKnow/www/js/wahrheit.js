@@ -2,6 +2,7 @@ var stopDeg, stopRounds, roundsCount;
 var stop, loop; 
 var start = true;
 var degreesCount = 0;
+var openWahrheit = false;
     
 function rotateArrow(){
     console.log("rotate");
@@ -50,11 +51,13 @@ $(document).bind('pageinit', function() {
     });
 
     $("#gameNameWahrheit").click(function () {
-        if ($("#divTextWahrheit" ).is(":hidden")) {
+        if ($("#divTextWahrheit" ).is(":hidden") && !openWahrheit) {
+            openWahrheit = true;
             $("#divTextWahrheit").slideDown("slow");
             $(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
         } 
-        else if ($("#divTextWahrheit" ).is(":visible")){
+        else if ($("#divTextWahrheit" ).is(":visible") && openWahrheit){
+            openWahrheit = false;
             $("#divTextWahrheit").slideUp("slow");
             $(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
         }

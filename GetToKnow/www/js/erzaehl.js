@@ -1,6 +1,7 @@
 $(document).bind('pageinit', function() {
 	var zaehlerErzaehl = 1;
 	var unterZehn = true;
+	var openErzaehl = false;
 
 	$("#erzaehlLogo").hide()
 	$("#hochzaehlenErzaehl").click(function() {
@@ -27,11 +28,13 @@ $(document).bind('pageinit', function() {
 	});
 
 	$("#gameNameErzaehl").click(function () {
-	  	if ($("#divTextErzaehl" ).is(":hidden")) {
+	  	if ($("#divTextErzaehl" ).is(":hidden") && !openErzaehl) {
+	  		openErzaehl = true;
 	    	$("#divTextErzaehl").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else if ($("#divTextErzaehl" ).is(":visible")){
+	  	else if ($("#divTextErzaehl").is(":visible") && openErzaehl){
+	    	openErzaehl = false;
 	    	$("#divTextErzaehl").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

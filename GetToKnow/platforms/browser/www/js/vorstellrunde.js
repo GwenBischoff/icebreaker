@@ -1,5 +1,6 @@
 $(document).bind('pageinit', function() {
 	var zaehlerVorstell;
+	var openVorstell = false;
 	var arrayVorstell = ["Wann gehst du normalerweise ins Bett?", 
 				  "Was ist f&uuml;r dich typisch?", 
 				  "Hast du Geschwister?", 
@@ -45,11 +46,13 @@ $(document).bind('pageinit', function() {
 	});
 
 	$("#gameNameVorstell").click(function () {
-	  	if ($("#divTextVorstell" ).is(":hidden")) {
+	  	if ($("#divTextVorstell" ).is(":hidden") && !openVorstell) {
+	    	openVorstell = true;
 	    	$("#divTextVorstell").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextVorstell" ).is(":visible") && openVorstell){
+	    	openVorstell = false;
 	    	$("#divTextVorstell").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

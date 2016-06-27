@@ -1,6 +1,7 @@
 $(document).bind('pageinit', function() {
 	var zaehlerWer;
 	var running = false;
+	var openWerBin = false;
 	var arrayWer = ["Abraham Lincoln",
 					"Angela Merkel",
 					"Barack Obama",
@@ -86,11 +87,13 @@ $(document).bind('pageinit', function() {
 	});
 
 	$("#gameNameWerBinIch").click(function () {
-	  	if ($("#divTextWerBinIch" ).is(":hidden")) {
+	  	if ($("#divTextWerBinIch" ).is(":hidden") && !openWerBin) {
+	  		openWerBin = true;
 	    	$("#divTextWerBinIch").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else if ($("#divTextWerBinIch" ).is(":visible")){
+	  	else if ($("#divTextWerBinIch" ).is(":visible") && openWerBin){
+	  		openWerBin = false;
 	    	$("#divTextWerBinIch").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

@@ -1,5 +1,6 @@
 $(document).bind('pageinit', function() {
 	var zaehlerWasWenn;
+	var openSortieren = false;
 	var arrayWasWenn = ["Schuhgr&ouml;&szlig;e", 
 						"Alter", 
 						"Vorname",
@@ -15,11 +16,13 @@ $(document).bind('pageinit', function() {
 	});
 	
 	$("#gameNameSortieren").click(function () {
-	  	if ($("#divTextSortieren" ).is(":hidden")) {
+	  	if ($("#divTextSortieren" ).is(":hidden") && !openSortieren) {
+	    	openSortieren = true;
 	    	$("#divTextSortieren").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else if ($("#divTextSortieren" ).is(":visible")){
+	  	else if ($("#divTextSortieren" ).is(":visible") && openSortieren){
+	  		openSortieren = false;
 	    	$("#divTextSortieren").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

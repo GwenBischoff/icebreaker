@@ -1,5 +1,6 @@
 $(document).bind('pageinit', function() {
 	var zaehlerNochNie;
+	var openNochNie = false;
 	var arrayNochNie  = ["Arme hochheben", "Einmal im Kreis tanzen", "Laut lachen", "Auf die Nase fassen", //4
 				"Den linken Nachbar anstupsen", "Beide Hände auf den Boden", "Die Zunge raus strecken", //3
 				"Auf einem Bein stehen", "Im Kreis hüpfen", "Die Augen rollen", "In die Hände klatschen", //4
@@ -12,11 +13,13 @@ $(document).bind('pageinit', function() {
 	});
 
 	$("#gameNameNochNie").click(function () {
-	  	if ($("#divTextNochNie" ).is(":hidden")) {
+	  	if ($("#divTextNochNie" ).is(":hidden") && !openNochNie) {
+	  		openNochNie = true;
 	    	$("#divTextNochNie").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else if ($("#divTextNochNie" ).is(":visible")){
+	  	else if ($("#divTextNochNie" ).is(":visible") && openNochNie){
+	  		openNochNie = false;
 	    	$("#divTextNochNie").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

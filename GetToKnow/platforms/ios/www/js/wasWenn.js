@@ -1,5 +1,6 @@
 $(document).bind('pageinit', function() {
 	var zaehlerWasWenn;
+	var openWasWenn = false;
 	var arrayWasWenn = ["... du 1 Million Euro im Lotto gewinnst?", 
 				  "... du nie mehr arbeiten müsstest?", 
 				  "... du für einen Tag unsichtbar sein könntest?", 
@@ -23,11 +24,13 @@ $(document).bind('pageinit', function() {
 	});
 	
 	$("#gameNameWasWenn").click(function () {
-	  	if ($("#divTextWasWenn" ).is(":hidden")) {
+	  	if ($("#divTextWasWenn" ).is(":hidden") && !openWasWenn) {
+	  		openWasWenn = true;
 	    	$("#divTextWasWenn").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextWasWenn" ).is(":visible") && openWasWenn){
+	  		openWasWenn = false;
 	    	$("#divTextWasWenn").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

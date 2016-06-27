@@ -1,5 +1,6 @@
 $(document).bind('pageinit', function() {
 	var zaehlerPantomime;
+	var openPantomime = false;
 	var arrayPantomime = ["Armdr&uuml;cken", 
 				  "Auto", 
 				  "Bademeister", 
@@ -44,11 +45,13 @@ $(document).bind('pageinit', function() {
 	});
 	
 	$("#gameNamePantomime").click(function () {
-	  	if ($("#divTextPantomime" ).is(":hidden")) {
+	  	if ($("#divTextPantomime" ).is(":hidden") && !openPantomime) {
+	  		openPantomime = true;
 	    	$("#divTextPantomime").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else if ($("#divTextPantomime" ).is(":visible")){
+	  	else if ($("#divTextPantomime" ).is(":visible") && openPantomime){
+	  		openPantomime = false;
 	    	$("#divTextPantomime").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

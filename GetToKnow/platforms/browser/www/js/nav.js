@@ -4,7 +4,6 @@ $( document ).ready(function() {
 	$(".sideNavIcon").click(function() {
 	    sidenav = document.getElementsByClassName("sideNav");
 	    Array.prototype.forEach.call(sidenav, function(el) {
-	    	console.log("open");
 	    	el.style.width = "20em";	    	
 		});
 	});
@@ -13,8 +12,14 @@ $( document ).ready(function() {
 	$(".closeBtn").click(function() {
 	    sidenav = document.getElementsByClassName("sideNav");
 	    Array.prototype.forEach.call(sidenav, function(el) {
-	    	console.log("close");
 	    	el.style.width = "0em";	    	
 		});
 	});
+
+	$(".sideNavItem").click(function() {
+		sidenav = document.getElementsByClassName("sideNav");
+	    Array.prototype.forEach.call(sidenav, function(el) {
+	    	el.style.width = "0em";	    	
+		});
+	});	
 });

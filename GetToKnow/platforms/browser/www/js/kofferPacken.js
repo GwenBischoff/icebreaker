@@ -1,5 +1,6 @@
 $(document).bind('pageinit', function() {
 	var zaehlerKoffer;
+	var openKoffer = false;
 	var arrayKoffer = ["ein Handtuch", 
 				  "Sonnencreme", 
 				  "einen Hut", 
@@ -27,11 +28,13 @@ $(document).bind('pageinit', function() {
 	});
 
 	$("#gameNameKoffer").click(function () {
-	  	if ($("#divTextKoffer" ).is(":hidden")) {
+	  	if ($("#divTextKoffer" ).is(":hidden") && !openKoffer) {
+	  		openKoffer = true;
 	    	$("#divTextKoffer").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextKoffer" ).is(":visible") && openKoffer){
+	  		openKoffer = false;
 	    	$("#divTextKoffer").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

@@ -1,6 +1,6 @@
-$(document).bind('pageinit', function() {
-	
+$(document).bind('pageinit', function() {	
 	var runningSpeed = false;
+	var openSpeed = false;
 	console.log("abc");
 	$( "#speedName" ).click(function() {
 		if (runningSpeed == false){
@@ -18,11 +18,13 @@ $(document).bind('pageinit', function() {
 	});
 
 	$("#gameNameSpeeddating").click(function () {
-	  	if ($("#divTextSpeed" ).is(":hidden")) {
+	  	if ($("#divTextSpeed" ).is(":hidden") && !openSpeed) {
+	  		openSpeed = true;
 	    	$("#divTextSpeed").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextSpeed" ).is(":visible") && openSpeed){
+	  		openSpeed = false;
 	    	$("#divTextSpeed").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}
