@@ -474,8 +474,8 @@ SORTIEREN
 /*********************************
 WER BIN ICH
 **********************************/
-#name{
-	font-size: 2em;
+#nameWerBinIch{
+	font-size: 3em;
 }
 
 /*********************************
@@ -501,12 +501,6 @@ VORSTELLRUNDE
 #gameDescriptionVorstellrunde{
     text-align: center;
 	height: 3em;
-}
-/*********************************
-WER BIN ICH
-**********************************/
-#name{
-	font-size: 2em;
 }
 
 /*********************************

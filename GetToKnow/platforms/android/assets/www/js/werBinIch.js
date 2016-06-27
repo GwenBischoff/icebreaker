@@ -69,15 +69,15 @@ $(document).bind('pageinit', function() {
 					"King Kong",
 					"Heidi"];
 
-	$( "#name" ).click(function() {
+	$( "#nameWerBinIch" ).click(function() {
 		if (running == false){
 			running = true;
 			zaehlerWer = Math.floor(Math.random() * arrayWer.length);
 			var sec = 10;
 			var timer = setInterval(function() {
-			   	$('#name').text(sec--);
+			   	$('#nameWerBinIch').text(sec--);
 			   	if (sec == -1) {
-			    	$('#name').text(arrayWer[zaehlerWer]);
+			    	$('#nameWerBinIch').text(arrayWer[zaehlerWer]);
 			    	running = false;
 			      	clearInterval(timer);
 		   		} 

@@ -58,9 +58,6 @@ GAMES
 .gameName{ 
     color: #fff;
 }
-.gameBtns{
-    background-color:#f4f4f4;
-}
 /*********************************
 GAME-NAV: KENNENLERN, DUNKELGRÜN
 **********************************/
@@ -83,10 +80,10 @@ GAME-NAV: EISBRECHER, HELLGRÜN
     background-color: hsla(71, 69%, 54%, 1); 
 }
 #gameTwoGreen{
-    background-color: hsla(71, 69%, 60%, 1);
+    background-color: hsla(71, 69%, 50%, 1);
 }
 #gameThreeGreen{
-    background-color: hsla(71, 69%, 66%, 1); 
+    background-color: hsla(71, 69%, 46%, 1); 
 }
 /*********************************
 GAME-NAV: PARTY, GELB
@@ -122,7 +119,7 @@ GAMES IN KENNENLERN, DUNKELGRÜN
 GAMES IN KENNENLERN, HELLGRÜN
 **********************************/
 #gamesGreen{
-    background-color: hsla(71, 69%, 54%, 1);
+    background-color: hsla(71, 69%, 46%, 1);
 }
 /*********************************
 GAMES IN KENNENLERN, GELB

@@ -8,7 +8,6 @@ $(document).on("ready", function(e) {
 				if ( e.type === "swiperight") {
 					sidenav.style.width = "20em";
 					$('.gameBtns').button('disable'); 
-					console.log([type="submit"]);
 				} else if ( e.type === "swipeleft" ) {
 					sidenav.style.width = "0";
 					$('.gameBtns').button('enable');
