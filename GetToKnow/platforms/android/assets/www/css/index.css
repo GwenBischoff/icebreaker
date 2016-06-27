@@ -481,6 +481,16 @@ WER BIN ICH
 #nameWerBinIch{
     font-size: 3em;
 }
+/*********************************
+SPEED DATING
+**********************************/
+#divSpeedName{
+    margin: 0 auto;
+    display: table;
+}
+#speedName{
+    font-size: 3em;
+}
 
 /*********************************
 VORSTELLRUNDE

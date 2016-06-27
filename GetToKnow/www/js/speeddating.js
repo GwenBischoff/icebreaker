@@ -1,7 +1,7 @@
 $(document).bind('pageinit', function() {	
 	var runningSpeed = false;
 	var openSpeed = false;
-	console.log("abc");
+
 	$( "#speedName" ).click(function() {
 		if (runningSpeed == false){
 			runningSpeed = true;
