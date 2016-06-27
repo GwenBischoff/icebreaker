@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.getToKnow;
+package com.icebreakers;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

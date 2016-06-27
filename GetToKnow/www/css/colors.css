@@ -34,16 +34,16 @@ SIDENAV
 MAIN
 **********************************/
 #menuOne{ 
-    background-color: hsla(165, 63%, 33%, 0.85);/*rgba(86, 162, 214,0.5); #56a2d6*/
+    background-color: hsla(165, 63%, 33%, 1);
 }
 #menuTwo{
-    background-color: hsla(71, 69%, 54%, 0.85); /*#00a38e*/
+    background-color: hsla(71, 69%, 54%, 1);
 }
 #menuThree{
-    background-color: hsla(52, 100%, 55%, 0.85);/*#b0412c*/
+    background-color: hsla(52, 100%, 55%, 1);
 }
 #menuFour{
-    background-color: hsla(28, 100%, 50%, 0.85);/*#d60300*/
+    background-color: hsla(28, 100%, 50%, 1);
 }
 
 /*********************************
@@ -68,71 +68,71 @@ GAME-NAV: KENNENLERN, DUNKELGRÜN
     padding: 3.7em 0 3.7em 0;
 }
 #gameOneBlue{
-    background-color: hsla(165, 63%, 33%, 0.85); /*#1F896F*/
+    background-color: hsla(165, 63%, 33%, 1); 
 }
 #gameTwoBlue{
-    background-color: hsla(165, 63%, 48%, 0.85);
+    background-color: hsla(165, 63%, 48%, 1);
 }
 #gameThreeBlue{
-    background-color: hsla(165, 63%, 63%, 0.85); /*#65DCBE*/
+    background-color: hsla(165, 63%, 63%, 1); 
 }
 /*********************************
 GAME-NAV: EISBRECHER, HELLGRÜN
 **********************************/
 #gameOneGreen{
-    background-color: hsla(71, 69%, 54%, 0.85); /*#BDDB39*/
+    background-color: hsla(71, 69%, 54%, 1); 
 }
 #gameTwoGreen{
-    background-color: hsla(71, 69%, 60%, 0.85);
+    background-color: hsla(71, 69%, 60%, 1);
 }
 #gameThreeGreen{
-    background-color: hsla(71, 69%, 66%, 0.85); /*#CEE46C*/
+    background-color: hsla(71, 69%, 66%, 1); 
 }
 /*********************************
 GAME-NAV: PARTY, GELB
 **********************************/
 #gameOneYellow{
-    background-color: hsla(52, 100%, 50%, 0.85); /*#FFDD00*/
+    background-color: hsla(52, 100%, 50%, 1); 
 }
 #gameTwoYellow{
-    background-color: hsla(52, 100%, 40%, 0.85);
+    background-color: hsla(52, 100%, 40%, 1);
 }
 #gameThreeYellow{
-    background-color: hsla(52, 100%, 30%, 0.85);
+    background-color: hsla(52, 100%, 30%, 1);
 }
 /*********************************
 GAME-NAV: ONE-PHONE, ORANGE
 **********************************/
 #gameOneRed{
-    background-color: hsla(28, 100%, 50%, 0.85)
+    background-color: hsla(28, 100%, 50%, 1)
 }
 #gameTwoRed{
-    background-color: hsla(28, 100%, 60%, 0.85)
+    background-color: hsla(28, 100%, 60%, 1)
 }
 #gameThreeRed{
-    background-color: hsla(28, 100%, 70%, 0.85)
+    background-color: hsla(28, 100%, 70%, 1)
 }
 /*********************************
 GAMES IN KENNENLERN, DUNKELGRÜN
 **********************************/
 #gamesBlue{
-    background-color: hsla(165, 63%, 33%, 0.85);
+    background-color: hsla(165, 63%, 33%, 1);
 }
 /*********************************
 GAMES IN KENNENLERN, HELLGRÜN
 **********************************/
 #gamesGreen{
-    background-color: hsla(71, 69%, 54%, 0.85);
+    background-color: hsla(71, 69%, 54%, 1);
 }
 /*********************************
 GAMES IN KENNENLERN, GELB
 **********************************/
 #gamesYellow{
-    background-color: hsla(52, 100%, 40%, 0.85);
+    background-color: hsla(52, 100%, 40%, 1);
 }
 /*********************************
 GAMES IN KENNENLERN, ORANGE
 **********************************/
 #gamesRed{
-    background-color: hsla(28, 100%, 50%, 0.85)
+    background-color: hsla(28, 100%, 50%, 1)
 }
