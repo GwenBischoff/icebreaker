@@ -48,7 +48,7 @@ $(document).bind('pageinit', function() {
 	    	$("#divTextPantomime").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextPantomime" ).is(":visible")){
 	    	$("#divTextPantomime").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

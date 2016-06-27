@@ -90,7 +90,7 @@ $(document).bind('pageinit', function() {
 	    	$("#divTextWerBinIch").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextWerBinIch" ).is(":visible")){
 	    	$("#divTextWerBinIch").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

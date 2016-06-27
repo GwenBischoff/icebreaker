@@ -19,7 +19,7 @@ $(document).bind('pageinit', function() {
 	    	$("#divTextSortieren").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextSortieren" ).is(":visible")){
 	    	$("#divTextSortieren").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

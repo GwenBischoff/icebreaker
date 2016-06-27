@@ -5,7 +5,7 @@ $(document).bind('pageinit', function() {
 	    	$("#divTextHelp").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextHelp" ).is(":visible")){
 	    	$("#divTextHelp").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

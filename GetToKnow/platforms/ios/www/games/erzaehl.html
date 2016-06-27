@@ -5,8 +5,10 @@
 	<title>Icebreakers</title>
 </head>
 
-<body class="bodyColorDarkGreen">
-   	<header>
+<body id="bodygreen">
+    <!--Hintergrundfarbe id und classen werden bei jquery mobile auf dem body nicht akzeptiert-->
+   	<style>body { background-color: hsla(165, 63%, 33%, 1);}</style>
+    <header>
         <!--SideNavigation-->
         <div id="sideNav" class="sideNav">
             <a class="closeBtn">&times;</a>
@@ -36,9 +38,6 @@
                 <div class="divText" id="divTextErzaehl">Dr&uuml;cke den Button beliebig oft (bis zu 9x) und bestätige anschließend.<hr>
                 </div> 
             </div>      
-			<div class="gameDescription">
-				<span id="anzeigeErzaehl"></span>
-			</div>
 			<div id="erzaehlLogo"><img id="erzaehlBild" src="../img/erzaehl_mir_was.png"></div>
         	<div class="gameBtnsDiv" >
 				<div class="gameBtns" id="hochzaehlenErzaehl">1</div>

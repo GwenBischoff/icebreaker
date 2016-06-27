@@ -27,7 +27,7 @@ $(document).bind('pageinit', function() {
 	    	$("#divTextWasWenn").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextWasWenn" ).is(":visible")){
 	    	$("#divTextWasWenn").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

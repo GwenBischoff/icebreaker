@@ -54,7 +54,7 @@ $(document).bind('pageinit', function() {
             $("#divTextWahrheit").slideDown("slow");
             $(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
         } 
-        else {
+        else if ($("#divTextWahrheit" ).is(":visible")){
             $("#divTextWahrheit").slideUp("slow");
             $(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
         }

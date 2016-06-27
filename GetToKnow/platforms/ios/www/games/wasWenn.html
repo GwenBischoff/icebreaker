@@ -6,6 +6,8 @@
 </head>
 
 <body>
+    <!--Hintergrundfarbe id und classen werden bei jquery mobile auf dem body nicht akzeptiert-->
+    <style>body {background-color: hsla(71, 69%, 46%, 1);}</style>
 	<header>
     	<!--SideNavigation-->
         <div id="sideNav" class="sideNav">
@@ -36,9 +38,6 @@
                 <div class="divText" id="divTextWasWenn">Bei diesem Spiel liest ein Spieler einen "Was w&auml;re wenn"-Satz vor und die anderen Spieler müssen diese Frage beantworten.<hr>
                 </div>   
             </div>
-			<div class="gameDescription" id="gameDescriptionWasWenn">
-				<span id="anzeigeWasWenn"></span>
-			</div>
         	<div class="gameBtnsDiv">
 				<div class="gameBtns" id="begriffWasWenn">Next</div>
 			</div>

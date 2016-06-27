@@ -474,8 +474,12 @@ SORTIEREN
 /*********************************
 WER BIN ICH
 **********************************/
+#divWerBinich{
+    margin: 0 auto;
+    display: table;
+}
 #nameWerBinIch{
-	font-size: 3em;
+    font-size: 3em;
 }
 
 /*********************************

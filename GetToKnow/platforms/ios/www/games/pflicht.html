@@ -6,6 +6,8 @@
 </head>
 
 <body>
+    <!--Hintergrundfarbe id und classen werden bei jquery mobile auf dem body nicht akzeptiert-->
+    <style>body {background-color: hsla(28, 100%, 50%, 1)}</style>
     <header>
         <!--SideNavigation-->
         <div id="sideNav" class="sideNav">
@@ -35,9 +37,6 @@
                 </div>  
                 <div class="divText" id="divTextWahrheit">Bei dem Spiel "Wahrheit oder Pflicht" sitzen alle Personen im Kreis um das Smartphone. Nun wird der Pfeil gedreht. Die Person auf die der Pfeil zeigt muss sich für Wahrheit oder Pflicht entscheiden. Bei Wahrheit d&uuml;rfen sich die anderen Mitspieler eine Frage ausdenken, die wahrheitsgem&auml;&szlig; beantwortet werden muss. Bei Pflicht dürfen sich die Mitspieler eine Aufgabe ausdenken die die Person durchführen muss.<hr><hr>
                 </div>   
-            </div>
-            <div class="gameDescription">
-                <span id="anzeige">Dr&uuml;cke auf den Pfeil um das Spiel zu starten</span>
             </div>
             <div class="gameBtnsDiv" id="wahrheit">
                 <img src="../img/arrow.png" id="arrow">

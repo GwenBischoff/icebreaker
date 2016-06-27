@@ -49,7 +49,7 @@ $(document).bind('pageinit', function() {
 	    	$("#divTextVorstell").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextVorstell" ).is(":visible")){
 	    	$("#divTextVorstell").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

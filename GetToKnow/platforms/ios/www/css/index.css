@@ -253,7 +253,6 @@ GAME-GENERAL: CONTENT
 }
 .contentGame {
     padding-top: 1em;
-    padding-bottom: 18%;
 }
 /*********************************
 ERZÄHL MIR WAS
@@ -475,8 +474,12 @@ SORTIEREN
 /*********************************
 WER BIN ICH
 **********************************/
-#name{
-	font-size: 2em;
+#divWerBinich{
+    margin: 0 auto;
+    display: table;
+}
+#nameWerBinIch{
+    font-size: 3em;
 }
 
 /*********************************
@@ -502,12 +505,6 @@ VORSTELLRUNDE
 #gameDescriptionVorstellrunde{
     text-align: center;
 	height: 3em;
-}
-/*********************************
-WER BIN ICH
-**********************************/
-#name{
-	font-size: 2em;
 }
 
 /*********************************

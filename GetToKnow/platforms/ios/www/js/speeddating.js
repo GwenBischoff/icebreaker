@@ -22,7 +22,7 @@ $(document).bind('pageinit', function() {
 	    	$("#divTextSpeed").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else if ($("#divTextSpeed" ).is(":visible")){
+	  	else {
 	    	$("#divTextSpeed").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}

@@ -6,6 +6,8 @@
 </head>
 
 <body>
+    <!--Hintergrundfarbe id und classen werden bei jquery mobile auf dem body nicht akzeptiert-->
+    <style>body { background-color: hsla(165, 63%, 33%, 1);}</style>
 	<header>
     	<!--SideNavigation-->
         <div id="sideNav" class="sideNav" >
@@ -34,9 +36,6 @@
                 </div>  
                 <div class="divText" id="divTextVorstell">Bei dem Spiel Vorstellrunde stellen sich die Mitspieler der Reihe nach vor und m&uuml;ssen zudem zuf&auml;llig generierten Fragen beantworten.<hr>
                 </div>   
-			</div>
-			<div class="gameDescription" id="gameDescriptionVorstellrunde">
-				<span id="anzeigeVorstell1"></span>
 			</div>
         	<div class="gameBtnsDiv">
 				<div class="gameBtns" id="begriffVorstell">Next</div>
