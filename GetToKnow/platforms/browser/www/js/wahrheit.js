@@ -10,7 +10,7 @@ function rotateArrow(){
         document.getElementById("arrow").style.transform = "rotate("+degreesCount+"deg)";
         
         /*Self calling funtion*/
-        loop = setTimeout('rotateArrow()', 0.1);
+        loop = setTimeout('rotateArrow()', 0.05);
         
         /*Increases degrees & rounds*/
         degreesCount++;

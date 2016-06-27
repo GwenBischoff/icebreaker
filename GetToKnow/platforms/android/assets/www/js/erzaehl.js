@@ -31,7 +31,7 @@ $(document).bind('pageinit', function() {
 	    	$("#divTextErzaehl").slideDown("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/ausrufezeichen.png");
 	  	} 
-	  	else {
+	  	else if ($("#divTextErzaehl" ).is(":visible")){
 	    	$("#divTextErzaehl").slideUp("slow");
 	    	$(".fragezeichenIcons").attr("src","../img/fragezeichen.png");
 	  	}
