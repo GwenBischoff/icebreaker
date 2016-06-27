@@ -527,7 +527,13 @@ MEDIA-QUERIES
     }
     .gamesNamen{
         padding: 7em 0 7em 0;   
-    }     
+    } 
+    #divWerBinich{
+        padding-top: 25em;
+    }
+    #divSpeedName{
+        padding-top: 25em;
+    }    
 }
 /*Nexus 7 2012 quer*/
 @media screen and ( max-height: 800px ){
@@ -536,7 +542,13 @@ MEDIA-QUERIES
     }
     .gamesNamen{
         padding: 3.655em 0 3.655em 0;   
-    }   
+    }  
+    #divWerBinich{
+        padding-top: 13em;
+    }
+    #divSpeedName{
+        padding-top: 13em;
+    } 
 }
 /*Nexus 4 hochkant*/
 @media screen and ( max-height: 640px ){
@@ -545,6 +557,12 @@ MEDIA-QUERIES
     }
     .gamesNamen{
         padding: 2.55em 0 2.55em 0;   
+    }
+    #divWerBinich{
+        padding-top: 8em;
+    }
+    #divSpeedName{
+        padding-top: 8em;
     }
 }
 /*Iphone 5 hochkant*/
@@ -555,6 +573,12 @@ MEDIA-QUERIES
     .gamesNamen{
         padding: 2.05em 0 2.05em 0;   
     } 
+    #divWerBinich{
+        padding-top: 6em;
+    }
+    #divSpeedName{
+        padding-top: 6em;
+    }
 }
 /*Nexus 4 quer*/
 @media screen and ( max-height: 384px ){
@@ -569,6 +593,12 @@ MEDIA-QUERIES
     }
     .gamesNamen{
         padding: 0.765em 0 0.765em 0;   
+    }
+    #divWerBinich{
+        padding-top: 1em;
+    }
+    #divSpeedName{
+        padding-top: 1em;
     }    
 }  
 /*Iphone 5 quer*/
@@ -579,6 +609,12 @@ MEDIA-QUERIES
     .gamesNamen{
         padding: 0.32em 0 0.32em 0;   
     } 
+    #divWerBinich{
+        padding-top: 0em;
+    }
+    #divSpeedName{
+        padding-top: 0em;
+    }
 }
 
 @media screen and ( min-width: 170px ){
