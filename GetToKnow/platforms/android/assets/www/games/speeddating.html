@@ -7,9 +7,9 @@
 
 <body>
     <!--Hintergrundfarbe id und classen werden bei jquery mobile auf dem body nicht akzeptiert-->
-    <style>body {background-color: hsla(28, 100%, 50%, 1)}</style>
-    <header>
-        <!--SideNavigation-->
+    <style>body { background-color: hsla(165, 63%, 33%, 1);}</style>
+	<header>
+    	<!--SideNavigation-->
         <div id="sideNav" class="sideNav">
             <a class="closeBtn">&times;</a>
             <a id="home" href="../index.html">Startseite</a>
@@ -20,36 +20,39 @@
             <a id="help" href="../help.html">Hilfe</a>
         </div>
 
-        <!--SideNavigation-Icon-->
+	    <!--SideNavigation-Icon-->
         <div id="navIconWrapper">
             <div class="sideNavIcon"><i class="fa fa-bars"></i></div>
             <div id="appName"><img src="../img/icon2.png" alt="Icebreakers"></div>
-        </div>
-
-    </header>
-    <section class="contentGame contentWahrheit" id="gamesRed">
-        <!--Game-->
+        </div>  
+	</header>
+	<section class="contentGame" id="gamesBlue">
+		<!--Game-->
         <div class="gameWrapper">
-            <div class="gameName" id="gameNameWahrheit">
+			<div class="gameName" id="gameNameSpeeddating">
                 <div class="gameNameSpan">
                     <div class="fragezeichen"><img class="fragezeichenIcons"src="../img/fragezeichen.png" alt="Icebreakers"></div>
-                    <h3><span>Wahrheit oder Pflicht</span></h3>
+                    <h3><span>Speeddating</span></h3>
                 </div>  
-                <div class="divText" id="divTextWahrheit">Bei dem Spiel "Wahrheit oder Pflicht" sitzen alle Personen im Kreis um das Smartphone. Nun wird der Pfeil gedreht. Die Person auf die der Pfeil zeigt muss sich für Wahrheit oder Pflicht entscheiden. Bei Wahrheit d&uuml;rfen sich die anderen Mitspieler eine Frage ausdenken, die wahrheitsgem&auml;&szlig; beantwortet werden muss. Bei Pflicht dürfen sich die Mitspieler eine Aufgabe ausdenken die die Person durchführen muss.<hr><hr>
+                <div class="divText" id="divTextSpeed">Bei dem Spiel setzen sich immer zwei Personen zusammen und versuchen solange der Timer ablÃ¤uft mÃ¶glichst viele lustige Sachen Ã¼ber ihr GegenÃ¼ber in erfahrung zu bringen.<hr>
                 </div>   
             </div>
-            <div class="gameBtnsDiv" id="wahrheit">
-                <img src="../img/arrow.png" id="arrow">
-            </div>
-        </div>
-    </section> 
+			<div class="gameDescription">
+				<span></span>
+				<br>
+			</div>
+        	<div class="gameBtnsDiv">
+               <center> <a href="#" id="speedName">Start</a> </center>
+			</div>
+		</div>
+    </section>	
     <footer>
         <p>&copy; 2016 Ein Projekt f&uuml;r MG3</p>
     </footer> 
-        <!-- Script for function-->
-    <script type="text/javascript" src="../js/wahrheit.js"></script>
+    <!-- Script for function-->
+    <script type="text/javascript" src="../js/speeddating.js"></script>
     <!-- Script to open nav-->
     <script type="text/javascript" src="../js/nav.js"></script>
-    <script type="text/javascript" src="../js/nav_swipe.js"></script>
+    <script type="text/javascript" src="../js/nav_swipe.js"></script> 
 </body>
 </html>
