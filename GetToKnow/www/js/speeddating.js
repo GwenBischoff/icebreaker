@@ -6,7 +6,7 @@ $(document).bind('pageinit', function() {
 	$( "#speedName" ).click(function() {
 		if (runningSpeed == false){
 			runningSpeed = true;
-			var sec = 5;
+			var sec = 45;
 			var timer = setInterval(function() {
 			   	$('#speedName').text(sec--);
 			   	if (sec == -1) {
