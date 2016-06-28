@@ -1,19 +1,33 @@
 $(document).bind('pageinit', function() {	
 	var runningSpeed = false;
 	var openSpeed = false;
+	var count = 0;
 
 	$( "#speedName" ).click(function() {
 		if (runningSpeed == false){
 			runningSpeed = true;
-			var sec = 45;
+			var sec = 5;
 			var timer = setInterval(function() {
 			   	$('#speedName').text(sec--);
 			   	if (sec == -1) {
 			   		//Alarm oä
 			    	runningSpeed = false;
 			      	clearInterval(timer);
+			      	var blink = setInterval(function() {  
+				        if(count == 10){
+				        	clearInterval(blink);
+				        	count = 0;
+				        }
+				        else if ($('#speedName').css('visibility') == 'hidden') {
+				            $('#speedName').css('visibility', 'visible');
+				            count++;
+				        } 
+				        else {
+				            $('#speedName').css('visibility', 'hidden'); 
+				        } 
+				    }, 500);
 		   		} 
-			}, 1000);
+			}, 1000);	
 		}
 	});
 

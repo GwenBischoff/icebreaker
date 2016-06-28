@@ -5,7 +5,6 @@ var degreesCount = 0;
 var openWahrheit = false;
     
 function rotateArrow(){
-    console.log("rotate");
     if(!stop){
         /*Roatate image*/ 
         document.getElementById("arrow").style.transform = "rotate("+degreesCount+"deg)";
@@ -30,7 +29,7 @@ function rotateArrow(){
 
 $(document).bind('pageinit', function() {
 
-    $("#arrow").click(function(){
+    $("#wahrheit").click(function(){
 
         if (start){
             /*Creats random degree and amount of rounds*/
