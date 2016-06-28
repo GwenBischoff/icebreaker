@@ -37,6 +37,9 @@ $(document).bind('pageinit', function() {
 	$("#begriffPantomime").click(function() {
 		zaehlerPantomime = Math.floor(Math.random() * arrayPantomime.length);
 		$("#begriffPantomime").html(arrayPantomime[zaehlerPantomime]);
+		$(this).css('background','#A1BE23');
+		setTimeout(function(){
+			$('#begriffPantomime').css('background','#BDDB39');}, 100);
 	});
 	
 	$("#begriffPantomime2").click(function() {

@@ -21,6 +21,9 @@ $(document).bind('pageinit', function() {
 	$("#begriffWasWenn").click(function(){ 
 		zaehlerWasWenn = Math.floor(Math.random() * arrayWasWenn.length);
 		$("#anzeigeWasWenn").html(innerHTML=arrayWasWenn[zaehlerWasWenn]);
+		$(this).css('background','#A1BE23');
+			setTimeout(function(){
+			$('#begriffWasWenn').css('background','#BDDB39');}, 100);
 	});
 	
 	$("#gameNameWasWenn").click(function () {
