@@ -10,6 +10,9 @@ $(document).bind('pageinit', function() {
 	$("#nochNie").click(function() {
 		zaehlerNochNie = Math.floor(Math.random() * arrayNochNie.length);
 		$("#anzeigeNochNie").html(arrayNochNie[zaehlerNochNie]);
+		$(this).css("border-color", "#FFF5B3");
+		setTimeout(function(){
+			$('#nochNie').css('border-color','#FFEB66');}, 100);
 	});
 
 	$("#gameNameNochNie").click(function () {

@@ -16,6 +16,9 @@ $(document).bind('pageinit', function() {
 			};
 			zaehlerErzaehl += 1;
 		}
+		$(this).css("border-color", "#D4F7EE");
+			setTimeout(function(){
+		$('#hochzaehlenErzaehl').css('border-color','#ACECDC');}, 100);
 	});
 
 	$("#bestaetigenErzaehl").click(function() {

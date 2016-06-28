@@ -4,28 +4,33 @@ $(document).bind('pageinit', function() {
 	var arrayKoffer = ["ein Handtuch", 
 				  "Sonnencreme", 
 				  "einen Hut", 
-				  "ein Chemiebuch",
-				  "meinen Dienstschlüssel",
+				  "Lockenwickler",
+				  "meinen PC",
 				  "meinen Hund",
 				  "einen netten Kerl",
-				  "eine Fliegenklatsche",
-				  "einen Staubsauger",
+				  "ein Kleid",
+				  "Strohhalme",
 				  "ein weisses Schaf",
-				  "ein schwarzes Schaf",
+				  "Bücher",
 				  "eine Taschenlampe",
-				  "Tabletten gegen Reisekrankheit",
+				  "ein Kopfkissen",
 				  "Vanilleeis",
-				  "Sagrotan Desinfektionstücher",
-				  "eine Bauchweghose",
+				  "ein Klavier",
+				  "Schuhe",
 				  "ein paar Hanteln",
-				  "meine Heino Schallplattensammlung",
-				  "Kühlschrankmagneten",
+				  "einen MP3 Player",
+				  "einen Grill",
 				  "einen Volleyball"];
 
 	$("#begriffKofferPacken").click(function() {
 		zaehlerKoffer = Math.floor(Math.random() * arrayKoffer.length);
-		$("#anzeigeKoffer").html(arrayKoffer[zaehlerKoffer]);
+		$("#begriffKofferPacken").html(arrayKoffer[zaehlerKoffer]);
+		$(this).css("border-color", "#F8FBE9");
+			setTimeout(function(){
+		$('#begriffKofferPacken').css('border-color','#E2EFA9');}, 100);
 	});
+	
+
 
 	$("#gameNameKoffer").click(function () {
 	  	if ($("#divTextKoffer" ).is(":hidden") && !openKoffer) {
