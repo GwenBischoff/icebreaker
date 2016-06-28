@@ -326,13 +326,13 @@ GAME-WASWENN
     font-size: 3em;
 	text-align: center;
 	
-	background: #BDDB39;
-	background-image: -webkit-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: -moz-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: -ms-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: -o-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: linear-gradient(to bottom, #BDDB39, #A9C624);
-	border: solid #D4E77E 8px;
+	background: #C6DF53;
+	background-image: -webkit-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: -moz-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: -ms-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: -o-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: linear-gradient(to bottom, #C6DF53, #93AC20);
+	border: solid #E2EFA9 8px;
 }
 #anzeigeWasWenn{
 	font-size: 1em;
@@ -354,13 +354,13 @@ KOFFERPACKEN
 	font-size: 1.7em;
 	text-align: center;
 	
-	background: #BDDB39;
-	background-image: -webkit-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: -moz-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: -ms-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: -o-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: linear-gradient(to bottom, #BDDB39, #A9C624);
-	border: solid #D4E77E 8px;
+	background: #C6DF53;
+	background-image: -webkit-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: -moz-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: -ms-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: -o-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: linear-gradient(to bottom, #C6DF53, #93AC20);
+	border: solid #E2EFA9 8px;
 }
 #gameDescriptionKofferPacken{
 	margin-top: -1em;
@@ -406,13 +406,13 @@ PANTOMIME
     font-size: 2em;
 	text-align: center;
 	
-	background: #BDDB39;
-	background-image: -webkit-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: -moz-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: -ms-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: -o-linear-gradient(top, #BDDB39, #A9C624);
-	background-image: linear-gradient(to bottom, #BDDB39, #A9C624);
-	border: solid #D4E77E 8px;
+	background: #C6DF53;
+	background-image: -webkit-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: -moz-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: -ms-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: -o-linear-gradient(top, #C6DF53, #93AC20);
+	background-image: linear-gradient(to bottom, #C6DF53, #93AC20);
+	border: solid #E2EFA9 8px;
 
 }
 #begriffPantomime2{

@@ -25,9 +25,9 @@ $(document).bind('pageinit', function() {
 	$("#begriffKofferPacken").click(function() {
 		zaehlerKoffer = Math.floor(Math.random() * arrayKoffer.length);
 		$("#begriffKofferPacken").html(arrayKoffer[zaehlerKoffer]);
-		$(this).css('background','#A1BE23');
+		$(this).css("border-color", "#F8FBE9");
 			setTimeout(function(){
-		$('#begriffKofferPacken').css('background','#BDDB39');}, 100);
+		$('#begriffKofferPacken').css('border-color','#E2EFA9');}, 100);
 	});
 	
 

@@ -42,7 +42,10 @@ $(document).bind('pageinit', function() {
 
 	$("#begriffVorstell").click(function() {
 		zaehlerVorstell = Math.floor((Math.random() * arrayVorstell.length));
-		$("#anzeigeVorstell1").html(arrayVorstell[zaehlerVorstell]);	
+		$("#anzeigeVorstell1").html(arrayVorstell[zaehlerVorstell]);
+		$(this).css("border-color", "#D4F7EE");
+			setTimeout(function(){
+		$('#begriffVorstell').css('border-color','#ACECDC');}, 100);
 	});
 
 	$("#gameNameVorstell").click(function () {
