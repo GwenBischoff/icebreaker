@@ -39,11 +39,10 @@ header{
 }
 #navIconWrapper{
     font-size: 2em;
-    padding: 0.6em 1em 0.2em 1em; 
+    padding: 0.6em 1em 0.65em 1em; 
     text-align: center;    
 }
 .sideNavIcon{
-    padding-top: 0.3em;
     float: left;
     width: 0;
 }
