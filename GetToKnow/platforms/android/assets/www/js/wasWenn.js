@@ -2,25 +2,26 @@ $(document).bind('pageinit', function() {
 	var zaehlerWasWenn;
 	var openWasWenn = false;
 	var arrayWasWenn = ["... du 1 Million Euro im Lotto gewinnst?", 
-				  "... du nie mehr arbeiten müsstest?", 
-				  "... du für einen Tag unsichtbar sein könntest?", 
-				  "... es eine Zombieinvasion gäbe?", 
-				  "... du nie wieder schlafen müsstest?", 
-				  "... du plötzlich eine Allergie gegen Papier hättest?", 
-				  "... es Minions wirklich gäbe?", 
-				  "... du einmalig die Zeit zurück drehen könntest?", 
-				  "... du die Welt regieren würdest?", 
-				  "... du auf jede nur denkbare Frage die Antwort wüsstest?",
-				  "... du in die Zukunft reisen könntest?", 		
-				  "... der Mond aus Käse wäre?", 
-				  "... einen Klon von deiner Gestalt treffen würdest?", 
-				  "... du eine Woche lang ganz alleine auf der Welt wärst?", 
-				  "... du einen Tag lang in der Welt deines Lieblingsfilmes gefangen wärst?", 
-				  "... du fliegen könntest?"];
+				  "... du nie mehr arbeiten m&uuml;sstest?", 
+				  "... du f&uuml;r einen Tag unsichtbar sein k&ouml;nntest?", 
+				  "... es eine Zombieinvasion g&auml;be?", 
+				  "... du nie wieder schlafen m&uuml;sstest?", 
+				  "... du pl&ouml;tzlich eine Allergie gegen Papier h&auml;ttest?", 
+				  "... es Minions wirklich g&auml;be?", 
+				  "... du einmalig die Zeit zurück drehen k&ouml;nntest?", 
+				  "... du die Welt regieren w&uuml;rdest?", 
+				  "... du auf jede nur denkbare Frage die Antwort w&uuml;sstest?",
+				  "... du in die Zukunft reisen k&ouml;nntest?", 		
+				  "... der Mond aus K&auml;se w&auml;re?", 
+				  "... einen Klon von deiner Gestalt treffen w&uuml;rdest?", 
+				  "... du eine Woche lang ganz alleine auf der Welt w&auml;rst?", 
+				  "... du einen Tag lang in der Welt deines Lieblingsfilmes gefangen w&auml;rst?", 
+				  "... du fliegen k&ouml;nntest?"];
 
 	$("#begriffWasWenn").click(function(){ 
 		zaehlerWasWenn = Math.floor(Math.random() * arrayWasWenn.length);
-		$("#anzeigeWasWenn").html(innerHTML=arrayWasWenn[zaehlerWasWenn]);
+		$("#anzeigeWasWenn").hide();
+        $("#anzeigeWasWenn").html(innerHTML=arrayWasWenn[zaehlerWasWenn]).fadeIn();
 		$(this).css("border-color", "#F8FBE9");
 			setTimeout(function(){
 		$('#begriffWasWenn').css('border-color','#E2EFA9');}, 100);

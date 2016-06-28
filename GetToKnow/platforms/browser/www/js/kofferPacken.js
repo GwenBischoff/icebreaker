@@ -11,7 +11,7 @@ $(document).bind('pageinit', function() {
 				  "ein Kleid",
 				  "Strohhalme",
 				  "ein weisses Schaf",
-				  "Bücher",
+				  "B&uuml;cher",
 				  "eine Taschenlampe",
 				  "ein Kopfkissen",
 				  "Vanilleeis",

@@ -12,7 +12,8 @@ $(document).bind('pageinit', function() {
 
 	$("#begriffSortieren").click(function(){ 
 		zaehlerWasWenn = Math.floor(Math.random() * arrayWasWenn.length);
-		$("#anzeigeSortieren").html(innerHTML=arrayWasWenn[zaehlerWasWenn]);
+		$("#anzeigeSortieren").hide();
+        $("#anzeigeSortieren").html(innerHTML=arrayWasWenn[zaehlerWasWenn]).fadeIn();
 		$(this).css("border-color", "#FFF1E6");
 		setTimeout(function(){
 			$('#begriffSortieren').css('border-color','#FFC999');}, 100);
