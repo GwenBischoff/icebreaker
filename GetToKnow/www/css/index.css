@@ -275,14 +275,15 @@ ERZÄHL MIR WAS
 	border: solid #ACECDC 8px;
 }
 
+
 #bestaetigenErzaehl{
-	margin-top: 1.2em;
+	margin-top: 1em;
 	padding-top: 0.7em;
 	
 	text-align: center;
-	height: 2em;
+	height: 1.8em;
 	
-	background-color: hsla(165, 63%, 33%, 0.85);
+	background-color: #3CD3AD;
 	
 }
 
@@ -326,12 +327,12 @@ GAME-WASWENN
 	text-align: center;
 	
 	background: #BDDB39;
-	background-image: -webkit-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: -moz-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: -ms-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: -o-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: linear-gradient(to bottom, #BDDB39, #A1BE23);
-	border: solid #A5C224 8px;
+	background-image: -webkit-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: -moz-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: -ms-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: -o-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: linear-gradient(to bottom, #BDDB39, #A9C624);
+	border: solid #D4E77E 8px;
 }
 #anzeigeWasWenn{
 	font-size: 1em;
@@ -345,25 +346,26 @@ GAME-WASWENN
 KOFFERPACKEN
 **********************************/
 #begriffKofferPacken{
-	padding: 1.4em 1.1em 0.6em 0.9em;
-    width: 2em;
-    height: 2em;
+	padding-top: 3em;
+    width: 6em;
+    height: 5em;
     border-radius: 50%;
     
-	font-size: 3em;
+	font-size: 1.7em;
 	text-align: center;
 	
 	background: #BDDB39;
-	background-image: -webkit-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: -moz-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: -ms-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: -o-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: linear-gradient(to bottom, #BDDB39, #A1BE23);
+	background-image: -webkit-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: -moz-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: -ms-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: -o-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: linear-gradient(to bottom, #BDDB39, #A9C624);
+	border: solid #D4E77E 8px;
 }
 #gameDescriptionKofferPacken{
-	margin-top: -0.5em;
+	margin-top: -1em;
 	text-align: center;
-	height: 5em;
+
 }
 
 /*********************************
@@ -378,17 +380,18 @@ NOCH NIE
 	font-size: 3em;
 	text-align: center;
 	
-	background: #FFDD00;
-	background-image: -webkit-linear-gradient(top, #FFDD00, #998500);
-	background-image: -moz-linear-gradient(top, #FFDD00, #998500);
-	background-image: -ms-linear-gradient(top, #FFDD00, #998500);
-	background-image: -o-linear-gradient(top, #FFDD00, #998500);
-	background-image: linear-gradient(to bottom, #FFDD00, #998500);
+	background: #FFE433;
+	background-image: -webkit-linear-gradient(top, #FFE433, #CCB100);
+	background-image: -moz-linear-gradient(top, #FFE433, #CCB100);
+	background-image: -ms-linear-gradient(top, #FFE433, #CCB100);
+	background-image: -o-linear-gradient(top, #FFE433, #CCB100);
+	background-image: linear-gradient(to bottom, #FFE433, #CCB100);
+	border: solid #FFEB66 8px;
 }
 
 #gameDescriptionNochNie{
 	text-align: center;
-	height: 4em;
+	height: 3em;
 }
 
 /*********************************
@@ -404,11 +407,12 @@ PANTOMIME
 	text-align: center;
 	
 	background: #BDDB39;
-	background-image: -webkit-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: -moz-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: -ms-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: -o-linear-gradient(top, #BDDB39, #A1BE23);
-	background-image: linear-gradient(to bottom, #BDDB39, #A1BE23);
+	background-image: -webkit-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: -moz-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: -ms-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: -o-linear-gradient(top, #BDDB39, #A9C624);
+	background-image: linear-gradient(to bottom, #BDDB39, #A9C624);
+	border: solid #D4E77E 8px;
 
 }
 #begriffPantomime2{
@@ -458,18 +462,11 @@ SORTIEREN
 }
 
 #gameDescriptionSortieren{
+	margin-top: -1em;
     text-align: center;
 	height: 3.5em;
 }
 
-#erzaehlLogo{
-	text-align: center;
-}
-#erzaehlBild{
-	margin-top: 2em;
-	height: 10em;
-	width: auto;
-}
 /*********************************
 WER BIN ICH
 **********************************/
