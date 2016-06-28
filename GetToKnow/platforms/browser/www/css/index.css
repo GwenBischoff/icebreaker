@@ -154,6 +154,19 @@ GAME-NAV
     float: left;
 }
 /*********************************
+MENU-CLICK-RESPONSE
+**********************************/
+.menuItem{
+    opacity: 1;
+    -webkit-transition: all 0.5s ease; 
+    -moz-transition: all 0.5s ease; 
+    -o-transition: all 0.5s ease; 
+    transition: all 0.5s ease; 
+}
+.clickResponse{
+    opacity: 0.6;
+}
+/*********************************
 GAME-GENERAL: NAME
 **********************************/
 #gameWrapper{

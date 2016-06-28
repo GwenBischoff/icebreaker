@@ -22,4 +22,11 @@ $( document ).ready(function() {
 	    	el.style.width = "0em";	    	
 		});
 	});	
+
+	$(".menuItem").click(function(){
+		var clickedPanel = jQuery(this);
+		clickedPanel.addClass(" clickResponse");
+		setTimeout(function(){
+			clickedPanel.removeClass(" clickResponse");}, 500);
+	});
 });
