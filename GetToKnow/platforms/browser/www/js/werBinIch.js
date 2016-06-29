@@ -75,6 +75,8 @@ $(document).bind('pageinit', function() {
 			running = true;
 			zaehlerWer = Math.floor(Math.random() * arrayWer.length);
 			var sec = 10;
+			$("#nameWerBinIch").css("background-color", "transparent");
+			$("#nameWerBinIch").css("border", "none");
 			var timer = setInterval(function() {
 			   	$('#nameWerBinIch').text(sec--);
 			   	if (sec == -1) {

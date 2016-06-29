@@ -489,6 +489,12 @@ WER BIN ICH
 }
 #nameWerBinIch{
     font-size: 3em;
+    background-color: hsla(52, 100%, 30%, 1);
+    padding: 1.5em 1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: solid #FFEB66 8px;
 }
 /*********************************
 SPEED DATING
